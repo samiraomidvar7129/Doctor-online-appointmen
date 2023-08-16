@@ -10,6 +10,8 @@
 }
 .introduce-content p{
     line-height: 36px;
+    color: #aaa;
+    margin-top: 15px;
 }
 .introduce-content button{
     background-color: #08B89D;

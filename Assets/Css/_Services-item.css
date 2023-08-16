@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: boxShadow 1s ease infinite;
+    animation: boxShadowitem 1s ease infinite;
 }
 .services-item img{
     width: 100px;
@@ -30,7 +30,7 @@
     color: #ccc;
 }
 
-@keyframes boxShadow {
+@keyframes boxShadowitem {
     100%{
         box-shadow: 1px 1px 3px 2px #08B89D;
     }

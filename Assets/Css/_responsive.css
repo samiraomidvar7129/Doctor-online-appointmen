@@ -53,13 +53,31 @@
         left: 15%;
     }
     
-  
+  .header-content-img{
+    display: none;
+  }
+  .header-content-boxRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .header-content-boxRight h6{
+    font-size: 18px;
+  }
+ 
 }
 
 @media screen and (max-width:480px) {
 .header-item1{
     margin-right: 300px;
 }
+
+.header-content-boxRight p{
+    font-size: 10px;
+  }
 }
 
 @media (pointer:fine){

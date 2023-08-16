@@ -1,6 +1,10 @@
 @import './_Fonts.css';
 @import './_Utilites.css';
 @import './_Header.css';
+@import './_Login.css';
+@import './_Switch.css';
+@import './_Loader.css';
+@import './_Navbar.css';
 @import './_HeaderContent.css';
 @import './_Services-item.css';
 @import './_Introduce-Hospital.css';
@@ -9,15 +13,11 @@
 @import './_Swiper.css';
 @import './_Banner.css';
 @import './_Comments.css';
-@import './_Login.css';
 @import './_Contact.css';
-@import './_Switch.css';
-@import './_Doctors-Search.css';
-@import './_Loader.css';
-@import './_Responsive.css';
-@import './_Navbar.css';
 @import './_Footer.css';
+@import './_Doctors-Search.css';
 @import './_Custom-scrollbar.css';
+@import './_Responsive.css';
 
 
 
@@ -27,9 +27,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'MyFont';
-    font-size: 16px !important;
-    
+    font-family: 'MyFont';    
 }
 html{
     scroll-behavior: smooth !important;
