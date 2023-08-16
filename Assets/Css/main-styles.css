@@ -1,22 +1,23 @@
 @import './_Fonts.css';
-@import './_utilites.css';
+@import './_Utilites.css';
 @import './_Header.css';
 @import './_HeaderContent.css';
 @import './_Services-item.css';
 @import './_Introduce-Hospital.css';
 @import './_Counseling.css';
 @import './_MySwiper.css';
-@import './Banner.css';
+@import './_Swiper.css';
+@import './_Banner.css';
 @import './_Comments.css';
 @import './_Login.css';
 @import './_Contact.css';
 @import './_Switch.css';
 @import './_Doctors-Search.css';
-@import './Loader.css';
-@import './_responsive.css';
+@import './_Loader.css';
+@import './_Responsive.css';
 @import './_Navbar.css';
 @import './_Footer.css';
-@import './custom-scrollbar.css';
+@import './_Custom-scrollbar.css';
 
 
 
