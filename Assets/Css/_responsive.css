@@ -1,0 +1,70 @@
+@media screen and (max-width:768px) {
+    html{
+        font-size: 14px;
+    }
+    .top-menu{
+        visibility: hidden;
+        opacity: 0;
+    }
+   
+    .contact-us,
+    .services-parent,
+    .introduce{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+    }
+    .services-item {
+        margin-top: 10px;
+    }
+    .card-info,.search-form,.introduce-img,#time-result{
+        display: none;
+    }
+    .footer{
+        padding: 20px;
+        display: none;
+        flex-direction: column;
+        direction: rtl;
+
+    }
+    .introduce-content{
+        width: 100%;
+    }
+    .introduce-content p{
+   padding: 10px;  
+  }
+   
+    
+    .work-time ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Benefits-of-counseling_item{
+        width: 100px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .Benefits-of-img{
+        left: 15%;
+    }
+    
+  
+}
+
+@media screen and (max-width:480px) {
+.header-item1{
+    margin-right: 300px;
+}
+}
+
+@media (pointer:fine){
+    li{padding: 10px;}
+}
+@media (pointer:coarse){
+    li{padding: 20px;}
+}

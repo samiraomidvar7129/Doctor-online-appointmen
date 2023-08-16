@@ -1,0 +1,37 @@
+#services{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.services-parent{
+    position: relative;
+}
+
+.services-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid #08B89D;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: boxShadow 1s ease infinite;
+}
+.services-item img{
+    width: 100px;
+    height: 100px;
+}
+.services-item span h6{
+    font-size: 12px !important;
+    color: #ccc;
+}
+
+@keyframes boxShadow {
+    100%{
+        box-shadow: 1px 1px 3px 2px #08B89D;
+    }
+}

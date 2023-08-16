@@ -1,0 +1,13 @@
+
+.doctors-search{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn:focus,.search-btn{
+    border: none !important;
+    outline:none !important;
+}

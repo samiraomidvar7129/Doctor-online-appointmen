@@ -1,0 +1,33 @@
+
+.social-media-icons a img{
+    width: 20px;height: 20px;
+    }
+.sub-footer{
+    height: 50px;
+    position: relative;
+}
+.sub-footer .arrow-up{
+    position: absolute;
+    top: -10px !important;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    border: 0;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    cursor: auto !important;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.arrow.scrollshow {
+    opacity: 0.75;
+    cursor: pointer !important;
+}
+
+.fs-14px{
+    font-size: 14px !important;
+}
+
+

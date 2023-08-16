@@ -1,0 +1,17 @@
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.btn-lightgreen {
+    background-color: #08B89D;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+h1.Online-consultation{
+    font-size: 30px !important;
+}
+

@@ -1,0 +1,51 @@
+.switch{
+    width: 60px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #000;
+    position: relative;
+    margin-right: 7px;
+  
+    
+}
+.fliker{
+    width: 20px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 4px rgb(255,255,255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark{
+    background-color: rgb(57,57,57);
+    transition: 0.3s;
+}
+
+
+.moon{
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255,255,255);
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    transform: rotate(-15deg);
+}
+
+.dark .fliker{
+    transform: translateX(40px);
+}
+.top-menu li a{
+    color: #010100;
+}
+.dark > *,
+.dark .top-menu li a{
+    color: white !important;
+}
+

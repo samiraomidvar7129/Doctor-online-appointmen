@@ -1,0 +1,40 @@
+.img-fluid{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-dark-blue{
+    background-color:#4C4C6D;
+}
+.glass-dark-blue{
+    background-color:#4f4f76 ;
+}
+.dark-blue-items{
+    background-color: #1D267D;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-justify{
+    text-align: justify !important;
+}
+.text-center{
+    text-align: center;
+}
+.glass-light-gray{
+    background:rgba(0,0,0,0.2);
+}
+.fs-30{
+    font-size: 30px;
+}
+.dark a{
+    color: aqua;
+}
+
+.my-10{
+    margin: 10px 0;
+}
