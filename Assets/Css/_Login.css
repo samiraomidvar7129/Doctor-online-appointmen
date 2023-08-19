@@ -1,6 +1,21 @@
 body{
     position: relative;
 }
+.span-modal{
+    width: 30px;
+    height: 30px;
+}
+.span-modal button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline:none;
+    background-color: #ace9e0;
+}
+.span-modal button .modal-icon{
+    font-size: 15px;
+    color: #aaa;
+}
 .modal-parent{
     text-align: right;
     position: absolute;

@@ -1,78 +1,89 @@
+
 {
-    
-   "doctors": [
-    {"groupId":1,"groupTitle":"دکتر نسیم ذبیحی","groupImage":"Assets/imgs/doctor-img/doc-1.jpg",
-    "info":[
-      {"NezamCode":" 144670","Speciallity":"تخصص بیماری‌های قلب و عروق","address":"خیابان مفتح  - ساختمان پزشکان 90"}
-    ]
-   },
-    {"groupId":2,  "groupTitle":"دکتر مهدی کریمی راد","groupImage":"Assets/imgs/doctor-img/doc-4.jpg",
-    "info":[
-      {"NezamCode":" 131971","Speciallity":"تخصص بیماری‌های قلب و عروق","address":"خیابان احمداباد  - ساختمان پزشکان ۷۳"}
-    ]
-   },
-
-    {"groupId":3,  "groupTitle":"دکتر الهام هادی بیگی","groupImage":"Assets/imgs/doctor-img/doc_4.jpg",
-     "info":[
-      {"NezamCode":" 137985","Speciallity":"تخصص بیماری‌های پوست و مو","address":"خیابان احمداباد  - ساختمان پزشکان ۷۳"}
-    ]
-   },
-
-    {"groupId":4,  "groupTitle":"دکتر زهرا اصغرنیاگورابجیری","groupImage":"Assets/imgs/doctor-img/doc-3.jpg",
-     "info":[
-      {"NezamCode":" 49598","Speciallity":" تخصص بیماری‌های زنان و  زایمان","address":"خیابان احمداباد  - ساختمان پزشکان ۷۳"}
-    ]
-   },
-
-    {"groupId":5,  "groupTitle":"دکتر حسین بهروز عزیزی","groupImage":"Assets/imgs/doctor-img/doc_6.jpg",
-     "info":[
-      {"NezamCode":" 20450","Speciallity":"تخصص بیماری‌های کلیه و مجاری","address":"خیابان احمداباد  - ساختمان پزشکان ۷۳"}
-    ]
-   },
-
-    {"groupId":6,  "groupTitle":"دکتر حسین ناقدی نیا","groupImage":"Assets/imgs/doctor-img/doc_8.jpg",
-     "info":[
-      {"NezamCode":" 120251","Speciallity":"تخصص بیماری‌های ارتوپدی ","address":"خیابان احمداباد  - ساختمان پزشکان ۴۵۰"}
-    ]
-   },
-
-    {"groupId":7,  "groupTitle":"دکتر مقصود پیروزی","groupImage":"Assets/imgs/doctor-img/doc-2.jpg",
-     "info":[
-      {"NezamCode":" 25253","Speciallity":"تخصص بیماری‌های مفاصل ","address":"خیابان احمداباد  - ساختمان پزشکان ۳۴"}
-    ]
-   },
-
-    {"groupId":8,  "groupTitle":"دکتر فرشته حری","groupImage":"Assets/imgs/doctor-img/doc-4.jpg",
-     "info":[
-      {"NezamCode":" 100453","Speciallity":"تخصص بیماری‌های اورولوژی","address":"خیابان احمداباد  - ساختمان پزشکان ۱۲"}
-    ]
-   },
-   {"groupId":9,  "groupTitle":"دکتر حسین اکبری ","groupImage":"Assets/imgs/doctor-img/doc_6.jpg",
-   "info":[
-    {"NezamCode":" 20450","Speciallity":"تخصص بیماری‌های کلیه و مجاری","address":"خیابان احمداباد  - ساختمان پزشکان ۷۳"}
-  ]
- },
-
-  {"groupId":10,  "groupTitle":"دکتر میلاد  خزائی","groupImage":"Assets/imgs/doctor-img/doc_8.jpg",
-   "info":[
-    {"NezamCode":" 120251","Speciallity":"تخصص بیماری‌های ارتوپدی ","address":"خیابان احمداباد  - ساختمان پزشکان ۴۵۰"}
-  ]
- },
-
-  {"groupId":11,  "groupTitle":"دکتر یزدان فتاحی","groupImage":"Assets/imgs/doctor-img/doc-2.jpg",
-   "info":[
-    {"NezamCode":" 25253","Speciallity":"تخصص بیماری‌های مفاصل ","address":"خیابان احمداباد  - ساختمان پزشکان ۳۴"}
-  ]
- },
-
-  {"groupId":12,  "groupTitle":"دکتر مینا درویش","groupImage":"Assets/imgs/doctor-img/doc-1.jpg",
-   "info":[
-    {"NezamCode":" 100453","Speciallity":"تخصص بیماری‌های اورولوژی","address":"خیابان احمداباد  - ساختمان پزشکان ۱۲"}
-  ]
- }
- 
-  
-
+  "doctors": [
+    {
+      "id": "1",
+     "groupTitle": "دکتر نسیم ذبیحی",
+     "groupImage": "Assets/imgs/doctor-img/doc-1.jpg",
+     "Speciallity": "متخصص قلب و عروق",
+     "NezamCode": "144670"
+    },
+    {
+      "id": "2",
+     "groupTitle": "دکتر مهدی کریمی راد",
+     "groupImage": "Assets/imgs/doctor-img/doc-4.jpg",
+     "Speciallity": "متخصص آنکولوژی ",
+     "NezamCode": "131971"
+    },
+    {
+      "id": "3",
+     "groupTitle": "دکتر الهام هادی بیگی",
+     "groupImage": "Assets/imgs/doctor-img/doc_4.jpg",
+     "Speciallity": "متخصص پوست و مو",
+     "NezamCode": "137985"
+    },
+    {
+      "id": "4",
+     "groupTitle": "دکتر زهرا اصغرنیا",
+     "groupImage": "Assets/imgs/doctor-img/doc-3.jpg",
+     "Speciallity": "متخصص زنان",
+     "NezamCode": "49598"
+    },
+    {
+      "id": "5",
+     "groupTitle": "دکتر حسین بهروز عزیزی",
+     "groupImage": "Assets/imgs/doctor-img/doc-6.jpg",
+     "Speciallity": "متخصص کلیه و مجاری",
+     "NezamCode": "20450"
+    },
+    {
+      "id": "6",
+     "groupTitle": "دکتر حسین ناقدی نیا",
+     "groupImage": "Assets/imgs/doctor-img/doc_8.jpg",
+     "Speciallity": "متخصص ارتوپدی",
+     "NezamCode": "120251"
+    },
+    {
+      "id": "7",
+     "groupTitle": "دکتر مقصود پیروزی",
+     "groupImage": "Assets/imgs/doctor-img/doc-2.jpg",
+     "Speciallity": "متخصص اعصاب و روان",
+     "NezamCode": "25253"
+    },
+    {
+      "id": "8",
+     "groupTitle": "دکتر فرشته حری",
+     "groupImage": "Assets/imgs/doctor-img/doc-4.jpg",
+     "Speciallity": "متخصص اورولوژی",
+     "NezamCode": "100453"
+    },
+    {
+      "id": "9",
+     "groupTitle": "دکتر میلاد خزائی",
+     "groupImage": "Assets/imgs/doctor-img/doc_8.jpg",
+     "Speciallity": "متخصص زیبایی",
+     "NezamCode": "120251"
+    },
+    {
+      "id": "10",
+     "groupTitle": "دکتر یزدان فتاحی",
+     "groupImage": "Assets/imgs/doctor-img/doc-2.jpg",
+     "Speciallity": "متخصص اطفال",
+     "NezamCode": "49598"
+    },
+    {
+      "id": "11",
+     "groupTitle": "دکتر مینا درویش",
+     "groupImage": "Assets/imgs/doctor-img/doc-1.jpg",
+     "Speciallity": "روانپزشک",
+     "NezamCode": "100453"
+    },
+    {
+      "id": "12",
+     "groupTitle": "دکتر حسین اکبری",
+     "groupImage": "Assets/imgs/doctor-img/doc_6.jpg",
+     "Speciallity": "مشاوره روانشناسی",
+     "NezamCode": "20450"
+    }
    ]
-  
 }

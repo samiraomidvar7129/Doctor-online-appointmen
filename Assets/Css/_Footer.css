@@ -1,26 +1,29 @@
 
+#arrow-up{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    display: none;
+    animation: ArrowAnimate 1s linear infinite;
+}
+#arrow-up  .arrow-up_icon{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border: 1px solid #08B89D;
+    border-radius: 100%;
+    padding: 5px;
+    background-color: #fff;
+}
+@keyframes ArrowAnimate {
+    0%{margin-bottom: 0;}
+    100%{margin-bottom: 5px;}
+}
+
 .social-media-icons a img{
     width: 20px;height: 20px;
     }
-.sub-footer{
-    height: 50px;
-    position: relative;
-}
-.sub-footer .arrow-up{
-    position: absolute;
-    top: -10px !important;
-    left: 0;
-    width: 48px;
-    height: 48px;
-    border: 0;
-    border-radius: 50%;
-    position: fixed;
-    left: 20px;
-    bottom: 20px;
-    cursor: auto !important;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
+
 .arrow.scrollshow {
     opacity: 0.75;
     cursor: pointer !important;

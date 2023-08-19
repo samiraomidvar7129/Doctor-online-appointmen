@@ -12,9 +12,11 @@ document.addEventListener('scroll',function(){
 
 const arrow=document.getElementById('arrow-up')
 window.addEventListener("scroll", e => {
-  if (window.scrollY > 0) {
+  if (window.scrollY > 600) {
+    arrow.style.display="block"
       arrow.classList.add("scrollshow")
   } else {
+    arrow.style.display=""
       arrow.classList.remove("scrollshow")
   }
 })
