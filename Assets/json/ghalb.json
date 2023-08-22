@@ -25,14 +25,14 @@
     {
       "id": "4",
      "groupTitle": "دکتر زهرا اصغرنیا",
-     "groupImage": "Assets/imgs/doctor-img/doc-3.jpg",
+     "groupImage": "Assets/imgs/doctor-img/doc_3.jpg",
      "Speciallity": "متخصص زنان",
      "NezamCode": "49598"
     },
     {
       "id": "5",
      "groupTitle": "دکتر حسین بهروز عزیزی",
-     "groupImage": "Assets/imgs/doctor-img/doc-6.jpg",
+     "groupImage": "Assets/imgs/doctor-img/doc_6.jpg",
      "Speciallity": "متخصص کلیه و مجاری",
      "NezamCode": "20450"
     },

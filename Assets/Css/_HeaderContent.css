@@ -31,8 +31,7 @@
     color: #010101;    
 }
 h1.Online-consultation{
-    font-size: 30px !important;
-    animation:  opacity 1s linear infinite;
+    font-size: 30px;
 }
 
 @keyframes opacity {

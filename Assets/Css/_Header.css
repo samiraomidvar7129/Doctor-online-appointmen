@@ -1,7 +1,6 @@
 #item-1{
-    background-color: #08B89D;
-}
-
+    background-color: #08B89D;}
+.header-navbar {position: relative;}
 .header-top-menu nav{
     display: flex;
     justify-content: space-around;

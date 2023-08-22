@@ -37,7 +37,9 @@
     
   </head>
   <body >
-   <!-- android menu -->
+
+
+   <!--Start android menu -->
   <nav class="navbar" id="navbar">
     <input type="checkbox" id="toggler">
     <label for="toggler"><img src="./Assets/imgs/icons/icons8-menu-30.png" alt="menu-icon"></label>
@@ -62,6 +64,7 @@
       </ul>
     </div>
   </nav>
+  <!-- END Android Menu -->
 
 
 
@@ -76,7 +79,10 @@
           </div>
           <!-- END Time -->
           <!-- Start Header Nav -->
-          <div class="item px-3" id="item-1">
+          <div class="header-navbar item px-3" id="item-1">
+                          <!--Start Dedicated scroll -->
+          <div id="DedicatedScroll"></div>
+          <!--END Dedicated scroll -->
             <div class="header-item header-item1 " >
                  <!-- Start Switch LightMode -->
            <div class="switch">
@@ -95,55 +101,53 @@
                   <i class="fa fa-user modal-icon"></i>
                 </button>
               </span>
-    
               <!--Start Modal Parent -->
               <div class="modal-parent">
                 <div class="close-btn">&times;</div>
-                <form action="" method="post" class="form" id="form-modal" novalidate>
-                  <h2>ورود / ثبت نام</h2>
+                <form action="" method="post" class="form" id="form-modal" novalidate >
+                  <h2>ورود /  عضویت</h2>
                   <div class="form-element">
                     <label for="user-name">نام کاربری</label>
-                    <input type="text" id="user-name" placeholder="نام کاربری" />
-                    <span></span>
+                    <input type="text" class="active" id="user-name"  placeholder="  نام کاربری شما"  />
+                    <span class="show-error"></span>
                   </div>
                   <div class="form-element">
-                    <label for="email">ایمیل</label>
-                    <input type="text" id="email" placeholder="Email" />
-                    <span></span>
+                    <label for="user-email">ایمیل</label>
+                    <input type="text" id="user-email" placeholder="ایمیل شما" />
+                    <span class="show-error" id="show-error"></span>
                   </div>
                   <div class="form-element">
-                    <label for="password">رمزعبور</label>
-                    <input type="password" id="password" placeholder="password" />
-                    <span></span>
+                    <label for="user-password">رمزعبور</label>
+                    <input type="password" id="user-password" placeholder=" رمز عبور شما"  />
+                    <span class="show-error"></span>
                   </div>
                   <div class="form-element">
+                    <label for="remember-me" class="checkmark"> مرا به خاطر بسپار</label>
                     <input type="checkbox" id="rememmber-me" />
-                    <label for="remember-me"> مرا به خاطر بسپار</label>
                   </div>
                   <div class="form-element">
-                    <button>ثبت نام</button>
+                    <button type="submit"> عضویت</button>
                   </div>
                   <div class="form-element">
-                    <a href="">فراموشی رمز عبور</a>
+                    <a href="">رمز خود را از یاد برده اید ?  کلیک کنید</a>
                   </div>
-                  <span id="show-error"></span>
                 </form>
               </div>
-              <!--END Modal Parent  -->
             </div>
+            <!--END Modal Parent  -->
             <div class="header-item header-item2 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
               <div class="header-top-menu m-auto">
                 <nav>
                   <div class="animate-ul"></div>
-                  <a href="#" id="counseling" class="link mx-3">مشاوره آنلاین</a>
+                  <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
     
-                  <a href="#" id="doctors" class="link mx-3">پزشکان</a>
+                  <a href="#" class="link mx-3">پزشکان</a>
     
-                  <a href="#" id="sections" class="link mx-3"> بانک دارو</a>
+                  <a href="#" class="link mx-3"> بانک دارو</a>
     
-                  <a href="#" id="nobat" class="link mx-3"> نوبت دهی</a>
+                  <a href="#" class="link mx-3"> نوبت دهی</a>
     
-                  <a href="#" id="about" class="link mx-3"> مجله سلامت</a>
+                  <a href="./Medicine blog.html" class="link mx-3"> مجله سلامت</a>
                 </nav>
               </div>
             </div>
@@ -153,8 +157,12 @@
                 <img src="./Assets/imgs/logo/logo-v2 (1).svg" alt="">
               </span>
             </div>
+
           </div>
           <!-- END Header Nav -->
+          
+        
+
           <!-- Start Header Content -->
           <div class="item">
           <section class="header-content ">
@@ -165,7 +173,7 @@
                   alt="..."/>
             </div>
             <div class="header-content-boxRight p-5" dir="rtl">
-              <h1 class=" mt-4 active Online-consultation">  مشاوره آنلاین پزشکی</h1>
+              <h1 class=" mt-4 active Online-consultation" id="Online-consultation">  مشاوره آنلاین پزشکی</h1>
               <h6 class=" mt-4">
              با بیش از <span class="active">&nbsp;2500&nbsp;</span> پزشک در <span class="active"> &nbsp;43&nbsp;</span> تخصص آنلاین گفتگو کنید </h6>
               <p>
@@ -340,176 +348,7 @@
               <h5 class="mySwiper_h1">  پزشکان آماده همراهی شما </h5>
               <h6 class="mt-3">بیش از 2500 پزشک آماده پاسخگویی به شما هستند</h6>
               </div> 
-             <div class="mySwiper-list">
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              <div class="mySwiprt-list_item">
-                <a href="" class="mySwiprt-list_items-link">
-                  <div class="mySwiprt-list_items">
-                    <div class="mySwiprt-list_items-title">
-                      <div class="mySwiprt-list_items-title--text">
-                        <h6>گفتگو و مشاوره با متخصص</h6>
-                        <h5>متخصص خون و آنکولوژی</h5>
-                      </div>
-                      <span class="mySwiprt-list_items-title--img"><img src="./Assets/imgs/Expertise-Icons/hematology-oncology.svg" title="hematology-oncology.svg" alt="hematology-oncology.svg"></span>
-                    </div>
-                    <p>کلینیک سرطان شش و ریه - کلینیک سرطان سینه </p>
-                  </div>
-                </a>
-              </div>
-              </div>
+             <div class="mySwiper-list"></div>
           </div>            
           </div>
     
@@ -528,7 +367,7 @@
           <!-- Start Comments Section -->
           <div class="item column" id="comments">
       <div class="comments-title m-auto my-5 text-center ">
-        <h1 class="comments-title_h1" > دیدگاه کاربران</h1>
+        <h5 class="comments-title_h1" > دیدگاه کاربران</h5>
         <p class="mt-3">
           آنچه شما درباره مشاوره آنلاین گفته اید 
         </p>
@@ -556,7 +395,7 @@
           <!-- Start Contact Section -->
           <div class="item column my-5" id="contact">
             <div class="contact-title m-auto my-5 text-center">
-              <h1 class="contact-title_h1">با ما در تماس باشید</h1>
+              <h5 class="contact-title_h1">با ما در تماس باشید</h5>
               <p class="mt-3">
                پیشنهاد و انتقادهای خود را از طریق فرم زیر ارسال نمایید
               </p>
@@ -596,6 +435,34 @@
             </div>
           </div>
           <!-- END Contact Section -->
+
+          <!-- Start Electronic symbol -->
+          <div class="item" id="ElectronicSymbol ">
+            <div class="Electronic-symbol-wrapper">
+               <div class="Electronic-symbol-wrapper_items">
+                <div class="Electronic-symbol_boxRight">
+                  <div class="Electronic-symbol_boxRight--img">
+                    <img src="./Assets/imgs/Electronic-symbol/logo.png" alt="">
+                  </div>
+                  <div class="Electronic-symbol_boxRight--content">
+                    <h5> دارای نماد الکترونیکی </h5>
+                    <h6>با اطمینان مشاوره انلاین بگیرید</h6>
+                  </div>
+                 </div>
+                <div class="Electronic-symbol_boxLeft">
+                  <div class="Electronic-symbol_boxLeft--img">
+                    <img src="./Assets/imgs/Electronic-symbol/idea.png" alt="">
+                  </div>
+                  <div class="Electronic-symbol_boxLeft--content">
+                    <h5>راهنما و قوانین</h5>
+                    <h6>لطفا قوانین سایت را مطالعه کنید</h6>
+                    <span><a href="#">مشاهده</a></span>
+                  </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+          <!-- END Electronic symbol -->
 
           <!-- Start Footer Section -->
           
@@ -669,7 +536,7 @@
       
     <!-- My Script Files -->
     <script src="./Assets/Js/myScripts2.js"></script>
-    <script src="./Assets/Js/myScripts.js"></script>
+    <script   src="./Assets/Js/myScripts.js"></script>
     
 
   

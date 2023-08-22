@@ -1,4 +1,7 @@
-//Sticky Navbar
+
+
+//Sticky Navbar----------------------
+
 const item_1=document.getElementById('item-1')
 document.addEventListener('scroll',function(){
   if(document.documentElement.scrollTop > 0){
@@ -8,29 +11,55 @@ document.addEventListener('scroll',function(){
   }
 })
 
-//Scroll Top
+//Start Dedicated Scroll ----------
 
-const arrow=document.getElementById('arrow-up')
+let DedicatedScroll=document.getElementById('DedicatedScroll');
+    window.addEventListener('scroll', ()=>{
+        let scrollTop=window.scrollY
+        // console.log(scrollTop);
+        let documentHeight=document.body.clientHeight
+        // console.log(documentHeight);
+        let windowHeight=window.innerHeight
+        // console.log(windowHeight);
+        let scrollPercent=scrollTop / (documentHeight - windowHeight)
+        // console.log(scrollPercent);
+        let scrollPercentRounded=Math.round(scrollPercent * 100)
+        // console.log(scrollPercentRounded);
+        DedicatedScroll.style.width=scrollPercentRounded + '%'
+    })
+
+
+//END Dedicated Scroll --------------
+
+// Animate Effect Arrow-Up-----------
+
+const ArrowUp=document.getElementById('arrow-up')
 window.addEventListener("scroll", e => {
   if (window.scrollY > 600) {
-    arrow.style.display="block"
-      arrow.classList.add("scrollshow")
+      ArrowUp.style.display="block"
+      ArrowUp.classList.add("scrollshow")
   } else {
-    arrow.style.display=""
-      arrow.classList.remove("scrollshow")
+      ArrowUp.style.display=""
+      ArrowUp.classList.remove("scrollshow")
   }
 })
 
-arrow.addEventListener("click", e => {
-  if (arrow.classList.contains("scrollshow")) {
+ArrowUp.addEventListener("click", e => {
+  if (ArrowUp.classList.contains("scrollshow")) {
       window.scrollTo({top: 0, behavior: "smooth"})
   }
 })
 
+function ArrowAnimate(){
+  setInterval(function(){
+    ArrowUp.style.animation="ArrowAnimate 1s linear infinite";
+    ArrowAnimate();
+  },1000)
+}
+ArrowAnimate();
 
 
-
-//Loader Func-----------------------------
+//Loader Function--------------------
 
 const loader = document.querySelector(".loader");
 
@@ -38,7 +67,7 @@ window.addEventListener("load", function () {
   loader.classList.add("hidden");
 });
 
-//ShowTime func---------------------------
+//ShowTime func------------------
 
 function ShowTime() {
   var myData = new Date();
@@ -67,67 +96,68 @@ setInterval(ShowTime, 1000);
 ShowTime();
 
 
-
-//Menu-----------------------
-const home = document.querySelector("#home");
-const doctors = document.querySelector("#doctors");
-const sections = document.querySelector("#sections");
-const nobat = document.querySelector("#nobat");
-const about = document.querySelector("#about");
-const topMenu = document.querySelector(".animate-ul");
-
-home.addEventListener("mouseenter", function () {
-  topMenu.style.width = "80px";
-  topMenu.style.marginRight = "-430px";
-});
-doctors.addEventListener("mouseenter", function () {
-  topMenu.style.width = "100px";
-  topMenu.style.marginRight = "-250px";
-});
-
-sections.addEventListener("mouseenter", function () {
-  topMenu.style.width = "100px";
-  topMenu.style.marginRight = "10px";
-});
-
-nobat.addEventListener("mouseenter", function () {
-  topMenu.style.width = "100px";
-  topMenu.style.marginRight = "200px";
-});
-
-about.addEventListener("mouseenter", function () {
-  topMenu.style.width = "100px";
-  topMenu.style.marginRight = "420px";
-});
-
-//modal func--------------------
+//modal Element---------------------
 
 const btnModal = document.querySelector(".btn-modal");
 const closeBtn = document.querySelector(".close-btn");
-
 const modalParent = document.querySelector(".modal-parent");
 
 showModal = () => {
-  (modalParent.style.display = "block"),
-    (document.body.style.filter = "blur(1px)");
-};
-
+  modalParent.style.display = "block";
+  modalParent.style.transition="all 0.5s cubic-bezier(0.7,-0.5,0.3,1.5)";
+}
 hideModal = () => {
-  (modalParent.style.display = "none"),
-    (document.body.style.filter = "blur(0px)");
+  modalParent.style.display = "none"
 };
 hideModalWithEsc = (e) => {
   if (e.keyCode === 27) {
-    (modalParent.style.display = "none"),
-      (document.body.style.filter = "blur(0px)");
+    modalParent.style.display = "none"
   }
 };
-
 btnModal.addEventListener("click", showModal);
 closeBtn.addEventListener("click", hideModal);
 document.body.addEventListener("keyup", hideModalWithEsc);
 
-//Start Light Mode Scripts---------------------
+// Form Validation with class-----
+
+let userName=document.getElementById('user-name');
+let userEmail=document.getElementById('user-email');
+let userPassword=document.getElementById('user-password');
+
+class formValidation{
+  constructor(myForm){
+   this.__myForm=myForm;
+   this.submitHandler();
+   this.focusHandler();
+  }
+
+
+  submitHandler =()=>{
+    this.__myForm.addEventListener('submit',(e) => {
+      e.preventDefault();
+    })
+  }
+
+  focusHandler = ()=>{
+  this.__myForm.addEventListener('focusin',(e)=>{
+  console.log(e.target);
+  });
+  this.__myForm.addEventListener('focusout',(e)=>{
+  console.log(e.target);
+  })
+    // console.log("focus");
+  }
+
+}
+
+
+
+let myForm=document.getElementById('form-modal');
+new formValidation(myForm);
+
+
+
+// Light Mode Scripts----------
 
 const SwitchElem = document.querySelector(".switch");
 
@@ -152,19 +182,36 @@ window.onload = () => {
   }
 };
 
-// END Light Mode Scripts-----------------------
+//----------------------------------
+
+//FadeOut Effect
+
+var  OnlineConsultation=document.getElementById('Online-consultation');
+function fadeOut(){
+  setInterval(function(){
+    OnlineConsultation.style.animation=" opacity 0.7s linear infinite"
+    fadeOut();
+  },1000)
+}
+fadeOut();
+
+//-----------------------------------
+
+
+//Get Data With Ajax , Api-------------
 
 document.addEventListener("DOMContentLoaded", function () {
   //step 1:
   var xhttp = new XMLHttpRequest();
 
   //step 2:
-  xhttp.open("GET", "/Assets/json/ghalb.json");
+  xhttp.open("GET", "https://64e0d10850713530432cb725.mockapi.io/doctors");
 
   //step 3:
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
       var myData = JSON.parse(xhttp.responseText);
+      // console.log(myData);
       createMainBox(myData);
     }
   };
@@ -172,67 +219,106 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function createMainBox(myData) {
-  var mainBox = document.getElementById("main-box");
+  var mainBox = document.querySelector(".mySwiper-list");
   mainBox.style.display="flex"
   mainBox.style.flexWrap="wrap"
-  mainBox.style.justifyContent="center"
+  mainBox.style.justifyContent="space-around"
   mainBox.style.alignItems="center"
   
-  for (const item in myData.doctors) {
+  for (const item in myData) {
     var mainBoxElem = createGroupBox(
-      myData.doctors[item].groupId,
-      myData.doctors[item].groupTitle,
-      myData.doctors[item].groupImage
+     myData[item].id,
+     myData[item].groupTitle,
+     myData[item].groupImage,
+     myData[item].Description,
     );
     mainBox.appendChild(mainBoxElem);
   }
 }
 
-function createGroupBox(groupId, groupTitle, groupImage) {
+function createGroupBox(id, groupTitle, groupImage,Description) {
 
   var boxItem = document.createElement("div");
-  boxItem.classList.add("main-box");
-  boxItem.style.width = "200px";
-  boxItem.style.margin="10px"
-  boxItem.style.padding="10px";
-  boxItem.style.display = "flex";
-  boxItem.style.flexDirection = "column";
-  boxItem.style.justifyContent = "center";
-  boxItem.style.alignItems="center"
-  boxItem.style.backgroundColor="darkBlue";
-  boxItem.style.borderRadius="30px";
+   boxItem.classList.add('mySwiprt-list_item')
   
+  var swiperLink = document.createElement('a');
+  swiperLink.classList.add('mySwiprt-list_items-link');
+  swiperLink.setAttribute('href',"details.html?group="+ id)
 
-  var itemImg = document.createElement("img");
-  itemImg.setAttribute("src", groupImage);
-  itemImg.style.width = "100px";
-  itemImg.style.height = "100px";
-  itemImg.style.borderRadius = "100%";
-  itemImg.style.margin = "auto";
 
   var itemCaption = document.createElement("div");
-  itemCaption.classList.add("caption");
-  itemCaption.style.width = "100%";
-  itemCaption.style.height = "50%";
+  itemCaption.classList.add("mySwiprt-list_items");
+  itemCaption.style.width = "250px";
+  itemCaption.style.height = "200px";
+  itemCaption.style.marginTop="12px"
+  itemCaption.style.padding="5px";
+  itemCaption.style.display = "flex";
+  itemCaption.style.flexDirection = "column";
+  itemCaption.style.justifyContent = "center";
+  itemCaption.style.alignItems="center"
+  itemCaption.style.borderRadius="10px";
+  itemCaption.style.border="1px solid #c7c7c7";
+  itemCaption.style.transition="0.5s ease";
 
-  var itemTitle = document.createElement("h5");
-  itemTitle.classList.add("title");
-  itemTitle.style.textAlign = "center";
-
-  var itemLink = document.createElement("a");
-  itemLink.style.color="white"
-  var itemLinkText = document.createTextNode(groupTitle);
-  itemLink.appendChild(itemLinkText);
-
-  itemLink.setAttribute("href", "details.html?group=" + groupId);
+ var itemsTitle = document.createElement('div');
+ itemsTitle.classList.add("mySwiprt-list_items-title");
+ itemsTitle.style.display = "flex";
+ itemsTitle.style.justifyContent = "center";
+ itemsTitle.style.alignItems="center";
 
 
-  itemTitle.appendChild(itemLink);
-  itemCaption.appendChild(itemTitle);
+ var titleText=document.createElement('div');
+ titleText.classList.add("mySwiprt-list_items-title--text");
 
-  boxItem.appendChild(itemImg);
-  boxItem.appendChild(itemCaption);
+ var H61=document.createElement('h6');
+ H61.textContent=groupTitle
+ H61.style.fontSize="12px";
+ H61.style.marginLeft="15px";
+
+ var H5=document.createElement('h5');
+ H5.textContent=Description,
+ H5.style,display="block"
+ H5.style.fontSize="17px";
+
+ var span=document.createTextNode("fdffdf");
+
+ H5.appendChild(span)
+
+
+ 
+ var spanImg=document.createElement("span");
+ spanImg.classList.add('mySwiprt-list_items-title--img');
+ spanImg.style.width="60px";
+ spanImg.style.height="60px";
+ spanImg.style.display = "flex";
+ spanImg.style.justifyContent = "center";
+ spanImg.style.alignItems="center";
+
+
+
+ var itemImg = document.createElement("img");
+ itemImg.setAttribute('src', groupImage);
+ itemImg.style.width = "100%";
+ itemImg.style.height = "100%";
+ itemImg.style.objectFit = "cover";
+ itemImg.style.marginLeft = "15px";
+
+ spanImg.appendChild(itemImg);
+
+
+ titleText.appendChild(H61,H5);
+
+ itemsTitle.appendChild(titleText,spanImg);
+ 
+ itemCaption.appendChild(itemsTitle);
+
+ swiperLink.appendChild(itemCaption);
+
+ boxItem.appendChild(swiperLink);
+
 
   return boxItem;
+  // console.log(boxItem);
 }
+
 

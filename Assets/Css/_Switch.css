@@ -37,13 +37,14 @@
 }
 
 .dark .fliker{
-    transform: translateX(40px);
+    transform: translateX(22px);
 }
 .top-menu li a{
     color: #010100;
 }
 .dark > *,
 .dark .top-menu li a{
-    color: white !important;
+    color: white;
 }
+
 

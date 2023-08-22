@@ -1,5 +1,6 @@
 @import './_Fonts.css';
 @import './_Utilites.css';
+@import './_DedicatedScroll.css';
 @import './_Header.css';
 @import './_Login.css';
 @import './_Switch.css';
@@ -14,9 +15,10 @@
 @import './_Banner.css';
 @import './_Comments.css';
 @import './_Contact.css';
+@import './_ElectronicSymbol.css';
 @import './_Footer.css';
+@import './_Doctors-advice.css';
 @import './_Doctors-Search.css';
-@import './_Custom-scrollbar.css';
 @import './_Responsive.css';
 
 

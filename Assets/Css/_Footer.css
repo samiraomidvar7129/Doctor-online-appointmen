@@ -4,7 +4,9 @@
     left: 10px;
     bottom: 10px;
     display: none;
-    animation: ArrowAnimate 1s linear infinite;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
 }
 #arrow-up  .arrow-up_icon{
     width: 30px;
@@ -12,11 +14,12 @@
     object-fit: cover;
     border: 1px solid #08B89D;
     border-radius: 100%;
-    padding: 5px;
+    padding: 7px;
     background-color: #fff;
 }
 @keyframes ArrowAnimate {
-    0%{margin-bottom: 0;}
+    0%{margin-bottom: 0;
+    box-shadow: 2px 2px 8px 5px #19e3c5;}
     100%{margin-bottom: 5px;}
 }
 
