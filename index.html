@@ -24,8 +24,7 @@
       rel="stylesheet"
       href="./Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
     />
-     <!-- Import MySwiper File -->
-     <link rel="stylesheet" href="./Assets/Css/_MySwiper.css">
+
     
      <!-- Import OWL Carousel Files -->
      <link rel="alternate" href="./Assets/Css/OwlCarousel/owl.carousel.min.css">
@@ -90,11 +89,6 @@
             <div class="moon"></div>
           </div>
           <!-- END Switch LightMode -->
-             <!-- Start SearchIcon -->
-             <div class="search-icon">
-              <i class="fa fa-search"></i>
-             </div>
-          <!-- END SearchIcon -->
               <!-- modal-login -->
               <span class="span-modal">
                 <button  type="button" value="" class="p-1 rounded btn-modal" title="modal">
@@ -107,19 +101,19 @@
                 <form action="" method="post" class="form" id="form-modal" novalidate >
                   <h2>ورود /  عضویت</h2>
                   <div class="form-element">
-                    <label for="user-name">نام کاربری</label>
-                    <input type="text" class="active" id="user-name"  placeholder="  نام کاربری شما"  />
-                    <span class="show-error"></span>
+                    <label for="user-name" > :نام و  نام خانوادگی  </label>
+                    <input type="text" class="active" id="user-name"  placeholder="  نام کاربری شما" data-validation="notEmpty"  />
+                    <div class="display-hide show-erro" id="validate-userName"></div>
                   </div>
                   <div class="form-element">
-                    <label for="user-email">ایمیل</label>
-                    <input type="text" id="user-email" placeholder="ایمیل شما" />
-                    <span class="show-error" id="show-error"></span>
+                    <label for="user-email"> :ایمیل </label>
+                      <input type="text" id="user-email" placeholder="ایمیل شما" data-validation="notEmpty isEmail"/>
+                    <div class="display-hide show-erro" id="validate-userEmail"></div>
                   </div>
                   <div class="form-element">
-                    <label for="user-password">رمزعبور</label>
-                    <input type="password" id="user-password" placeholder=" رمز عبور شما"  />
-                    <span class="show-error"></span>
+                    <label for="user-password show-erro"> :رمزعبور </label>
+                      <input type="password" id="user-password" placeholder=" رمز عبور شما" data-validation="isPassword" />
+                    <div class="display-hide" id="validate-userPassword"></div>
                   </div>
                   <div class="form-element">
                     <label for="remember-me" class="checkmark"> مرا به خاطر بسپار</label>
@@ -160,8 +154,6 @@
 
           </div>
           <!-- END Header Nav -->
-          
-        
 
           <!-- Start Header Content -->
           <div class="item">
@@ -520,9 +512,20 @@
           </div>
           <!-- END Footer Section -->
 
+          </div>
+
          
 
+          
 
+
+
+
+
+
+
+
+          
    <!-- Swiper js -->
    <script src="./Assets/Js/mySwiper.js"></script>
    <script src="./Assets/Js/swiper.js"></script>

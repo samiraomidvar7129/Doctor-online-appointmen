@@ -1,63 +1,59 @@
-
-
 //Sticky Navbar----------------------
 
-const item_1=document.getElementById('item-1')
-document.addEventListener('scroll',function(){
-  if(document.documentElement.scrollTop > 0){
-    item_1.classList.add('position')
-  }else{
-    item_1.classList.remove('position')
+const item_1 = document.getElementById("item-1");
+document.addEventListener("scroll", function () {
+  if (document.documentElement.scrollTop > 0) {
+    item_1.classList.add("position");
+  } else {
+    item_1.classList.remove("position");
   }
-})
+});
 
 //Start Dedicated Scroll ----------
 
-let DedicatedScroll=document.getElementById('DedicatedScroll');
-    window.addEventListener('scroll', ()=>{
-        let scrollTop=window.scrollY
-        // console.log(scrollTop);
-        let documentHeight=document.body.clientHeight
-        // console.log(documentHeight);
-        let windowHeight=window.innerHeight
-        // console.log(windowHeight);
-        let scrollPercent=scrollTop / (documentHeight - windowHeight)
-        // console.log(scrollPercent);
-        let scrollPercentRounded=Math.round(scrollPercent * 100)
-        // console.log(scrollPercentRounded);
-        DedicatedScroll.style.width=scrollPercentRounded + '%'
-    })
-
+let DedicatedScroll = document.getElementById("DedicatedScroll");
+window.addEventListener("scroll", () => {
+  let scrollTop = window.scrollY;
+  // console.log(scrollTop);
+  let documentHeight = document.body.clientHeight;
+  // console.log(documentHeight);
+  let windowHeight = window.innerHeight;
+  // console.log(windowHeight);
+  let scrollPercent = scrollTop / (documentHeight - windowHeight);
+  // console.log(scrollPercent);
+  let scrollPercentRounded = Math.round(scrollPercent * 100);
+  // console.log(scrollPercentRounded);
+  DedicatedScroll.style.width = scrollPercentRounded + "%";
+});
 
 //END Dedicated Scroll --------------
 
 // Animate Effect Arrow-Up-----------
 
-const ArrowUp=document.getElementById('arrow-up')
-window.addEventListener("scroll", e => {
+const ArrowUp = document.getElementById("arrow-up");
+window.addEventListener("scroll", (e) => {
   if (window.scrollY > 600) {
-      ArrowUp.style.display="block"
-      ArrowUp.classList.add("scrollshow")
+    ArrowUp.style.display = "block";
+    ArrowUp.classList.add("scrollshow");
   } else {
-      ArrowUp.style.display=""
-      ArrowUp.classList.remove("scrollshow")
+    ArrowUp.style.display = "";
+    ArrowUp.classList.remove("scrollshow");
   }
-})
+});
 
-ArrowUp.addEventListener("click", e => {
+ArrowUp.addEventListener("click", (e) => {
   if (ArrowUp.classList.contains("scrollshow")) {
-      window.scrollTo({top: 0, behavior: "smooth"})
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
-})
+});
 
-function ArrowAnimate(){
-  setInterval(function(){
-    ArrowUp.style.animation="ArrowAnimate 1s linear infinite";
+function ArrowAnimate() {
+  setInterval(function () {
+    ArrowUp.style.animation = "ArrowAnimate 1s linear infinite";
     ArrowAnimate();
-  },1000)
+  }, 1000);
 }
 ArrowAnimate();
-
 
 //Loader Function--------------------
 
@@ -95,7 +91,6 @@ function ShowTime() {
 setInterval(ShowTime, 1000);
 ShowTime();
 
-
 //modal Element---------------------
 
 const btnModal = document.querySelector(".btn-modal");
@@ -104,14 +99,14 @@ const modalParent = document.querySelector(".modal-parent");
 
 showModal = () => {
   modalParent.style.display = "block";
-  modalParent.style.transition="all 0.5s cubic-bezier(0.7,-0.5,0.3,1.5)";
-}
+  modalParent.style.transition = "all 0.5s cubic-bezier(0.7,-0.5,0.3,1.5)";
+};
 hideModal = () => {
-  modalParent.style.display = "none"
+  modalParent.style.display = "none";
 };
 hideModalWithEsc = (e) => {
   if (e.keyCode === 27) {
-    modalParent.style.display = "none"
+    modalParent.style.display = "none";
   }
 };
 btnModal.addEventListener("click", showModal);
@@ -120,41 +115,82 @@ document.body.addEventListener("keyup", hideModalWithEsc);
 
 // Form Validation with class-----
 
-let userName=document.getElementById('user-name');
-let userEmail=document.getElementById('user-email');
-let userPassword=document.getElementById('user-password');
+let userName = document.getElementById("user-name");
+let userEmail = document.getElementById("user-email");
+let userPassword = document.getElementById("user-password");
 
-class formValidation{
-  constructor(myForm){
-   this.__myForm=myForm;
-   this.submitHandler();
-   this.focusHandler();
+class formValidation {
+  constructor(myForm) {
+    this.__myForm = myForm;
+    this.submitHandler();
+    this.focusHandler();
   }
 
-
-  submitHandler =()=>{
-    this.__myForm.addEventListener('submit',(e) => {
+  submitHandler = () => {
+    this.__myForm.addEventListener("submit", (e) => {
       e.preventDefault();
-    })
-  }
+    });
+  };
 
-  focusHandler = ()=>{
-  this.__myForm.addEventListener('focusin',(e)=>{
-  console.log(e.target);
-  });
-  this.__myForm.addEventListener('focusout',(e)=>{
-  console.log(e.target);
-  })
-    // console.log("focus");
-  }
+  focusHandler = () => {
+    this.__myForm.addEventListener("focusin", (e) => {
+      console.log(e.target);
+    });
+    this.__myForm.addEventListener("focusout", (e) => {
+      let dataSetValidation = e.target.dataset.validation;
+      console.log(dataSetValidation);
+      // console.log(validationArray);
 
+      if (dataSetValidation) {
+        let validationArray = dataSetValidation.split(" ");
+        for (let index = 0; index < validationArray.length; index++) {
+          const result = validationArray[index];
+          let errorMessage = this[result](e.target);
+
+          var siblingElem = e.target.nextElementSibling;
+          siblingElem.innerHTML += errorMessage + "<br>";
+          if (errorMessage.length > 0) {
+            siblingElem.classList.remove("display-hide");
+            siblingElem.style.color = "red";
+            siblingElem.style.fontSize = "10px";
+            siblingElem.style.marginTop = "10px";
+          } else {
+            siblingElem.classList.add("display-hide");
+          }
+        }
+      }
+    });
+  };
+
+  notEmpty = (element) => {
+    if (element.value === "") {
+      return "کاربر محترم !  این فیلد نباید خالی باشد";
+    }
+    return "";
+  };
+
+
+isEmail(element){
+  const reg = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+ if (!reg.test(element.value)){
+ return 'قالب ایمیل نادرست است'
+} else{
+ return "";
+ }
 }
 
 
+isPassword(element){
+const reg=new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8 ِ})");
+if(!reg.test(element.value)){
+  return 'قالب رمز عبور نامعتبر است'
+}
+return "";
 
-let myForm=document.getElementById('form-modal');
-new formValidation(myForm);
+};
 
+}
+new formValidation(document.getElementById("form-modal"));
 
 
 // Light Mode Scripts----------
@@ -166,7 +202,6 @@ darkTheme = () => {
 
   if (document.body.className.includes("dark")) {
     //boolean
-
     localStorage.setItem("theme", "dark");
   } else {
     localStorage.setItem("theme", "light");
@@ -186,17 +221,16 @@ window.onload = () => {
 
 //FadeOut Effect
 
-var  OnlineConsultation=document.getElementById('Online-consultation');
-function fadeOut(){
-  setInterval(function(){
-    OnlineConsultation.style.animation=" opacity 0.7s linear infinite"
+var OnlineConsultation = document.getElementById("Online-consultation");
+function fadeOut() {
+  setInterval(function () {
+    OnlineConsultation.style.animation = " opacity 0.7s linear infinite";
     fadeOut();
-  },1000)
+  }, 1000);
 }
 fadeOut();
 
 //-----------------------------------
-
 
 //Get Data With Ajax , Api-------------
 
@@ -205,13 +239,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var xhttp = new XMLHttpRequest();
 
   //step 2:
-  xhttp.open("GET", "https://64e0d10850713530432cb725.mockapi.io/doctors");
+  var url= "/Assets/json/ghalb.json"
+  xhttp.open("GET",url);
 
   //step 3:
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      var myData = JSON.parse(xhttp.responseText);
-      // console.log(myData);
+      var myData =JSON.parse(xhttp.responseText);
       createMainBox(myData);
     }
   };
@@ -220,105 +254,93 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function createMainBox(myData) {
   var mainBox = document.querySelector(".mySwiper-list");
-  mainBox.style.display="flex"
-  mainBox.style.flexWrap="wrap"
-  mainBox.style.justifyContent="space-around"
-  mainBox.style.alignItems="center"
-  
-  for (const item in myData) {
+  mainBox.style.display = "flex";
+  mainBox.style.flexWrap = "wrap";
+  mainBox.style.justifyContent = "space-around";
+  mainBox.style.alignItems = "center";
+
+  for (const item in myData.doctors) {
     var mainBoxElem = createGroupBox(
-     myData[item].id,
-     myData[item].groupTitle,
-     myData[item].groupImage,
-     myData[item].Description,
+      myData.doctors[item].id,
+      myData.doctors[item].groupTitle,
+      myData.doctors[item].groupImage,
+   
     );
     mainBox.appendChild(mainBoxElem);
   }
 }
 
-function createGroupBox(id, groupTitle, groupImage,Description) {
-
+function createGroupBox(id, groupTitle, groupImage) {
   var boxItem = document.createElement("div");
-   boxItem.classList.add('mySwiprt-list_item')
-  
-  var swiperLink = document.createElement('a');
-  swiperLink.classList.add('mySwiprt-list_items-link');
-  swiperLink.setAttribute('href',"details.html?group="+ id)
+  boxItem.classList.add("mySwiprt-list_item");
 
+  var swiperLink = document.createElement("a");
+  swiperLink.classList.add("mySwiprt-list_items-link");
+  swiperLink.setAttribute("href", "details.html?group=" + id);
 
   var itemCaption = document.createElement("div");
   itemCaption.classList.add("mySwiprt-list_items");
   itemCaption.style.width = "250px";
   itemCaption.style.height = "200px";
-  itemCaption.style.marginTop="12px"
-  itemCaption.style.padding="5px";
+  itemCaption.style.marginTop = "12px";
+  itemCaption.style.padding = "5px";
   itemCaption.style.display = "flex";
   itemCaption.style.flexDirection = "column";
   itemCaption.style.justifyContent = "center";
-  itemCaption.style.alignItems="center"
-  itemCaption.style.borderRadius="10px";
-  itemCaption.style.border="1px solid #c7c7c7";
-  itemCaption.style.transition="0.5s ease";
+  itemCaption.style.alignItems = "center";
+  itemCaption.style.borderRadius = "10px";
+  itemCaption.style.border = "1px solid #c7c7c7";
+  itemCaption.style.transition = "0.5s ease";
 
- var itemsTitle = document.createElement('div');
- itemsTitle.classList.add("mySwiprt-list_items-title");
- itemsTitle.style.display = "flex";
- itemsTitle.style.justifyContent = "center";
- itemsTitle.style.alignItems="center";
+  var itemsTitle = document.createElement("div");
+  itemsTitle.classList.add("mySwiprt-list_items-title");
+  itemsTitle.style.display = "flex";
+  itemsTitle.style.justifyContent = "center";
+  itemsTitle.style.alignItems = "center";
 
+  var titleText = document.createElement("div");
+  titleText.classList.add("mySwiprt-list_items-title--text");
 
- var titleText=document.createElement('div');
- titleText.classList.add("mySwiprt-list_items-title--text");
+  var H61 = document.createElement("h6");
+  H61.textContent = groupTitle;
+  H61.style.fontSize = "12px";
+  H61.style.marginLeft = "15px";
 
- var H61=document.createElement('h6');
- H61.textContent=groupTitle
- H61.style.fontSize="12px";
- H61.style.marginLeft="15px";
+  var H5 = document.createElement("h5");
+  (H5.textContent = Description), H5.style, (display = "block");
+  H5.style.fontSize = "17px";
 
- var H5=document.createElement('h5');
- H5.textContent=Description,
- H5.style,display="block"
- H5.style.fontSize="17px";
+  var span = document.createTextNode("fdffdf");
 
- var span=document.createTextNode("fdffdf");
+  H5.appendChild(span);
 
- H5.appendChild(span)
+  var spanImg = document.createElement("span");
+  spanImg.classList.add("mySwiprt-list_items-title--img");
+  spanImg.style.width = "60px";
+  spanImg.style.height = "60px";
+  spanImg.style.display = "flex";
+  spanImg.style.justifyContent = "center";
+  spanImg.style.alignItems = "center";
 
+  var itemImg = document.createElement("img");
+  itemImg.setAttribute("src", groupImage);
+  itemImg.style.width = "100%";
+  itemImg.style.height = "100%";
+  itemImg.style.objectFit = "cover";
+  itemImg.style.marginLeft = "15px";
 
- 
- var spanImg=document.createElement("span");
- spanImg.classList.add('mySwiprt-list_items-title--img');
- spanImg.style.width="60px";
- spanImg.style.height="60px";
- spanImg.style.display = "flex";
- spanImg.style.justifyContent = "center";
- spanImg.style.alignItems="center";
+  spanImg.appendChild(itemImg);
 
+  titleText.appendChild(H61, H5);
 
+  itemsTitle.appendChild(titleText, spanImg);
 
- var itemImg = document.createElement("img");
- itemImg.setAttribute('src', groupImage);
- itemImg.style.width = "100%";
- itemImg.style.height = "100%";
- itemImg.style.objectFit = "cover";
- itemImg.style.marginLeft = "15px";
+  itemCaption.appendChild(itemsTitle);
 
- spanImg.appendChild(itemImg);
+  swiperLink.appendChild(itemCaption);
 
-
- titleText.appendChild(H61,H5);
-
- itemsTitle.appendChild(titleText,spanImg);
- 
- itemCaption.appendChild(itemsTitle);
-
- swiperLink.appendChild(itemCaption);
-
- boxItem.appendChild(swiperLink);
-
+  boxItem.appendChild(swiperLink);
 
   return boxItem;
   // console.log(boxItem);
 }
-
-
