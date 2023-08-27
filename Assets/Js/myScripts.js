@@ -239,7 +239,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var xhttp = new XMLHttpRequest();
 
   //step 2:
-  var url= "/Assets/json/ghalb.json"
+  // var url= "Assets/json/ghalb.json";
+  var url= "http://localhost:3000/doctors";
   xhttp.open("GET",url);
 
   //step 3:
@@ -259,18 +260,20 @@ function createMainBox(myData) {
   mainBox.style.justifyContent = "space-around";
   mainBox.style.alignItems = "center";
 
-  for (const item in myData.doctors) {
+  for (const item in myData) {
     var mainBoxElem = createGroupBox(
-      myData.doctors[item].id,
-      myData.doctors[item].groupTitle,
-      myData.doctors[item].groupImage,
+      myData[item].id,
+      myData[item].groupTitle,
+      myData[item].groupImage,
+      myData[item].groupImage,
+      myData[item].Speciallity
    
     );
     mainBox.appendChild(mainBoxElem);
   }
 }
 
-function createGroupBox(id, groupTitle, groupImage) {
+function createGroupBox(id, groupTitle, groupImage,Speciallity) {
   var boxItem = document.createElement("div");
   boxItem.classList.add("mySwiprt-list_item");
 
@@ -307,7 +310,8 @@ function createGroupBox(id, groupTitle, groupImage) {
   H61.style.marginLeft = "15px";
 
   var H5 = document.createElement("h5");
-  (H5.textContent = Description), H5.style, (display = "block");
+  (H5.textContent = Speciallity),
+   H5.style, (display = "block");
   H5.style.fontSize = "17px";
 
   var span = document.createTextNode("fdffdf");
