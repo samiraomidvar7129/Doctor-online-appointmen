@@ -8,10 +8,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #08B89D;
+    background-color: rgba(0,0,0,0.9);
 }
 .loader > h3{
     width: 100px;
+}
+.loader > h3 .loader-icon{
+    font-size: 50px;
+    animation:  rotate 2s linear infinite;
+    color: #ddd;
 }
 
 .loader.hidden{
@@ -23,5 +28,11 @@
     100%{
         opacity: 0;
         visibility: hidden;
+    }
+}
+
+@keyframes rotate{
+    100%{
+       transform: rotate(-360deg);
     }
 }

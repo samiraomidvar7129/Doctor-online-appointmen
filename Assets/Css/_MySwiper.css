@@ -28,7 +28,6 @@
 .mySwiprt-list_items-title--text{
     width: 100%;
     height: 100%;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,7 +42,6 @@
     font-size: 17px;
 }
 .mySwiprt-list_items-title{
-    background-color: red;
     width: 200px;
     height: 200px;
 }
@@ -53,14 +51,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.mySwiprt-list_items-title span img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-left: 15px;
-}
-.mySwiprt-list_items p{
-    margin-top: 20px;
-    font-size: 13px;
 }

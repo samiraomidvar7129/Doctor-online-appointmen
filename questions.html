@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>از دکتر بپرسید</title>
+
+    <!-- FavIcon -->
+    <link rel="icon" href="./Assets/imgs/logo/logo-v2 (1).svg" />
+    <!-- Import Wow.js Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Import FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="./Assets/Libs/fontawesome-pro-5.15.3-web/css/all.min.css"
+    />
+
+    <!-- Import Bootsrap 5 CDN -->
+    <link
+      rel="stylesheet"
+      href="./Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./Assets/Css/main-styles.css" />
+  </head>
+  <body>
+    <!--Start Loader -->
+    <div class="loader">
+      <h3 class="text-center">LOADING...</h3>
+    </div>
+    <!-- END Loader -->
+    <div class="wrapper">
+   
+      <!-- Start Header Nav -->
+      <div class="header-navbar item px-3" id="item-1">
+        <!--Start Dedicated scroll -->
+        <div id="DedicatedScroll"></div>
+        <!--END Dedicated scroll -->
+        <div class="header-item header-item1">
+          <!-- Start Switch LightMode -->
+          <div class="switch">
+            <div class="fliker"></div>
+            <div class="moon"></div>
+          </div>
+          <!-- END Switch LightMode -->
+          <!-- modal-login -->
+          <span class="span-modal">
+            <button
+              type="button"
+              value=""
+              class="p-1 rounded btn-modal"
+              title="modal"
+            >
+              <i class="fa fa-user modal-icon"></i>
+            </button>
+          </span>
+          <!--Start Modal Parent -->
+          <div class="modal-parent">
+            <div class="close-btn">&times;</div>
+            <form
+              action=""
+              method="post"
+              class="form"
+              id="form-modal"
+              novalidate
+            >
+              <h2>ورود / عضویت</h2>
+              <div class="form-element">
+                <label for="user-name"> :نام و نام خانوادگی </label>
+                <input
+                  type="text"
+                  class="active"
+                  id="user-name"
+                  placeholder="  نام کاربری شما"
+                  data-validation="notEmpty"
+                />
+                <div
+                  class="display-hide show-erro"
+                  id="validate-userName"
+                ></div>
+              </div>
+              <div class="form-element">
+                <label for="user-email"> :ایمیل </label>
+                <input
+                  type="text"
+                  id="user-email"
+                  placeholder="ایمیل شما"
+                  data-validation="notEmpty isEmail"
+                />
+                <div
+                  class="display-hide show-erro"
+                  id="validate-userEmail"
+                ></div>
+              </div>
+              <div class="form-element">
+                <label for="user-password show-erro"> :رمزعبور </label>
+                <input
+                  type="password"
+                  id="user-password"
+                  placeholder=" رمز عبور شما"
+                  data-validation="isPassword"
+                />
+                <div class="display-hide" id="validate-userPassword"></div>
+              </div>
+              <div class="form-element">
+                <label for="remember-me" class="checkmark">
+                  مرا به خاطر بسپار</label
+                >
+                <input type="checkbox" id="rememmber-me" />
+              </div>
+              <div class="form-element">
+                <button type="submit">عضویت</button>
+              </div>
+              <div class="form-element">
+                <a href="">رمز خود را از یاد برده اید ? کلیک کنید</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--END Modal Parent  -->
+        <div
+          class="header-item header-item2 d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+        >
+          <div class="header-top-menu m-auto">
+            <nav>
+              <div class="animate-ul"></div>
+              <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
+              <a href="#" class="link mx-3"> نوبت دهی</a>
+              <a href="questions.html" class="link mx-3">از دکتر بپرسید</a>
+              <a href="medicine blog.html" class="link mx-3"> مجله سلامت</a>
+              <a href="contactUs.html" class="link mx-3">  تماس باما</a>
+            </nav>
+          </div>
+        </div>
+        <div
+          class="header-item header-item3 d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+        >
+          <span>
+            <img src="./Assets/imgs/logo/logo-v2.svg" alt="" />
+          </span>
+        </div>
+      </div>
+      <!-- END Header Nav -->
+       <!-- Start TypeWriter -->
+       <div class="item">
+        <div id="text-writer"></div>
+        <!-- <div id="time-result"></div> -->
+      </div>
+      <!-- END TypeWriter -->
+
+      <!-- Staer Question Section -->
+      <div class="item">
+        <main class="questions-wrapper">
+          <div class="questions-wrapper_title">
+            <p class="questions-wrapper_title-p">
+              قسمت پرسش از دکتر نبض ما به صورت رباتیک نبوده و تمامی سوالات توسط
+              پزشکان متخصص و فوق تخصص که با مجموعه
+              <a href="">دکتر ساینا</a> همکاری دارند، پاسخ داده می شوند
+            </p>
+          </div>
+          <div class="questions-wrapper_content">
+            <p class="questions-wrapper_content-p">
+              شما میتوانید سوالات خود را دقیق و با درج تمامی جزئیات مطرح نموده و
+              کد رهگیری دریافت نمائید. پس از ثبت سؤال هم از طریق سیستم پیامکی و
+              هم ایمیل کد رهگیری ارسال خواهد شد .همچنین زمان پاسخ دهی مجدد از
+              طریق پیامک به همراهتان اطلاع داده خواهد شد . به جهت رعایت اصل
+              امانت داری و بمنظور حفظ حریم شخصی ، مشخصات بیماران در پاسخگویی
+              نمایش داده نمیشود و فقط کد رهگیری مشاهده خواهد شد
+            </p>
+            <h6>
+              پاسخ های ارائه شده هیچگاه جایگزین تشخیص قطعی نمیباشد و از تجویز
+              دارو معذوریم .
+            </h6>
+            <p>
+              مهمترین وشایع ترین سوالات هر بیماری در بخش لیست
+              <a href="" class="question-repeat">سوالات پر تکرار</a> بهمراه جواب
+              قرارداده شده است لطفا پس از مطالعه در آن بخش در صورت غیر تکراری
+              بودن سوال خود را مطرح بفرمائید
+            </p>
+            <div>
+              <p>
+                همچنین میتوانید در بخش
+                <a href="" class="search-text">جستجوی سایت</a> موضوع یا بیماری
+                یا داروی مورد نظر را تایپ و راجب آن مقالات و مطالب مربوط به
+                پیشگیری وعلائم و عوارض و درمان را بیابید و در بخش
+                <a href="" class="ask-question">پرسش و پاسخ</a> با برخی از
+                پزشکان تیم دکتر ساینا بیشتر آشنا شوید .
+              </p>
+            </div>
+            <h5>سلامت و تندرست باشید   ـ   تیم پزشکی دکتر ساینا</h5>
+          </div>
+        </main>
+      </div>
+      <!-- END Questions Section -->
+
+  
+
+      <!-- Start Footer Section -->
+      <div class="item column" id="footer">
+        <footer
+          class="footer d-flex justify-content-space-between align-items-center"
+        >
+          <div class="p-3">
+            <h4 class="">عضویت در خبرنامه</h4>
+            <p class="text-justify my-4">
+              ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+            </p>
+            <div>
+              <form action="#" class="d-flex">
+                <input type="email" placeholder="ورود آدرس ایمیل" class="p-2" />
+                <button
+                  type="button"
+                  class="btn btn-outline-primary p-2 mx-2"
+                  title="arrow-icon"
+                >
+                  <img
+                    src="./Assets/imgs/icons/icons8-arrow-left-30.png"
+                    alt=""
+                  />
+                </button>
+              </form>
+
+              <div class="social-media-icons mt-5">
+                <a href="!#"
+                  ><img
+                    class="fx-14"
+                    src="./Assets/imgs/icons/icons8-instagram-30.png"
+                    alt=""
+                /></a>
+                <a href="!#"
+                  ><img
+                    class="fx-14"
+                    src="./Assets/imgs/icons/icons8-facebook-30.png"
+                    alt=""
+                /></a>
+                <a href="!#"
+                  ><img
+                    class="fx-14"
+                    src="./Assets/imgs/icons/icons8-linkedin-30.png"
+                    alt=""
+                /></a>
+                <a href="!#"
+                  ><img
+                    class="fx-14"
+                    src="./Assets/imgs/icons/icons8-youtube-squared-30.png"
+                    alt=""
+                /></a>
+                <a href="!#"
+                  ><img
+                    class="fx-14"
+                    src="./Assets/imgs/icons/icons8-twitter-squared-30.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="p-3" dir="rtl">
+            <img src="./Assets/imgs/logo/logo-v2 (1).svg" alt="" />
+            <p class="text-justify my-5">
+              ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون
+            </p>
+            <ul>
+              <li class="d-flex mt-3">
+                <img
+                  src="./Assets/imgs/icons/icons8-location-20.png"
+                  alt="location"
+                />
+                <a class="mx-3" href="!#">تهران، خیابان آزادی</a>
+              </li>
+              <li class="d-flex mt-3">
+                <img
+                  src="./Assets/imgs/icons/icons8-call-center-agent-20.png"
+                  alt="supporter"
+                />
+                <a class="mx-3" href="!#">support@medvil.com</a>
+              </li>
+              <li class="d-flex mt-3">
+                <img
+                  src="./Assets/imgs/icons/icons8-clock-20.png"
+                  alt="clock"
+                />
+                <a class="mx-3" href="!#">۰۹:۰۰ صبح الی ۱۶:۰۰</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#up" id="arrow-up"
+            ><i class="fa fa-arrow-up arrow-up_icon" aria-hidden="true"></i
+          ></a>
+        </footer>
+      </div>
+      <!-- END Footer Section -->
+    </div>
+
+    <!-- Bootsrap Files-->
+    <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="./Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
+
+    <!-- My Script Files -->
+    <script src="./Assets/Js/myScripts.js"></script>
+    <script src="./Assets/Js/myScripts2.js"></script>
+  </body>
+</html>

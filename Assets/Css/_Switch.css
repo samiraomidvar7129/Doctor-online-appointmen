@@ -39,11 +39,13 @@
 .dark .fliker{
     transform: translateX(22px);
 }
-.top-menu li a{
+/* .top-menu li a{
     color: #010100;
-}
+} */
 .dark > *,
-.dark .top-menu li a{
+.dark a,
+.dark h6,.dark h5 ,.dark h3
+{
     color: white;
 }
 

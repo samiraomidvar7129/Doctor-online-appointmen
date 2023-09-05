@@ -6,14 +6,15 @@ body{
     height: 30px;
 }
 .span-modal button{
-    width: 100%;
-    height: 100%;
+    width: 26px;
+    height: 26px;
     border: none;
     outline:none;
-    background-color: #aceff9e0;
+    background-color: #fff;
+    margin-top: 3px;
 }
 .span-modal button .modal-icon{
-    font-size: 15px;
+    font-size: 14px;
     color: #aaa;
 }
 

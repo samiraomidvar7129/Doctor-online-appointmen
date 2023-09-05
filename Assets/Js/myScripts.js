@@ -1,3 +1,24 @@
+// Menu Burger----------------------
+const menuBurger=document.querySelector('.menu-burger');
+const menuBurgerList=document.querySelector('.menu-burger-list');
+console.log(menuBurger);
+console.log(menuBurgerList);
+
+var booleanFlag=true;
+
+menuBurger.addEventListener('click', () =>{
+  if(booleanFlag == true){
+    menuBurger.classList.add('open');
+    menuBurgerList.style.top="0";
+    booleanFlag=false;
+  }else{
+    menuBurger.classList.remove('open');
+    menuBurgerList.style.top="-25%";
+    booleanFlag=true;
+  }
+});
+
+
 //Sticky Navbar----------------------
 
 const item_1 = document.getElementById("item-1");
@@ -63,33 +84,53 @@ window.addEventListener("load", function () {
   loader.classList.add("hidden");
 });
 
-//ShowTime func------------------
+//ShowTime-------------------------
 
-function ShowTime() {
-  var myData = new Date();
-  var Hour = myData.getHours();
-  var Minutes = myData.getMinutes();
-  var Seconds = myData.getSeconds();
-  var p = "AM";
-  if (Hour > 12) {
-    Hour = Hour - 12;
-    p = "PM";
-  }
-  if (Hour < 10) {
-    Hour = "0" + Hour;
-  }
-  if (Minutes < 10) {
-    Minutes = "0" + Minutes;
-  }
-  if (Seconds < 10) {
-    Seconds = "0" + Seconds;
-  }
+// function ShowTime() {
+//   var myData = new Date();
+//   var Hour = myData.getHours();
+//   var Minutes = myData.getMinutes();
+//   var Seconds = myData.getSeconds();
+//   var p = "AM";
+//   if (Hour > 12) {
+//     Hour = Hour - 12;
+//     p = "PM";
+//   }
+//   if (Hour < 10) {
+//     Hour = "0" + Hour;
+//   }
+//   if (Minutes < 10) {
+//     Minutes = "0" + Minutes;
+//   }
+//   if (Seconds < 10) {
+//     Seconds = "0" + Seconds;
+//   }
 
-  var result = document.getElementById("time-result");
-  result.innerHTML = Hour + ":" + Minutes + ":" + Seconds;
+//   var result = document.getElementById("time-result");
+//   result.innerHTML = Hour + ":" + Minutes + ":" + Seconds;
+// }
+// setInterval(ShowTime, 1000);
+// ShowTime();
+
+
+
+//Type Writer ---------------------
+
+const textWriter=document.querySelector('#text-writer');
+
+let myText= ' بهترین و بزرگترین سایت نوبت دهی آنلاین در کشور';
+let index= 0;
+
+const typeWriter = () =>{
+if(index < myText.length){
+  textWriter.innerHTML += myText[index]
+  index++
 }
-setInterval(ShowTime, 1000);
-ShowTime();
+setTimeout(()=>{
+  typeWriter();
+},100)
+}
+typeWriter();
 
 //modal Element---------------------
 
@@ -234,46 +275,49 @@ fadeOut();
 
 //Get Data With Ajax , Api-------------
 
+var myData;
+
 document.addEventListener("DOMContentLoaded", function () {
   //step 1:
   var xhttp = new XMLHttpRequest();
 
   //step 2:
-  // var url= "Assets/json/ghalb.json";
-  var url= "http://localhost:3000/doctors";
-  xhttp.open("GET",url);
+   
+  var url="/Assets/json/ghalb.json";
+  xhttp.open("GET", url);
 
   //step 3:
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
-      var myData =JSON.parse(xhttp.responseText);
-      createMainBox(myData);
+      var data =JSON.parse(xhttp.responseText);
+      createMainBox(data);
     }
   };
   xhttp.send();
 });
 
-function createMainBox(myData) {
+function createMainBox(data) {
+  myData=data;
+  
   var mainBox = document.querySelector(".mySwiper-list");
   mainBox.style.display = "flex";
   mainBox.style.flexWrap = "wrap";
   mainBox.style.justifyContent = "space-around";
   mainBox.style.alignItems = "center";
 
-  for (const item in myData) {
+  for (const item in myData.doctors) {
     var mainBoxElem = createGroupBox(
-      myData[item].id,
-      myData[item].groupTitle,
-      myData[item].groupImage,
-      myData[item].groupImage,
-      myData[item].Speciallity
-   
+      myData.doctors[item].id,
+      myData.doctors[item].Name,
+      myData.doctors[item].ImageUrl,
+      myData.doctors[item].Speciallity
     );
+
     mainBox.appendChild(mainBoxElem);
   }
 }
 
-function createGroupBox(id, groupTitle, groupImage,Speciallity) {
+function createGroupBox(id, Name, ImageUrl,Speciallity) {
   var boxItem = document.createElement("div");
   boxItem.classList.add("mySwiprt-list_item");
 
@@ -305,18 +349,17 @@ function createGroupBox(id, groupTitle, groupImage,Speciallity) {
   titleText.classList.add("mySwiprt-list_items-title--text");
 
   var H61 = document.createElement("h6");
-  H61.textContent = groupTitle;
+  H61.innerText = Name;
   H61.style.fontSize = "12px";
   H61.style.marginLeft = "15px";
 
   var H5 = document.createElement("h5");
-  (H5.textContent = Speciallity),
-   H5.style, (display = "block");
-  H5.style.fontSize = "17px";
+  H5.textContent = Speciallity,
+  H5.style.display = "block";
+  H5.style.fontSize = "13px";
+  H5.style.marginTop="22px"
 
-  var span = document.createTextNode("fdffdf");
-
-  H5.appendChild(span);
+  
 
   var spanImg = document.createElement("span");
   spanImg.classList.add("mySwiprt-list_items-title--img");
@@ -327,24 +370,25 @@ function createGroupBox(id, groupTitle, groupImage,Speciallity) {
   spanImg.style.alignItems = "center";
 
   var itemImg = document.createElement("img");
-  itemImg.setAttribute("src", groupImage);
+  itemImg.setAttribute("src", ImageUrl);
   itemImg.style.width = "100%";
   itemImg.style.height = "100%";
   itemImg.style.objectFit = "cover";
-  itemImg.style.marginLeft = "15px";
+  itemImg.style.borderRadius="100%";
+  itemImg.style.marginLeft="22px"
 
-  spanImg.appendChild(itemImg);
+  spanImg.append(itemImg);
 
-  titleText.appendChild(H61, H5);
+  titleText.append(H61, H5);
 
-  itemsTitle.appendChild(titleText, spanImg);
+  itemsTitle.append(titleText, spanImg);
 
-  itemCaption.appendChild(itemsTitle);
+  itemCaption.append(itemsTitle);
 
-  swiperLink.appendChild(itemCaption);
+  swiperLink.append(itemCaption);
 
-  boxItem.appendChild(swiperLink);
-
+  boxItem.append(swiperLink);
+  
+  
   return boxItem;
-  // console.log(boxItem);
 }

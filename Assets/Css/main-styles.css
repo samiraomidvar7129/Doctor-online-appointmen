@@ -11,7 +11,6 @@
 @import './_Introduce-Hospital.css';
 @import './_Counseling.css';
 @import './_MySwiper.css';
-@import './_MySwiper.css';
 @import './_Banner.css';
 @import './_Comments.css';
 @import './_Contact.css';
@@ -19,6 +18,7 @@
 @import './_Footer.css';
 @import './_Doctors-advice.css';
 @import './_Doctors-Search.css';
+@import './_Questions.css';
 @import './_Responsive.css';
 
 
@@ -63,7 +63,6 @@ a{
 
 .header-top,.item,.header-item1{
     display:flex; 
-    justify-content: space-around;
     align-items: center;
 }
 .header-item{

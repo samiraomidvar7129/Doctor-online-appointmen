@@ -18,7 +18,7 @@ width: 100%;
 
 .doctors-information{
     width: 100%;
-    height: 200px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,9 +50,32 @@ width: 100%;
     border-radius: 10px;
     padding: 5px;
 }
-
+.doctors-information_heade-leftBox--links .offer{
+    background-color: rgb(36, 184, 36);
+}
+.doctors-information_heade-leftBox--links .offer:hover{
+    background-color: rgb(31, 148, 31);
+}
+.doctors-information_heade-leftBox--links .not-suggest{
+    background-color: red;
+}
+.doctors-information_heade-leftBox--links .not-suggest:hover{
+    background-color: rgb(236, 101, 101);
+}
+.doctors-information_heade-leftBox--links .Reservation{
+    background-color: #ccc;
+}
+.doctors-information_heade-leftBox--links span .custom-icon{
+    color: #ffff;
+    font-size: 18px;
+    padding:  5px 0 3px 0;
+}
+.doctors-information_heade-leftBox--links span i{
+    color: white !important;
+}
 .doctors-information_heade-leftBox--links span a{
     font-size: 10px;
+    color: #010101 !important;
 }
 .doctors-information_heade-rightBox{
     width: 40%; 
@@ -115,14 +138,18 @@ width: 100%;
     font-size: 10px;
    padding-right: 10px;
 }
-.heade-rightBox_itemLeft span{
+.heade-rightBox_itemLeft span.doctor-location{
     display: flex;
     flex-direction: row-reverse;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 12px;
 }
 .heade-rightBox_itemLeft span h4.location-text{
+    font-size: 12px;
+}
+.heade-rightBox_itemLeft span .doctor-address{
+    margin-bottom: 7px;
     font-size: 12px;
 }
 .heade-rightBox_itemLeft span .location-icon{
@@ -141,7 +168,7 @@ width: 100%;
     width: 100%;
     height: 200px;
     padding: 0 20px;
-    margin: 20px 0 0 0 ;
+    margin: 50px 0 0 0 ;
 }
 .doctors-information_items-inner{
     width: 20%;
@@ -157,8 +184,13 @@ width: 100%;
     flex-direction: column;
     margin-right: 16px;
 }
-
-
+.fa-certificate,
+.fa-file,
+.fa-comments,
+.fa-exclamation,
+.fa-star{
+    color: rgb(228, 193, 105);
+}
 /* -----------------------health-centers------------------------- */
 
 .health-centers{

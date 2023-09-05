@@ -28,6 +28,36 @@
     <link rel="stylesheet" href="./Assets/Css/main-styles.css" />
   </head>
   <body >
+
+       <!--Start android menu -->
+       <nav class="navbar" id="navbar">
+        <input type="checkbox" id="toggler" />
+        <label for="toggler">
+          <i class="fa fa-bars"></i>
+        </label>
+        <div class="menubar">
+          <div class="form-body">
+            <form action="" id="search-form">
+              <input type="text" name="search" id="search-input" />
+              <span class="p-2 dark-blue-items rounded mt-1">
+                <button class="search-btn" title="search-btn">
+                  <i class="fa fa-search search-icon"></i>
+                </button>
+              </span>
+            </form>
+          </div>
+          <ul class="menubar-list">
+            <nav>
+              <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
+              <a href="#" class="link mx-3"> نوبت دهی</a>
+              <a href="questions.html" class="link mx-3">از دکتر بپرسید</a>
+              <a href="medicine blog.html" class="link mx-3"> مجله سلامت</a>
+              <a href="contactUs.html" class="link mx-3"> تماس باما</a>
+            </nav>
+          </ul>
+        </div>
+      </nav>
+      <!-- END Android Menu -->
            
 
     <!--Start Loader -->
@@ -35,16 +65,15 @@
       <h3 class="text-center">LOADING...</h3></div>
       <!-- END Loader -->
       <div class="wrapper">
-      <!-- Start Time -->
-      <div class="item text-dark">
-      <div id="time-result"></div>
-      </div>
-      <!-- END Time -->
+      
       <!-- Start Header Nav -->
+
       <div class="header-navbar item px-3" id="item-1">
-                      <!--Start Dedicated scroll -->
+
+        <!--Start Dedicated scroll -->
       <div id="DedicatedScroll"></div>
       <!--END Dedicated scroll -->
+      
         <div class="header-item header-item1 " >
              <!-- Start Switch LightMode -->
        <div class="switch">
@@ -95,26 +124,28 @@
         <div class="header-item header-item2 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
           <div class="header-top-menu m-auto">
             <nav>
-              <div class="animate-ul"></div>
-              <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
-
-              <a href="#" class="link mx-3"> بانک دارو</a>
-
-              <a href="#" class="link mx-3"> نوبت دهی</a>
-
-              <a href="./Medicine blog.html" class="link mx-3"> مجله سلامت</a>
-            </nav>
+                  <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
+                  <a href="#" class="link mx-3"> نوبت دهی</a>
+                  <a href="questions.html" class="link mx-3">از دکتر بپرسید</a>
+                  <a href="medicine blog.html" class="link mx-3"> مجله سلامت</a>
+                  <a href="contactUs.html" class="link mx-3">  تماس باما</a>
+                </nav>
           </div>
         </div>
         <div
           class="header-item header-item3 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
           <span>
-            <img src="./Assets/imgs/logo/logo-v2 (1).svg" alt="">
+            <img src="./Assets/imgs/logo/logo-v2.svg" alt="">
           </span>
         </div>
-
       </div>
       <!-- END Header Nav -->
+         <!-- Start TypeWriter -->
+         <div class="item">
+          <div id="text-writer"></div>
+          <!-- <div id="time-result"></div> -->
+        </div>
+        <!-- END TypeWriter -->
          
           <!-- Start Doctors InfoBox -->
            <div class="item">
@@ -126,20 +157,21 @@
               <div class="doctors-information_head">
                 <div class="doctors-information_heade-leftBox">
                   <div class="doctors-information_heade-leftBox--links">
-                    <span> <i class="fa fa-clock"></i><a href=""> رزرو نوبت</a> </span>
-                    <span> <i class="fa fa-heart"></i><a href="">لایک کنید</a></span>
-                    <span> <i class="fa fa-heart"></i><a href=""> دنبال کردن</a></span>
+                    <span class="Reservation"> <i class="fa fa-clock custom-icon"></i><a href=""> رزرو نوبت</a> </span>
+                    <span class="offer"> <i class="fa fa-check  custom-icon"></i><a href=""> پیشنهاد میکنم</a></span>
+                    <span class="not-suggest"> <i class="fa fa-times  custom-icon"></i><a href=""> پیشنهاد نمی کنم</a></span>
                   </div>
                 </div>
                 <div class="doctors-information_heade-rightBox">
                   <div class="heade-rightBox_itemLeft">
-                    <h5>دکتر مهدی رضایی</h5>
-                    <h6>طب فیزیک و توانبخشی</h6>
-                    <span class="doctor-location"><i class="fa fa-location location-icon"></i> <h4 class="location-text">شهر محل طبابت : مشهد</h4></span>
+                    <h5 id="doctor-title"></h5>
+                    <h6 id="doctor-Speciallity">طب فیزیک و توانبخشی</h6>
+                    <h6 class="nezam-code"> کد نظام پزشکی  : <span id="nezamCode"></span></h6>
+                    <span class="doctor-location"><i class="fa fa-location location-icon"></i> <h4 class="location-text">شهر محل طبابت : مشهد</h4> &nbsp; | &nbsp; <span class="doctor-address"></span></span>
                   </div>
                   <div class="heade-rightBox_itemRight">
                     <div class="heade-rightBox_itemRight-img">
-                      <img src="./Assets/imgs/doctor-img/doc-2.jpg" alt="doctor-title">
+                      <img  id="doctor-image" src="" alt="doctor-title">
                       <span class="online-status"></span>
                     </div>
                     <div class="heade-rightBox_itemRight-status">
@@ -151,28 +183,28 @@
               </div>
               <div class="doctors-information_items">
                 <div class="doctors-information_items-inner">
-                  <i class="fa fa-heart"></i>                
+                  <i class="fa fa-certificate"></i>                
                     <span>
                       <h6>جوایز</h6>
                       <span>۱۰</span>
                     </span>
                 </div>
                 <div class="doctors-information_items-inner">
-                  <i class="fa fa-heart"></i>                
+                  <i class="fa fa-file"></i>                
                   <span>
                     <h6>مقالات</h6>
                     <span>۱۷</span>
                   </span>
                 </div>
                 <div class="doctors-information_items-inner">
-                  <i class="fa fa-heart"></i>                
+                  <i class=" fa fa-comments"></i>                
                   <span>
                     <h6>نظرات</h6>
                     <span>۱۱۴</span>
                   </span>
                 </div>
                 <div class="doctors-information_items-inner">
-                  <i class="fa fa-heart"></i>                
+                  <i class="fa fa-exclamation"></i>                
                    <span>
                     <h6>پاسخ ها</h6>
                     <span>۱۳۲۴</span>
@@ -234,87 +266,6 @@
             </div>
           </div>
           <!-- END health-centers -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -382,8 +333,8 @@
     <script src="./Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
       
     <!-- My Script Files -->
-    <script src="./Assets/Js/myScripts2.js"></script>
     <script   src="./Assets/Js/myScripts.js"></script>
+    <script src="./Assets/Js/myScripts2.js"></script>
   </body>
 </html>
 

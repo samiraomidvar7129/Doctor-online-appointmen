@@ -1,62 +1,47 @@
-@media screen and (max-width:768px) {
-    html{
-        font-size: 14px;
-    }
-    .top-menu{
-        visibility: hidden;
-        opacity: 0;
-    }
-   
-    .contact-us,
-    .services-parent,
-    .introduce{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center;
-    }
-    .services-item {
-        margin-top: 10px;
-    }
-    .card-info,.search-form,.introduce-img,#time-result{
-        display: none;
-    }
-    .footer{
-        padding: 20px;
-        display: none;
-        flex-direction: column;
-        direction: rtl;
-
-    }
-    .introduce-content{
-        width: 100%;
-    }
-    .introduce-content p{
-   padding: 10px;  
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
   }
-   
-    
-    .work-time ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .Benefits-of-counseling_item{
-        width: 100px;
-        height: 200px;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-    }
-    .Benefits-of-img{
-        left: 15%;
-    }
-    
-  .header-content-img{
+  .contact-us,
+  .services-parent,
+  .introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduce-content {
+    width: 100%;
+  }
+  .introduce-content p {
+    padding: 10px;
+  }
+  .services-item {
+    margin-top: 10px;
+  }
+
+  .footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+  }
+
+  .Benefits-of-counseling_item {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .Benefits-of-img {
+    left: 15%;
+  }
+
+  .header-content-img {
     display: none;
   }
-  .header-content-boxRight{
+  .header-content-boxRight {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,25 +49,28 @@
     align-items: center;
     text-align: center;
   }
-  .header-content-boxRight h6{
+  .header-content-boxRight h6 {
     font-size: 18px;
   }
  
 }
 
-@media screen and (max-width:480px) {
-.header-item1{
-    margin-right: 300px;
-}
-
-.header-content-boxRight p{
+@media screen and (max-width: 480px) {
+  #ElectronicSymbol {
+    display: none;
+  }
+  .header-content-boxRight p {
     font-size: 10px;
   }
 }
 
-@media (pointer:fine){
-    li{padding: 10px;}
+@media (pointer: fine) {
+  li {
+    padding: 10px;
+  }
 }
-@media (pointer:coarse){
-    li{padding: 20px;}
+@media (pointer: coarse) {
+  li {
+    padding: 20px;
+  }
 }

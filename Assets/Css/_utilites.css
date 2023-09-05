@@ -25,13 +25,13 @@
 .text-center{
     text-align: center;
 }
-
+.text-gray{
+    color: #b4acac;
+}
 .fs-30{
     font-size: 30px;
 }
-.dark a{
-    color: aqua;
-}
+
 
 .my-10{
     margin: 10px 0;
