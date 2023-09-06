@@ -40,38 +40,23 @@
   </head>
   <body>
     <!--Start android menu -->
-    <nav class="navbar" id="navbar">
-      <input type="checkbox" id="toggler" />
-      <label for="toggler">
-        <i class="fa fa-bars"></i>
-      </label>
-      <div class="menubar">
-        <div class="form-body">
-          <form action="" id="search-form">
-            <input type="text" name="search" id="search-input" />
-            <span class="p-2 dark-blue-items rounded mt-1">
-              <button class="search-btn" title="search-btn">
-                <i class="fa fa-search search-icon"></i>
-              </button>
-            </span>
-          </form>
-        </div>
-        <ul class="menubar-list">
-          <nav>
-            <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
-            <a href="#" class="link mx-3"> نوبت دهی</a>
-            <a href="questions.html" class="link mx-3">از دکتر بپرسید</a>
-            <a href="medicine blog.html" class="link mx-3"> مجله سلامت</a>
-            <a href="contactUs.html" class="link mx-3"> تماس باما</a>
-          </nav>
-        </ul>
-      </div>
-    </nav>
+    <div class="menu-burger">
+      <div class="burger-inner"></div>
+    </div>
+    <ul class="menu-burger-list">
+      <li><a href="index.html" class="link mx-3">مشاوره آنلاین</a></li>
+      <li><a href="#" class="link mx-3"> نوبت دهی</a></li>
+      <li><a href="questions.html" class="link mx-3">از دکتر بپرسید</a></li>
+      <li><a href="medicine blog.html" class="link mx-3"> مجله سلامت</a></li>
+      <li><a href="contactUs.html" class="link mx-3"> تماس باما</a></li>
+    </ul>
     <!-- END Android Menu -->
 
     <!--Start Loader -->
     <div class="loader">
-      <h3 class="text-center">LOADING...</h3>
+      <div class="loader">
+        <h3 class="text-center"><i class="fa fa-spinner loader-icon"></i></h3>
+      </div>
     </div>
     <!-- END Loader -->
     <div class="wrapper">
@@ -167,11 +152,15 @@
         >
           <div class="header-top-menu m-auto">
             <nav>
-              <a href="index.html" class="link mx-3">مشاوره آنلاین</a>
-              <a href="#" class="link mx-3"> نوبت دهی</a>
-              <a href="questions.html" class="link mx-3">از دکتر بپرسید</a>
-              <a href="medicine blog.html" class="link mx-3"> مجله سلامت</a>
-              <a href="contactUs.html" class="link mx-3"> تماس باما</a>
+              <li><a href="index.html" class="link mx-3">مشاوره آنلاین</a></li>
+              <li><a href="#" class="link mx-3"> نوبت دهی</a></li>
+              <li>
+                <a href="questions.html" class="link mx-3">از دکتر بپرسید</a>
+              </li>
+              <li>
+                <a href="medicine blog.html" class="link mx-3"> مجله سلامت</a>
+              </li>
+              <li><a href="contactUs.html" class="link mx-3"> تماس باما</a></li>
             </nav>
           </div>
         </div>
@@ -184,12 +173,6 @@
         </div>
       </div>
       <!-- END Header Nav -->
-      <!-- Start TypeWriter -->
-      <div class="item">
-        <div id="text-writer"></div>
-        <!-- <div id="time-result"></div> -->
-      </div>
-      <!-- END TypeWriter -->
 
       <!-- Start Contact Section -->
       <div class="item column my-5" id="contact">
@@ -263,69 +246,66 @@
       <!-- Start Footer Section -->
 
       <div class="item column" id="footer">
-        <footer
-          class="footer d-flex justify-content-space-between align-items-center"
-        >
-          <div class="p-3">
-            <h4 class="">عضویت در خبرنامه</h4>
+        <footer class="footer">
+          <div class="footer-boxLeft p-3">
+            <h4>عضویت در خبرنامه</h4>
             <p class="text-justify my-4">
-              ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+              برای اطلاع از اخبار جدید در خبرنامه عضو شوید
             </p>
-            <div>
-              <form action="#" class="d-flex">
-                <input type="email" placeholder="ورود آدرس ایمیل" class="p-2" />
-                <button
-                  type="button"
-                  class="btn btn-outline-primary p-2 mx-2"
-                  title="arrow-icon"
-                >
-                  <img
-                    src="./Assets/imgs/icons/icons8-arrow-left-30.png"
-                    alt=""
-                  />
+            <div class="footer-form_wrapper">
+              <form action="#" class="footer-form_wrapper-inner">
+                <input
+                  type="email"
+                  placeholder="ورود آدرس ایمیل"
+                  class="footer-form_wrapper-inner--input p-2"
+                />
+                <button type="submit" class="footer-form_wrapper-inner--btn">
+                  <i
+                    class="fa fa-arrow-left footer-form_wrapper-inner--icon"
+                  ></i>
                 </button>
               </form>
-
-              <div class="social-media-icons mt-5">
-                <a href="!#"
-                  ><img
-                    class="fx-14"
-                    src="./Assets/imgs/icons/icons8-instagram-30.png"
-                    alt=""
-                /></a>
-                <a href="!#"
-                  ><img
-                    class="fx-14"
-                    src="./Assets/imgs/icons/icons8-facebook-30.png"
-                    alt=""
-                /></a>
-                <a href="!#"
-                  ><img
-                    class="fx-14"
-                    src="./Assets/imgs/icons/icons8-linkedin-30.png"
-                    alt=""
-                /></a>
-                <a href="!#"
-                  ><img
-                    class="fx-14"
-                    src="./Assets/imgs/icons/icons8-youtube-squared-30.png"
-                    alt=""
-                /></a>
-                <a href="!#"
-                  ><img
-                    class="fx-14"
-                    src="./Assets/imgs/icons/icons8-twitter-squared-30.png"
-                    alt=""
-                /></a>
-              </div>
+            </div>
+            <div class="social-media-icons mt-5">
+              <a href="!#"
+                ><img
+                  class="fx-14"
+                  src="./Assets/imgs/icons/icons8-instagram-30.png"
+                  alt=""
+              /></a>
+              <a href="!#"
+                ><img
+                  class="fx-14"
+                  src="./Assets/imgs/icons/icons8-facebook-30.png"
+                  alt=""
+              /></a>
+              <a href="!#"
+                ><img
+                  class="fx-14"
+                  src="./Assets/imgs/icons/icons8-linkedin-30.png"
+                  alt=""
+              /></a>
+              <a href="!#"
+                ><img
+                  class="fx-14"
+                  src="./Assets/imgs/icons/icons8-youtube-squared-30.png"
+                  alt=""
+              /></a>
+              <a href="!#"
+                ><img
+                  class="fx-14"
+                  src="./Assets/imgs/icons/icons8-twitter-squared-30.png"
+                  alt=""
+              /></a>
             </div>
           </div>
-          <div class="p-3" dir="rtl">
-            <img src="./Assets/imgs/logo/logo-v2 (1).svg" alt="" />
+          <div class="footer-boxRight p-3" dir="rtl">
+            <div class="footer-boxRight_item--image">
+              <img src="./Assets/imgs/logo/logo-v2.svg" alt="" />
+            </div>
             <p class="text-justify my-5">
-              ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-              استفاده از طراحان گرافیک است. چاپگرها و متون
+              ارائه بهترین و حرفه ای ترین خدمات پزشکی و اورژانسی همراه با ویزیت
+              و مشاوره آنلاین در همه ساعات شبانه روز
             </p>
             <ul>
               <li class="d-flex mt-3">
@@ -333,21 +313,21 @@
                   src="./Assets/imgs/icons/icons8-location-20.png"
                   alt="location"
                 />
-                <a class="mx-3" href="!#">تهران، خیابان آزادی</a>
+                <a class="mx-3 text-dark" href="!#">تهران، خیابان آزادی</a>
               </li>
               <li class="d-flex mt-3">
                 <img
                   src="./Assets/imgs/icons/icons8-call-center-agent-20.png"
                   alt="supporter"
                 />
-                <a class="mx-3" href="!#">support@medvil.com</a>
+                <a class="mx-3 text-dark" href="!#">support@medvil.com</a>
               </li>
               <li class="d-flex mt-3">
                 <img
                   src="./Assets/imgs/icons/icons8-clock-20.png"
                   alt="clock"
                 />
-                <a class="mx-3" href="!#">۰۹:۰۰ صبح الی ۱۶:۰۰</a>
+                <a class="mx-3 text-dark" href="!#">۰۹:۰۰ صبح الی ۱۶:۰۰</a>
               </li>
             </ul>
           </div>
@@ -359,14 +339,11 @@
       <!-- END Footer Section -->
     </div>
 
-
-
     <!-- Bootsrap Files-->
     <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="./Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
-
 
     <!-- My Script Files -->
     <script src="./Assets/Js/myScripts.js"></script>

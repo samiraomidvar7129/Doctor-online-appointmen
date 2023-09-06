@@ -16,27 +16,27 @@
 .header-navbar {position: relative;}
 .header-top-menu nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     width:100%;
-    height: 50px;
+    height: 70px;
     position: relative;
     direction: rtl;
-
 }
-.header-top-menu nav a{
-    line-height: 50px;
-    z-index: 1;
+.header-top-menu nav li{
+    margin-left: 12px;
     text-align: center;
-    padding: 0 10px;
-    font-size: 14px;
+    transition: .7s ease;
 }
-.animate-ul{
-   position: absolute;
-   height: 100%;
-   z-index: 0;
-   border-radius: 8px;
-   transition: margin .5s;
-   width: 100%;
+.header-top-menu nav li:hover{
+    background-color: #fff;
+    border-radius: 5px;
+}
+.header-top-menu nav li a{
+    font-size: 12px;
+}
+.header-item2{
+    width: 100%;
 }
 a#counseling{
     color: #010101;
@@ -44,43 +44,6 @@ a#counseling{
 a#counseling:hover,
 a#counseling:active{
     color: #010101;
-}
-
-#search-form
-{
-    padding: 5px;
-    color: #eee;
-    display: flex;
-    align-items: center;
-}
-#search-form:is(input,button){
-    color: inherit;
-    border: none;
-    background: transparent;
-    outline: none;
-}
-#search-input{
-    width: 0px;
-    outline: none;
-    transition: width .5s;
-}
-.search-btn{
-    width: 25px;
-    height: 25px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    
-}
-
-#search-form:focus-within input{
-    width: 170px;
-    background-color: red;
-}
-
-::placeholder{
-    color: lightgray;
-    text-align: right;
 }
 
 #carouselExampleControls{
@@ -98,12 +61,8 @@ a#counseling:active{
    color: rgb(192, 193, 198);
  }
 
-
  .header-item1{
     width: 15%;
  }
-.search-icon{
-    margin-right: 10px;
-    color: #d8d4d4;
-}
+
  

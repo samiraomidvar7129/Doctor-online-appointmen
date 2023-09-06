@@ -44,7 +44,7 @@
 } */
 .dark > *,
 .dark a,
-.dark h6,.dark h5 ,.dark h3
+.dark h6,.dark h5 ,.dark h3,.dark p
 {
     color: white;
 }

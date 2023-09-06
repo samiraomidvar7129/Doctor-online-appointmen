@@ -13,7 +13,7 @@ menuBurger.addEventListener('click', () =>{
     booleanFlag=false;
   }else{
     menuBurger.classList.remove('open');
-    menuBurgerList.style.top="-25%";
+    menuBurgerList.style.top="-35%";
     booleanFlag=true;
   }
 });
