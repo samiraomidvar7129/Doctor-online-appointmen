@@ -68,6 +68,8 @@
 
 .footer-item_1{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 100px;
 }
 .footer-boxLeft{
@@ -95,11 +97,11 @@
     height: 100%;
     object-fit: cover;
 }
-.footer-boxRight_item{
+.footer-boxRight{
     display: flex;
     flex-direction:column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content:center ;
+    align-items:center ;
 }
 
 .footer-boxRight_item--social-icons,
@@ -157,7 +159,7 @@
 
 #arrow-up{
     position: fixed;
-    left: 10px;
+    left: 20px;
     bottom: 10px;
     display: none;
     border-radius: 100%;

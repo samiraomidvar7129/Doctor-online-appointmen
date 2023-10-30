@@ -1,0 +1,15 @@
+.health-centersـinformation{
+    width: 100%;
+
+}
+.content-box{
+    position: relative;
+    margin:  10px 20px;
+}
+.health-centersـinformation--head{
+    position: relative;
+    padding: 10px;
+    color: red;
+    cursor: pointer;
+    background-color: gray;
+}

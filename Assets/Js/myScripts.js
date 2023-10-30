@@ -260,16 +260,20 @@ window.onload = () => {
 
 //----------------------------------
 
-//FadeOut Effect
+//roatingText
 
-var OnlineConsultation = document.getElementById("Online-consultation");
+let OnlineConsultation =document.getElementById("Online-consultation");
+
 function fadeOut() {
   setInterval(function () {
-    OnlineConsultation.style.animation = " opacity 0.7s linear infinite";
+
+    OnlineConsultation.style.animation = "opacity 0.7s linear infinite";
     fadeOut();
+
   }, 1000);
 }
 fadeOut();
+
 
 //-----------------------------------
 

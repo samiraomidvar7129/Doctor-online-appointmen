@@ -10,7 +10,7 @@
     width: 45px;
     height: 45px;
     position: fixed;
-    top: 20px;
+    top: 15px;
     right: 10px;
     display: flex;
     justify-content: center;
@@ -41,7 +41,6 @@
 .menu-burger .burger-inner::before{
     transform: translateY(-8px);
 }
-
 .menu-burger.open .burger-inner{
     transform: translateX(-20px);
     background-color: transparent;
@@ -53,7 +52,6 @@ transform: translate(20px ,0) rotate(45deg);
 transform: translate(20px ,0) rotate(-45deg);
 
 }
-
 .menu-burger-list{
     width: 35%;
     height:350px;
@@ -93,14 +91,7 @@ transform: translate(20px ,0) rotate(-45deg);
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 }
-
 .menu-burger-list li:hover{
     background-color: #fff;
     color: black;
 }
-
-
-@media screen and (max-width:768px) {
-
-} 
-

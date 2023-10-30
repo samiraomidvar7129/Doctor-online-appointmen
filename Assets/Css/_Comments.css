@@ -1,6 +1,18 @@
 
-.comments-carousel_slider{
-    width: 800px;
-    height: auto;
+.swiper {
+    width:800px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+.swiper-slide{
+    background-color: gray;
 }
-
+.swiper-button-prev_custom::after,
+.swiper-button-next_custom::after{
+  background-color:#ccc;
+  opacity: 1.9;
+    padding: 10px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 25px;
+}

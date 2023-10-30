@@ -20,10 +20,7 @@
       rel="stylesheet"
       href="./Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
     />
-    <!-- Import Owl Carousel Slider -->
-    <link rel="stylesheet" href="./Assets/Libs/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./Assets/Libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./Assets/Libs/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css">
  
 
     <!-- Import Styles File -->
@@ -139,7 +136,7 @@
         <div class="header-item header-item2 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
           <div class="header-top-menu m-auto">
             <nav>
-              <li><a href="index.html" class="link ">مشاوره آنلاین</a></li>
+              <li><a href="index.html" class="link "> خانه</a></li>
               <li><a href="#" class="link "> نوبت دهی</a></li>
               <li><a href="questions.html" class="link ">از دکتر بپرسید</a></li>
               <li><a href="medicine blog.html" class="link "> مجله سلامت</a></li>
@@ -167,12 +164,9 @@
       <div class="item">
         <section class="header-content">
           <div class="header-content-boxRight p-5" dir="rtl">
-            <h1
-              class="mt-4 active Online-consultation"
-              id="Online-consultation"
-            >
-              مشاوره آنلاین پزشکی
-            </h1>
+            <div class="mt-4  Online-consultation" id="Online-consultation">
+              <p class="Online-consultation-text">مشاوره آنلاین پزشکی</p>
+          </div>
             <h6 class="mt-4">
               با بیش از <span class="active">&nbsp;2500&nbsp;</span> پزشک در
               <span class="active"> &nbsp;43&nbsp;</span> تخصص آنلاین گفتگو کنید
@@ -368,33 +362,31 @@
       </div>
       <!-- END Banner -->
       <!-- Start Comments Section -->
-      <div class="item column" id="comments-carousel">
+       <div class="item column" id="comments-carousel">
         <div class="comments-title m-auto my-5 text-center">
           <h5 class="comments-title_h1">دیدگاه کاربران</h5>
           <p class="mt-3">آنچه شما درباره مشاوره آنلاین گفته اید</p>
         </div>
-     <section class="comments-carousel_slider">
-      <div class="owl-carousel owl-theme">
-        <div class="item"><h4>1</h4></div>
-        <div class="item"><h4>2</h4></div>
-        <div class="item"><h4>3</h4></div>
-        <div class="item"><h4>4</h4></div>
-        <div class="item"><h4>5</h4></div>
-        <div class="item"><h4>6</h4></div>
-        <div class="item"><h4>7</h4></div>
-        <div class="item"><h4>8</h4></div>
-        <div class="item"><h4>9</h4></div>
-        <div class="item"><h4>10</h4></div>
-        <div class="item"><h4>11</h4></div>
-        <div class="item"><h4>12</h4></div>
-    </div>
-     </section>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev swiper-button-prev_custom"></div>
+  <div class="swiper-button-next swiper-button-next_custom"></div>
 
-
-      </div>
+</div>
+      </div> 
       <!-- END Comments Section -->
      
-
       <!-- Start Electronic symbol -->
       <div class="item" id="ElectronicSymbol ">
         <div class="Electronic-symbol-wrapper">
@@ -468,7 +460,7 @@
             </ul>
           </div>
         </div>
-        <div class=" footer-boxRight p-3" dir="rtl">
+        <div class="footer-boxRight p-3" >
           <h6 >در باره ما بیشتر بدانید</h6>
           <div class="footer-boxRight_item">
           <p class="text-justify my-5">
@@ -476,15 +468,14 @@
          راهی سریع برای ارتباط بهتر با بیماران، رزرو نوبت به روشی آسان و معرفی مراکز درمانی آنها است
           </p>
           <div class="footer-boxRight_item--social-icons">
-            <h6>  مارا دنبال کنید  :</h6>
             <ul class="footer-boxRight_item--social-icons_ul">
-            <a href="">	
-              <i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-linkedin"></i></a>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-whatsapp"></i></a>
-            </ul>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-whatsapp"></i></a>
+              </ul>
+            <h6>  مارا دنبال کنید  :</h6>
           </div>
           </div>
         </div>
@@ -498,8 +489,7 @@
      <!--Jquery File -->
      <script src="./Assets/Js/jquery.js"></script>
 
-     <!-- Import Owl Carousel Script File -->
-     <script src="./Assets/Libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
      
 
     <!-- Bootsrap Files-->
@@ -511,25 +501,35 @@
     <script src="./Assets/Js/myScripts2.js"></script>
     <script src="./Assets/Js/myScripts.js"></script>
 
-
 <script>
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    dots:false,
-    nav:true,
-    responsive:{
-        0:{
-            items:2
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
+  const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 3,
+      spaceBetween: 10,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // breakpoints: {
+  //       640: {
+  //         slidesPerView: 1,
+  //         spaceBetween: 10,
+  //       },
+  //       768: {
+  //         slidesPerView: 2,
+  //         spaceBetween: 10,
+  //       },
+  //       1024: {
+  //         slidesPerView: 5,
+  //         spaceBetween: 50,
+  //       },
+  //     }
+
+});
 </script>
+
   </body>
 </html>

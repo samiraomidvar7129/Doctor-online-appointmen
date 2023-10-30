@@ -57,9 +57,10 @@ a{
 .active{
     color: #08B89D;
 }
-.wrapper{
+/* .wrapper{
     display: grid;
-}
+    background-color: red;
+} */
 
 .header-top,.item,.header-item1{
     display:flex; 
@@ -68,11 +69,11 @@ a{
 .header-item{
     display: flex;
 } 
-.div-style{
+/* .div-style{
     width: 600px;
     height: 400px;
     padding: 30px;
-}
+} */
 .div-item{
     width: 200px;
     height: 300px;

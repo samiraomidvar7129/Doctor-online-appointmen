@@ -1,5 +1,5 @@
 
-@media screen and (max-width:766px) {
+@media screen and (max-width:769px) {
   .menu-burger{
     display: block;
 }
@@ -19,10 +19,22 @@
 .menu-burger-list li a{
     font-size: 12px;
 }
-
+.swiper {
+  width:400px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+.swiper-button-prev_custom::after,
+.swiper-button-next_custom::after{
+  background-color:#ccc;
+  opacity: 1.9;
+    padding: 5px;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 15px;
 }
 
-
+}
 @media screen and (max-width: 767px) {
   .header-navbar{
     height: 50px;
@@ -49,8 +61,20 @@
     flex-direction: column;
     direction: rtl;
   }
-  .footer-boxLeft{
-    width: 100%;
+  .footer-item_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-boxCenter{
+    text-align: center;
+  }
+  .footer-boxCenter_links{
+    margin-top: 15px;
+  }
+  .footer-boxCenter_links ul{
+    padding:0;
   }
   .Benefits-of-counseling_item {
     width: 100px;
@@ -87,20 +111,23 @@
   width: 200px;
   height: 200px;
   }
-  .Electronic-symbol-wrapper,
-  .footer-boxRight{
+  .Electronic-symbol-wrapper{
     display: none;
   }
- 
 }
+
+
 @media screen and (max-width:618px){
   .services-item{
     width:240px
   }
-  #Benefits-of-counseling{
+  #Benefits-of-counseling,.footer-boxLeft{
     display: none;
   }
+
 }
+
+
 @media screen and (max-width:600px) {
 
   .menu-burger-list{
@@ -118,6 +145,7 @@
       font-size: 10px;
   }
   
+
 }
 
 
@@ -126,6 +154,7 @@
   .header-content-boxRight p {
     font-size: 10px;
   }
+
 }
 
 @media (pointer: fine) {
