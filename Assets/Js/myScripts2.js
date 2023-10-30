@@ -31,10 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
          if(group === myData.doctors[index].id){
             document.getElementById('doctor-title').innerHTML=myData.doctors[index].Name;
             document.getElementById('doctor-Speciallity').innerHTML=myData.doctors[index].Speciallity;
-            document.querySelector('.location-text').innerHTML=myData.doctors[index].city;
-            document.querySelector('.doctor-address').innerHTML=myData.doctors[index].address;
+            document.querySelector('.state').innerHTML=myData.doctors[index].state;
+            document.querySelector('.doctor-address').innerHTML=myData.doctors[index].city;
             document.getElementById('nezamCode').innerHTML=myData.doctors[index].NezamCode;
-            document.getElementById('doctor-image').setAttribute('src',myData.doctors[index].ImageUrl)
+            document.getElementById('doctor-image').setAttribute('src',myData.doctors[index].ImageUrl);
+            document.querySelector('.gifts').innerHTML=myData.doctors[index].gifts;
+            document.querySelector('.article').innerHTML=myData.doctors[index].articcles;
+            document.querySelector('.comments').innerHTML=myData.doctors[index].comments;
+            document.querySelector('.answers').innerHTML=myData.doctors[index].answers;
          }
 
         }

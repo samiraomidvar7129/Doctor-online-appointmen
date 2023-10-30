@@ -189,7 +189,7 @@ width: 100%;
 .fa-comments,
 .fa-exclamation,
 .fa-star{
-    color: gold;
+    color:goldenrod;
 }
 /* -----------------------health-centers------------------------- */
 
@@ -224,8 +224,19 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #c9c7c7;
-    border-top: 1px solid gray;
+    background-image: linear-gradient(
+        145deg,
+        hsl(171deg 92% 38%) 0%,
+        hsl(168deg 50% 51%) 13%,
+        hsl(167deg 48% 59%) 28%,
+        hsl(166deg 47% 65%) 43%,
+        hsl(165deg 47% 71%) 57%,
+        hsl(164deg 47% 77%) 68%,
+        hsl(164deg 47% 83%) 78%,
+        hsl(163deg 47% 89%) 86%,
+        hsl(163deg 47% 94%) 94%,
+        hsl(0deg 0% 100%) 100%
+      );    border-top: 1px solid gray;
 }
 .health-centersـinformation--head::before{
     content: "\002b";
@@ -284,10 +295,11 @@ margin: 5px 0 0 5px;
  font-size: 12px;
  margin-top: 10px;
 }
-.information--head-boxleft_item{
+.information--head-boxleft_item-imgs{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-wrap: nowrap;
 }
 .information--head-boxleft_item-imgs img{
     width: 20px;
@@ -298,6 +310,6 @@ margin: 5px 0 0 5px;
     font-size: 12px;
 }
 
-#footer{
+/* #footer{
     margin-top: 50px;
-}
+} */
