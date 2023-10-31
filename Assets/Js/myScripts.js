@@ -76,7 +76,7 @@ function ArrowAnimate() {
 }
 ArrowAnimate();
 
-//Loader Function--------------------
+//Loader Function-----------------------
 
 const loader = document.querySelector(".loader");
 
@@ -84,53 +84,38 @@ window.addEventListener("load", function () {
   loader.classList.add("hidden");
 });
 
-//ShowTime-------------------------
+// --------------------------------------
 
-// function ShowTime() {
-//   var myData = new Date();
-//   var Hour = myData.getHours();
-//   var Minutes = myData.getMinutes();
-//   var Seconds = myData.getSeconds();
-//   var p = "AM";
-//   if (Hour > 12) {
-//     Hour = Hour - 12;
-//     p = "PM";
-//   }
-//   if (Hour < 10) {
-//     Hour = "0" + Hour;
-//   }
-//   if (Minutes < 10) {
-//     Minutes = "0" + Minutes;
-//   }
-//   if (Seconds < 10) {
-//     Seconds = "0" + Seconds;
-//   }
+//OnlineConsultation Animate-------------
+var OnlineConsultation =document.querySelector(".Online-consultation-text");
 
-//   var result = document.getElementById("time-result");
-//   result.innerHTML = Hour + ":" + Minutes + ":" + Seconds;
-// }
-// setInterval(ShowTime, 1000);
-// ShowTime();
-
-
-
-//Type Writer ---------------------
-
-const textWriter=document.querySelector('#text-writer');
-
-let myText= ' بهترین و بزرگترین سایت نوبت دهی آنلاین در کشور';
-let index= 0;
-
-const typeWriter = () =>{
-if(index < myText.length){
-  textWriter.innerHTML += myText[index]
-  index++
+function fadeOut() {
+  setInterval(function () {
+    OnlineConsultation.style.animation = "opacity 0.7s linear infinite";
+    fadeOut();
+  },100);
 }
-setTimeout(()=>{
-  typeWriter();
-},100)
-}
-typeWriter();
+
+fadeOut();
+
+// -------------------------------------
+// SearchBar
+
+let  searchBtn=document.querySelector('.search-btn');
+let searchInput=document.getElementById('search-input')
+let searchBar=document.querySelector('.search-bar');
+let closeBtnIcon=document.querySelector('.close-btn-icon');
+
+searchBtn.addEventListener('click',()=>{
+  searchBar.classList.add('active');
+  searchBar.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
+  closeBtnIcon.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
+});
+closeBtnIcon.addEventListener('click',()=>{
+  searchBar.classList.remove('active');
+  searchInput.value=""
+})
+
 
 //modal Element---------------------
 
@@ -259,21 +244,6 @@ window.onload = () => {
 };
 
 //----------------------------------
-
-//roatingText
-
-var OnlineConsultation =document.getElementById("Online-consultation");
-
-function fadeOut() {
-  setInterval(function () {
-
-    OnlineConsultation.style.animation = "opacity 0.7s linear infinite";
-    fadeOut();
-
-  }, 1000);
-}
-
-fadeOut();
 
 
 //-----------------------------------
