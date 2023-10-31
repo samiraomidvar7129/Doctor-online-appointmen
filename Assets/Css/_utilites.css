@@ -28,6 +28,9 @@
 .text-gray{
     color: #b4acac;
 }
+.text-right{
+    text-align: right;
+}
 .fs-30{
     font-size: 30px;
 }

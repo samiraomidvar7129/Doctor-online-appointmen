@@ -35,7 +35,7 @@
       <li><a href="index.html" class="link mx-3">مشاوره آنلاین</a></li>
       <li><a href="#" class="link mx-3"> نوبت دهی</a></li>
       <li><a href="questions.html" class="link mx-3">از دکتر بپرسید</a></li>
-      <li><a href="medicine blog.html" class="link mx-3"> مجله سلامت</a></li>
+      <li><a href="blog.html" class="link mx-3"> مجله سلامت</a></li>
       <li><a href="contactUs.html" class="link mx-3"> تماس باما</a></li>
     </ul>
     <!-- END Android Menu -->
@@ -137,9 +137,8 @@
           <div class="header-top-menu m-auto">
             <nav>
               <li><a href="index.html" class="link "> خانه</a></li>
-              <li><a href="#" class="link "> نوبت دهی</a></li>
               <li><a href="questions.html" class="link ">از دکتر بپرسید</a></li>
-              <li><a href="medicine blog.html" class="link "> مجله سلامت</a></li>
+              <li><a href="blog.html" class="link "> مجله سلامت</a></li>
               <li><a href="contactUs.html" class="link "> تماس باما</a></li>
             </nav>
           </div>
@@ -368,16 +367,17 @@
           <p class="mt-3">آنچه شما درباره مشاوره آنلاین گفته اید</p>
         </div>
 <!-- Slider main container -->
-<div class="swiper">
+<div class="swiper" id="comments-swiper">
   <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+  <div class="swiper-wrapper" id="commentns-wrapper-box">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">
+    </div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
+    <div class="swiper-slide"></div>
   </div>
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev swiper-button-prev_custom"></div>
@@ -488,10 +488,10 @@
 
      <!--Jquery File -->
      <script src="./Assets/Js/jquery.js"></script>
-
+     
+     <!-- Swiper.js -->
      <script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
      
-
     <!-- Bootsrap Files-->
     <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
@@ -499,7 +499,8 @@
     <script src="./Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
     <!-- My Script Files -->
     <script src="./Assets/Js/myScripts2.js"></script>
-    <script src="./Assets/Js/myScripts.js"></script>
+    <script src="./Assets/Js/myScripts.js" ></script>
+    <script src="./Assets/Js/comments.js" ></script>
 
 <script>
   const swiper = new Swiper('.swiper', {
@@ -513,20 +514,20 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  // breakpoints: {
-  //       640: {
-  //         slidesPerView: 1,
-  //         spaceBetween: 10,
-  //       },
-  //       768: {
-  //         slidesPerView: 2,
-  //         spaceBetween: 10,
-  //       },
-  //       1024: {
-  //         slidesPerView: 5,
-  //         spaceBetween: 50,
-  //       },
-  //     }
+  breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }
 
 });
 </script>

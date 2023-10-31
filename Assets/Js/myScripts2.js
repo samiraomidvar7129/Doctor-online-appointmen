@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         }
     }
-  
+
 
     //health-centersـinformation Accordion
 

@@ -1,46 +1,74 @@
 
 .contact-us{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   width: 700px;
+   height: auto;
+   padding: 10px;
 }
 .contact-us_form {
     width: 100%;
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #08B89D;
+    background:url('/Assets/imgs/banner/bg-contact.jpg');
+    background-size: cover;
+    background-position: right 0 bottom 0  ;
+    background-repeat:no-repeat;
+    border: 1px solid #10dabc;
     padding: 10px;
 }
+.contact-us_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
 .form-element{
-    margin-top: 12px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
 }
 .form-element input{
     border-radius: 3px;
     outline: none;
     border: none;
-    border: 1px solid #aaa;
-    padding: 5px;
-
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 50%;
 }
-#UerSelected,#UserNumber{
-    width: 100%;
-
-}
-#UerSelected{
-    margin-top: 10px;
-    padding: 5px;
-    border: none;
-    outline: none;
-    border: 1px solid #aaa;
-    text-align: right;
-    color: #aaa;
-}
-::placeholder{
+.form-element label{
     font-size: 12px;
-    color: #aaa;
+    padding: 5px;
+    text-wrap: nowrap;
 }
+::-webkit-input-placeholder{
+    color: #ccc;
+    text-align: right;
+    direction: rtl;
+    font-size: 10px !important;
+}
+
+
 input#UserNumber::-webkit-outer-spin-button,
 input#UserNumber::-webkit-inner-spin-button{
     -webkit-appearance: none !important;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    margin: 20px 10px;
+        padding: 15px;
+        border: none;
+        border:  1px solid lightgray;
+}
+.contact-btn-form{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #0ccaad;
+    color: #fff;
 }

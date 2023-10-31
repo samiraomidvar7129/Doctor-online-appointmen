@@ -1,8 +1,8 @@
+
+
 // Menu Burger----------------------
 const menuBurger=document.querySelector('.menu-burger');
 const menuBurgerList=document.querySelector('.menu-burger-list');
-console.log(menuBurger);
-console.log(menuBurgerList);
 
 var booleanFlag=true;
 
@@ -262,7 +262,7 @@ window.onload = () => {
 
 //roatingText
 
-let OnlineConsultation =document.getElementById("Online-consultation");
+var OnlineConsultation =document.getElementById("Online-consultation");
 
 function fadeOut() {
   setInterval(function () {
@@ -272,6 +272,7 @@ function fadeOut() {
 
   }, 1000);
 }
+
 fadeOut();
 
 
