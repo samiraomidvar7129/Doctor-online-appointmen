@@ -20,6 +20,7 @@ div.Online-consultation p{
     font-size: 30px;
     color: #08B89D;
     margin-bottom: 50px;
+    animation:  opacity;
 }
 
 

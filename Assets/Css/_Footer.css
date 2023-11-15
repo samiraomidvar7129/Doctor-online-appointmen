@@ -117,9 +117,10 @@
     margin:5px 15px;
 }
 .footer-boxRight_item--social-icons_ul a{
-    margin-left: 12px
+    margin-left: 12px;
+    font-size: 18px;
+    color: #08B89D;
 }
-
 .footer-boxCenter{
     display: flex;
     flex-direction: column;

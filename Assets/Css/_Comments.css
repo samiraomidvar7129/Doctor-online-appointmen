@@ -6,7 +6,7 @@
   }
 .swiper-slide{
   width: 200px;
-    background-color:lightgray;
+    background-color:#08B89D;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -21,7 +21,11 @@
     color: #fff;
     font-size: 25px;
 }
-
+.swiper-button-prev_custom:focus,
+.swiper-button-next_custom:focus{
+  border: none;
+  outline: none;
+}
 .userImg{
   width: 70px;
   height: 70px;

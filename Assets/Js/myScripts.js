@@ -1,3 +1,31 @@
+//Loading -----------------------
+
+// const loadingElement = document.querySelector(".loader");
+
+// window.addEventListener("load", function () {
+//   loader.classList.add("hidden");
+// });
+// تعیین مقدار اولیه درصد لودینگ
+// var progress = 0;
+
+// // تابع برای تغییر درصد لودینگ در بازه زمانی بین 0 تا 100
+// function updateProgress() {
+//   if (progress < 100) {
+//     // افزایش درصد لودینگ به صورت تصادفی
+//     progress += Math.floor(Math.random() * 10) + 1;
+//     loadingElement.innerHTML = 'در حال بارگیری... ' + progress + '%';
+
+//     // تاخیر در به روزرسانی درصد لودینگ
+//     setTimeout(updateProgress, 500);
+//   } else {
+//     loadingElement.innerHTML = 'بارگیری کامل شد!';
+//   }
+// }
+
+// // فراخوانی تابع برای شروع لودینگ
+// updateProgress();
+
+
 
 
 // Menu Burger----------------------
@@ -76,22 +104,16 @@ function ArrowAnimate() {
 }
 ArrowAnimate();
 
-//Loader Function-----------------------
 
-const loader = document.querySelector(".loader");
-
-window.addEventListener("load", function () {
-  loader.classList.add("hidden");
-});
 
 // --------------------------------------
 
 //OnlineConsultation Animate-------------
-var OnlineConsultation =document.querySelector(".Online-consultation-text");
+var onlineConsultation =document.querySelector(".Online-consultation-text");
 
-function fadeOut() {
+const fadeOut =() =>{
   setInterval(function () {
-    OnlineConsultation.style.animation = "opacity 0.7s linear infinite";
+    onlineConsultation.style.animation="opacity 0.7s linear infinite"
     fadeOut();
   },100);
 }
@@ -99,22 +121,68 @@ function fadeOut() {
 fadeOut();
 
 // -------------------------------------
-// SearchBar
+// SearchBar Scripts
 
-let  searchBtn=document.querySelector('.search-btn');
-let searchInput=document.getElementById('search-input')
-let searchBar=document.querySelector('.search-bar');
-let closeBtnIcon=document.querySelector('.close-btn-icon');
+// let  searchBtn=document.querySelector('.search-btn');
+// let searchInput=document.getElementById('search-input')
+// let searchBar=document.querySelector('.search-bar');
+// let closeBtnIcon=document.querySelector('.close-btn-icon');
 
-searchBtn.addEventListener('click',()=>{
-  searchBar.classList.add('active');
-  searchBar.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
-  closeBtnIcon.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
-});
-closeBtnIcon.addEventListener('click',()=>{
-  searchBar.classList.remove('active');
-  searchInput.value=""
-})
+// searchBtn.addEventListener('click',()=>{
+//   searchBar.classList.add('active');
+//   searchBar.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
+//   closeBtnIcon.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
+// });
+// closeBtnIcon.addEventListener('click',()=>{
+//   searchBar.classList.remove('active');
+//   searchInput.value=""
+// })
+
+// //Doctors Search Scripts----------
+// searchInput.addEventListener('keypress',(e)=>{
+//   if(e.key ==='Enter'){
+//     let searchValue=e.target.value;
+//     searchResult(searchValue);
+//     searchInput.value="";
+//   }
+// })
+
+// const searchResult=(searchValue)=>{
+//   let searchResultBox=document.querySelector('.mySwiper-list');
+//   searchResultBox.innerHTML="";
+
+//   resultArray=[];
+
+//   myData.doctors.forEach(group => {
+//     if(group.city === searchValue){
+//     resultArray.push(group)
+     
+//      }
+//   }
+//   );
+
+
+// if(resultArray.length > 0){
+//   let h1=document.createElement('h1');
+//   h1.appendChild(document.createTextNode('نتیجه     :'));
+//   searchResultBox.appendChild(h1);
+
+//   searchResult.forEach(group=>{
+//     searchResultBox.appendChild(createDoctorsBox(group));
+//   }
+//   );
+// }else{
+//   let h1=document.createElement('h1');
+//   h1.appendChild(document.createTextNode('نتیجه ای پیدا نشد  :'));
+//   searchResultBox.appendChild(h1);
+
+// }
+// }
+// const createDoctorsBox=(group)=>{
+//   searchResultBox.innerHTML=group;
+
+// }
+
 
 
 //modal Element---------------------
@@ -165,7 +233,6 @@ class formValidation {
     this.__myForm.addEventListener("focusout", (e) => {
       let dataSetValidation = e.target.dataset.validation;
       console.log(dataSetValidation);
-      // console.log(validationArray);
 
       if (dataSetValidation) {
         let validationArray = dataSetValidation.split(" ");
@@ -271,20 +338,17 @@ document.addEventListener("DOMContentLoaded", function () {
   xhttp.send();
 });
 
-function createMainBox(data) {
+const createMainBox =(data) =>{
   myData=data;
   
   var mainBox = document.querySelector(".mySwiper-list");
-  mainBox.style.display = "flex";
-  mainBox.style.flexWrap = "wrap";
-  mainBox.style.justifyContent = "space-around";
-  mainBox.style.alignItems = "center";
 
   for (const item in myData.doctors) {
     var mainBoxElem = createGroupBox(
       myData.doctors[item].id,
       myData.doctors[item].Name,
       myData.doctors[item].ImageUrl,
+      myData.doctors[item].NezamCode,
       myData.doctors[item].Speciallity
     );
 
@@ -292,59 +356,50 @@ function createMainBox(data) {
   }
 }
 
-function createGroupBox(id, Name, ImageUrl,Speciallity) {
-  var boxItem = document.createElement("div");
+const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
+
+  let boxItem = document.createElement("div");
   boxItem.classList.add("mySwiprt-list_item");
 
-  var swiperLink = document.createElement("a");
+  let swiperLink = document.createElement("a");
   swiperLink.classList.add("mySwiprt-list_items-link");
   swiperLink.setAttribute("href", "details.html?group=" + id);
 
-  var itemCaption = document.createElement("div");
+  let itemCaption = document.createElement("div");
   itemCaption.classList.add("mySwiprt-list_items");
-  itemCaption.style.width = "250px";
-  itemCaption.style.height = "200px";
-  itemCaption.style.marginTop = "12px";
-  itemCaption.style.padding = "5px";
-  itemCaption.style.display = "flex";
-  itemCaption.style.flexDirection = "column";
-  itemCaption.style.justifyContent = "center";
-  itemCaption.style.alignItems = "center";
-  itemCaption.style.borderRadius = "10px";
-  itemCaption.style.border = "1px solid #c7c7c7";
-  itemCaption.style.transition = "0.5s ease";
-
-  var itemsTitle = document.createElement("div");
-  itemsTitle.classList.add("mySwiprt-list_items-title");
-  itemsTitle.style.display = "flex";
-  itemsTitle.style.justifyContent = "center";
-  itemsTitle.style.alignItems = "center";
-
-  var titleText = document.createElement("div");
-  titleText.classList.add("mySwiprt-list_items-title--text");
-
-  var H61 = document.createElement("h6");
-  H61.innerText = Name;
-  H61.style.fontSize = "12px";
-  H61.style.marginLeft = "15px";
-
-  var H5 = document.createElement("h5");
-  H5.textContent = Speciallity,
-  H5.style.display = "block";
-  H5.style.fontSize = "13px";
-  H5.style.marginTop="22px"
-
   
 
-  var spanImg = document.createElement("span");
-  spanImg.classList.add("mySwiprt-list_items-title--img");
-  spanImg.style.width = "60px";
-  spanImg.style.height = "60px";
-  spanImg.style.display = "flex";
-  spanImg.style.justifyContent = "center";
-  spanImg.style.alignItems = "center";
+  let itemsTitle = document.createElement("div");
+  itemsTitle.classList.add("mySwiprt-list_items-title");
 
-  var itemImg = document.createElement("img");
+
+  let titleText = document.createElement("div");
+  titleText.classList.add("mySwiprt-list_items-title--text");
+
+  let H61 = document.createElement("h6");
+  H61.classList.add('doctor-name')
+  H61.innerText = Name;
+
+
+  let H5 = document.createElement("h5");
+  H5.classList.add('Speciallity')
+  H5.textContent = Speciallity;
+
+  let ratingAndCode=document.createElement('div');
+  ratingAndCode.classList.add('ratingAndCode')
+
+  let nezamCodeH6=document.createElement('h6');
+  nezamCodeH6.classList.add('nezamCodeH6')
+  let nezamCodeH6Txt=document.createTextNode('  :  نظام پزشکی ');
+  nezamCodeH6.innerText=NezamCode;
+  
+  nezamCodeH6.append(nezamCodeH6Txt);
+  ratingAndCode.append(nezamCodeH6)
+
+  let spanImg = document.createElement("span");
+  spanImg.classList.add("mySwiprt-list_items-title--img");
+
+  let itemImg = document.createElement("img");
   itemImg.setAttribute("src", ImageUrl);
   itemImg.style.width = "100%";
   itemImg.style.height = "100%";
@@ -354,7 +409,7 @@ function createGroupBox(id, Name, ImageUrl,Speciallity) {
 
   spanImg.append(itemImg);
 
-  titleText.append(H61, H5);
+  titleText.append(H61, H5,nezamCodeH6);
 
   itemsTitle.append(titleText, spanImg);
 
@@ -367,3 +422,15 @@ function createGroupBox(id, Name, ImageUrl,Speciallity) {
   
   return boxItem;
 }
+
+
+
+
+
+
+
+
+
+
+
+      

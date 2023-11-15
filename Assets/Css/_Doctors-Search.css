@@ -187,8 +187,7 @@ width: 100%;
 .fa-gift,
 .fa-file,
 .fa-comments,
-.fa-exclamation,
-.fa-star{
+.fa-exclamation{
     color:goldenrod;
 }
 /* -----------------------health-centers------------------------- */
@@ -213,6 +212,25 @@ width: 100%;
     width: 90%;
     height: 60px;
 }
+#star-rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star {
+    margin-top: 10px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+  }
+  .star.selected {
+    color: gold;
+  }
+  #result{
+    font-size: 12px;
+    text-align: right;
+    padding: 20px 10px 0 0;
+  }
 .content-box{
     width: 100%;
     position: relative;
@@ -256,6 +274,19 @@ width: 100%;
     overflow: hidden;
     transition: 0.5s;
 }
+.information--head-table_item{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    color: red;
+    display: flex;
+  
+}
+.information--head-table_item div{
+    width: 300px;
+    height: 50px;
+    background-color: gray;
+}
 .content-box.active{
     border: none !important;
     color: #010101 !important;
@@ -264,7 +295,7 @@ width: 100%;
     content: "-";
 }
 .content-box.active .health-centersـinformation--head-table{
-    height: 150px;
+    height: auto;
     padding: 10px;
     background:#fff;
     border-left: 1px solid lightgray;
@@ -295,21 +326,13 @@ margin: 5px 0 0 5px;
  font-size: 12px;
  margin-top: 10px;
 }
-.information--head-boxleft_item-imgs{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-wrap: nowrap;
+.information--head-boxleft_item-img{
+   width: 55px;
+   height: 55px;
 }
-.information--head-boxleft_item-imgs img{
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
+.information--head-boxleft_item-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
 }
-.information--head-boxleft_item-imgs span{
-    font-size: 12px;
-}
-
-/* #footer{
-    margin-top: 50px;
-} */

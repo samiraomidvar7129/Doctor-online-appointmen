@@ -1,4 +1,5 @@
 .loader{
+    direction: rtl;
     position: fixed;
     z-index: 99;
     top: 0;
@@ -8,32 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(79, 75, 75, 0.9);
 }
-.loader > h3{
+.loader  h3{
     width: 100px;
 }
-.loader > h3 .loader-icon{
-    font-size: 50px;
-    animation:  rotate 2s linear infinite;
-    color: #ddd;
-}
 
-.loader.hidden{
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fadeOut{
-    100%{
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes rotate{
-    100%{
-       transform: rotate(-360deg);
-    }
-} 
 
