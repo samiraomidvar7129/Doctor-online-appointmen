@@ -21,7 +21,7 @@ hamburgerIcon.addEventListener('click',()=>{
 
 //Sticky Navbar----------------------
 
-const item_1 = document.getElementById("item-1");
+let item_1 = document.getElementById("item-1");
 document.addEventListener("scroll", function () {
   if (document.documentElement.scrollTop > 0) {
     item_1.classList.add("position");
@@ -110,7 +110,9 @@ closeBtnIcon.addEventListener('click',()=>{
   searchInput.value=""
 })
 
-// //Doctors Search Scripts----------
+//Doctors Search Scripts----------
+
+
 // searchInput.addEventListener('keypress',(e)=>{
 //   if(e.key ==='Enter'){
 //     let searchValue=e.target.value;
@@ -315,6 +317,7 @@ const createMainBox =(data) =>{
   
   var mainBox = document.querySelector(".mySwiper-list");
 
+
   for (const item in myData.doctors) {
     var mainBoxElem = createGroupBox(
       myData.doctors[item].id,
@@ -332,6 +335,9 @@ const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
 
   let boxItem = document.createElement("div");
   boxItem.classList.add("mySwiprt-list_item");
+
+  let swiperWrapper=document.createElement('div');
+  swiperWrapper.classList.add('swiper-wrapper')
 
   let swiperLink = document.createElement("a");
   swiperLink.classList.add("mySwiprt-list_items-link");
@@ -388,6 +394,7 @@ const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
   itemCaption.append(itemsTitle);
 
   swiperLink.append(itemCaption);
+
 
   boxItem.append(swiperLink);
   
