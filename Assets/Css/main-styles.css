@@ -1,7 +1,6 @@
 @import './_Fonts.css';
 @import './_Utilites.css';
 @import './_DedicatedScroll.css';
-@import './_Header.css';
 @import './_Login.css';
 @import './_Switch.css';
 @import './_Search-bar.css';
@@ -30,7 +29,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'MyFont';    
+    font-family: 'MyFont'; 
+    user-select: none;   
 }
 html{
     scroll-behavior: smooth !important;
@@ -58,10 +58,6 @@ a{
 .active{
     color: #08B89D;
 }
-/* .wrapper{
-    display: grid;
-    background-color: red;
-} */
 
 .header-top,.item,.header-item1{
     display:flex; 

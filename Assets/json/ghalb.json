@@ -48,19 +48,19 @@
 
            "workShifts":[
         {
-          "workShiftsId":"1",
+          "workShiftsId":"4",
           "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
         },
         {
-          "workShiftsId":"2",
+          "workShiftsId":"5",
           "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
         },
         {
-          "workShiftsId":"3",
+          "workShiftsId":"6",
           "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
         },
         {
-          "workShiftsId":"4",
+          "workShiftsId":"7",
           "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
         }
       ]
@@ -74,19 +74,19 @@
 
            "workShifts":[
         {
-          "workShiftsId":"1",
+          "workShiftsId":"8",
           "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
         },
         {
-          "workShiftsId":"2",
+          "workShiftsId":"9",
           "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
         },
         {
-          "workShiftsId":"3",
+          "workShiftsId":"10",
           "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
         },
         {
-          "workShiftsId":"4",
+          "workShiftsId":"11",
           "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
         }
       ]
@@ -100,19 +100,19 @@
 
            "workShifts":[
         {
-          "workShiftsId":"1",
+          "workShiftsId":"12",
           "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
         },
         {
-          "workShiftsId":"2",
+          "workShiftsId":"13",
           "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
         },
         {
-          "workShiftsId":"3",
+          "workShiftsId":"14",
           "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
         },
         {
-          "workShiftsId":"4",
+          "workShiftsId":"15",
           "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
         }
       ]
@@ -122,7 +122,7 @@
     },
     {
       "id": "2",
-      "Name": "دکتر مریم ملائی اردستانی",
+      "Name": "دکتر مریم ملائی ",
       "NezamCode": " 165574",
       "ImageUrl": "https://membersearch.irimc.org/member/personalphoto?id=b6b214a5-c391-4a6a-85d5-02ec3e222d27",
       "Speciallity": "   دکترای  تغذیه و رژیم درمانی ",
@@ -376,28 +376,105 @@
           "name":"بیمارستان منتصریه",
           "address":" خیابان امام خمینی 25 - روبروی ساختمان صبا  ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
+
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان فارابی",
           "address":"  بلوار وکیل اباد ، نبش خیابان کوثر ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
+
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
           "address":"خیابان شهدا ",
+          "phone":"05137249799",
           "img":"Assets/imgs/Hospital-imgs/emamReza.jpg",
-           "phone":"05137249799"
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
+
         }, 
         {
           "hospitalId":"4",
           "name":"بیمارستان قائم ",
           "address":" میدان دکتر شریعتی ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
+
         }
       ]   
     },
@@ -419,28 +496,100 @@
           "name":" بیمارستان ۱۷ شهریور",
           "address":" خیابان کوهسنگی ، بین کوهسنگی 14 و 16 ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان ثامن الائمه",
           "address":" خیابان امام خمینی ، نبش امام خمینی57 ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان ۵۵۰ ارتش",
           "address":"  خیابان بهار، جنب فروشگاه اتکا ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان امام حسین ",
           "address":"خیابان ابوریحان ",
            "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]    
     },
@@ -462,28 +611,100 @@
           "name":"بیمارستان جواد الائمه",
           "address":" بلوار وکیل اباد ، ابتدای خیابان هنرستان ",
           "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان امام زمان",
           "address":"  خیابان سرخس",
           "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":" کلینیک حضرت ابوالفضل",
           "address":"خیابان امام خمینی ،  ",
           "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"  کلینیک امام محمد باقر",
           "address":" بلوار ابو طالب ، نبش ابوطالب 20 ",
           "phone":"05137249799",
-          "img":"Assets/imgs/Hospital-imgs/akbar.jpg"
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]     
     },
@@ -503,22 +724,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }, 
         {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]    
     },
@@ -538,21 +839,101 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }, {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]     
     },
@@ -573,22 +954,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]     
     },
@@ -608,22 +1069,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]  
     },
@@ -643,22 +1184,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]     
     },
@@ -678,22 +1299,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]      
     },
@@ -713,22 +1414,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]      
     },
@@ -749,22 +1530,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }, 
         {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]    
     },
@@ -784,22 +1645,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]  
     },
@@ -819,22 +1760,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ]   
     },
@@ -854,22 +1875,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ] 
     },
@@ -889,22 +1990,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }, 
         {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ] 
     },
@@ -924,22 +2105,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }, 
         {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ] 
     },
@@ -959,22 +2220,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }, 
         {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ] 
     },
@@ -994,22 +2335,102 @@
         {
           "hospitalId":"1",
           "name":"بیمارستان فارابی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"2",
           "name":"بیمارستان رازی",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
         {
           "hospitalId":"3",
           "name":"بیمارستان امام رضا (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         },
          {
           "hospitalId":"4",
           "name":"بیمارستان حضرت معصومه (ع)",
-          "address":"خیابان شهدا "
+          "address":"خیابان شهدا ",
+             "phone":"05137249799",
+          "img":"Assets/imgs/Hospital-imgs/akbar.jpg",
+               "workShifts":[
+        {
+          "workShiftsId":"1",
+          "workingTime":"شنبه : ۱۲ صبح الی ۶ عصر"
+        },
+        {
+          "workShiftsId":"2",
+          "workingTime":" دوشنبه : ۵ عصر الی ۸ شب "
+        },
+        {
+          "workShiftsId":"3",
+          "workingTime":"سه شنبه : ۸ صبح الی  ۱۲ ظهر"
+        },
+        {
+          "workShiftsId":"4",
+          "workingTime":"چهارشنبه : ۹ صبح الی ۶ عصر"
+        }
+      ]
         }
       ] 
     }

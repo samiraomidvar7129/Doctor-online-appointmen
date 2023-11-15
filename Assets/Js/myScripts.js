@@ -1,50 +1,22 @@
 //Loading -----------------------
 
-// const loadingElement = document.querySelector(".loader");
+const loadingElement = document.querySelector(".loader");
 
-// window.addEventListener("load", function () {
-//   loader.classList.add("hidden");
-// });
-// تعیین مقدار اولیه درصد لودینگ
-// var progress = 0;
+window.addEventListener("load",  () =>{
+  loadingElement.classList.add("hidden");
 
-// // تابع برای تغییر درصد لودینگ در بازه زمانی بین 0 تا 100
-// function updateProgress() {
-//   if (progress < 100) {
-//     // افزایش درصد لودینگ به صورت تصادفی
-//     progress += Math.floor(Math.random() * 10) + 1;
-//     loadingElement.innerHTML = 'در حال بارگیری... ' + progress + '%';
-
-//     // تاخیر در به روزرسانی درصد لودینگ
-//     setTimeout(updateProgress, 500);
-//   } else {
-//     loadingElement.innerHTML = 'بارگیری کامل شد!';
-//   }
-// }
-
-// // فراخوانی تابع برای شروع لودینگ
-// updateProgress();
-
-
-
-
-// Menu Burger----------------------
-const menuBurger=document.querySelector('.menu-burger');
-const menuBurgerList=document.querySelector('.menu-burger-list');
-
-var booleanFlag=true;
-
-menuBurger.addEventListener('click', () =>{
-  if(booleanFlag == true){
-    menuBurger.classList.add('open');
-    menuBurgerList.style.top="0";
-    booleanFlag=false;
-  }else{
-    menuBurger.classList.remove('open');
-    menuBurgerList.style.top="-35%";
-    booleanFlag=true;
-  }
 });
+
+
+
+//  Hamburger Menu-----------------
+
+let hamburgerIcon=document.querySelector('.hamburger-icon');
+hamburgerIcon.addEventListener('click',()=>{
+  let hamburger_menu_list=document.querySelector('.hamburger-menu-list')
+  hamburger_menu_list.classList.toggle('active')
+})
+
 
 
 //Sticky Navbar----------------------
@@ -123,20 +95,20 @@ fadeOut();
 // -------------------------------------
 // SearchBar Scripts
 
-// let  searchBtn=document.querySelector('.search-btn');
-// let searchInput=document.getElementById('search-input')
-// let searchBar=document.querySelector('.search-bar');
-// let closeBtnIcon=document.querySelector('.close-btn-icon');
+let  searchBtn=document.querySelector('.search-btn');
+let searchInput=document.getElementById('search-input')
+let searchBar=document.querySelector('.search-bar');
+let closeBtnIcon=document.querySelector('.close-btn-icon');
 
-// searchBtn.addEventListener('click',()=>{
-//   searchBar.classList.add('active');
-//   searchBar.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
-//   closeBtnIcon.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
-// });
-// closeBtnIcon.addEventListener('click',()=>{
-//   searchBar.classList.remove('active');
-//   searchInput.value=""
-// })
+searchBtn.addEventListener('click',()=>{
+  searchBar.classList.add('active');
+  searchBar.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
+  closeBtnIcon.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
+});
+closeBtnIcon.addEventListener('click',()=>{
+  searchBar.classList.remove('active');
+  searchInput.value=""
+})
 
 // //Doctors Search Scripts----------
 // searchInput.addEventListener('keypress',(e)=>{

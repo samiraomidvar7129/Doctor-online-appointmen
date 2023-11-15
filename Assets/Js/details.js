@@ -123,7 +123,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
             hospitalData.forEach(key=>{
              const hospitalListContainer = document.querySelector('.health-centersـinformation');
-            
+
+// Get workShifts Data---------------------------------------------------------------
+
+             let workShiftsData="";
+
+             key.workShifts.forEach(items=>{
+               workShiftsData+=`
+               
+               <div class="information--head-table_item ">
+               <div class="workingTime-box" ><br><br><br>
+                 ${items.workingTime}
+               </div>
+                </div>
+               
+               `
+             })
+
              hospitalListContainer.innerHTML+=`
               <div class="content-box">
                     <div class="health-centersـinformation--head">
@@ -142,23 +158,19 @@ document.addEventListener("DOMContentLoaded", function () {
                        <p class="hospital-address">${key.address}</p>
                      </div>
                     </div>  
-                    <div class="health-centersـinformation--head-table"> </div>  
+                    <div class="health-centersـinformation--head-table">
+                    ${workShiftsData}
+                    <div class="Rules-box">
+                    <h5>  :  توضیحات و قوانین </h5>
+                    <ul>
+                    <li>  .عودت وجه پرداختی تنها در صورت عدم حضور پزشک امکانپذیر میباشد </li>
+                    <li> .در صورت پرداخت آزاد وجه پرداختی به هیچ عنوان عودت داده نخواهد شد </li>
+                    <li> .ثبت نام و رزرو نهائی پس از عملیات پرداخت و دریافت کد رهگیری پایان میپذیرد </li>
+                    </ul>
+                    </div>
+                    </div>  
                   </div> 
               `
-            
-// Get workShifts Data-------------------------------------------------------------
-
-            const workShiftsData=key.workShifts;
-          
-            workShiftsData.forEach(item=>{
-             let test=document.querySelector('.health-centersـinformation--head-table')
-             test.innerHTML+=`
-            <div class="information--head-table_item">
-                     <div>${item.workingTime}</div>
-            </div>
-            `
-            })
-
           })
            
 

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 16px;
 }
 .search-bar input{
     direction: rtl;
@@ -80,4 +80,9 @@
     right: 3px;
     opacity: 1;
     color: rgb(184, 181, 181);
+}
+@media (max-width:768px) {
+    .search-bar{
+        margin-left: 30px;
+    }
 }
