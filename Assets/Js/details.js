@@ -21,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//Show Data In Elements------------------------------------------------------
+
     const createItems =(myData) =>{
 
         const urlParams=new URLSearchParams(window.location.search);
@@ -82,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
           
             `
 
- //Rating --------------------------------------------------------------------
+ // Stars Rating  --------------------------------------------------------------------
 
                const stars = document.querySelectorAll(".star");
                const result = document.getElementById("result");
@@ -115,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
                }
 
- // Get Hospitals Data-------------------------------------------------------------
+ // Get Hospitals Data---------------------------------------------------------------
 
             const hospitalData=myData.doctors[index].hospitals;
 
@@ -140,12 +142,11 @@ document.addEventListener("DOMContentLoaded", function () {
                        <p class="hospital-address">${key.address}</p>
                      </div>
                     </div>  
-                    <div class="health-centersـinformation--head-table">
-                    
-                   </div>  
+                    <div class="health-centersـinformation--head-table"> </div>  
                   </div> 
               `
             
+// Get workShifts Data-------------------------------------------------------------
 
             const workShiftsData=key.workShifts;
           
@@ -162,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
            
 
           
-                  // Create Accordion----------------------
+// Create Accordion---------------------------------------------------------------
 
                   const accordion=document.getElementsByClassName('content-box');
                     for(let i=0;i<accordion.length;i++){
