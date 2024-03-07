@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 16px;
+    margin-left: 35px;
 }
 .search-bar input{
     direction: rtl;
@@ -19,16 +19,17 @@
     border-radius: 40px;
     padding: 0 60px 0 7px;
     opacity: 0;
+    border: 1px solid silver;
 }
 .search-bar .search-btn{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     position: absolute;
     top: 45%;
     left:-20px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    color: #ccc;
+    color: #fff;
     font-size: 16px;
     cursor: pointer;
     line-height: 50px;
@@ -37,8 +38,9 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    background-color: #fff;
+    background-color: rgb(11,183,181);
 }
+
 .search-bar .close-btn-icon{
     position: absolute;
     top: 50%;
@@ -66,7 +68,7 @@
 .search-bar.active .search-btn{
     width: 40px;
     height: 40px;
-    background-color: rgb(36, 192, 235);
+    background-color: rgb(11,183,181);
     color: white;
     border-radius: 100%;
     display: flex;

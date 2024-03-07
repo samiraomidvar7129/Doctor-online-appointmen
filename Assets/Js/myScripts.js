@@ -21,7 +21,7 @@ hamburgerIcon.addEventListener('click',()=>{
 
 //Sticky Navbar----------------------
 
-let item_1 = document.getElementById("item-1");
+let item_1 = document.getElementById("header-nav");
 document.addEventListener("scroll", function () {
   if (document.documentElement.scrollTop > 0) {
     item_1.classList.add("position");
@@ -110,52 +110,6 @@ closeBtnIcon.addEventListener('click',()=>{
   searchInput.value=""
 })
 
-//Doctors Search Scripts----------
-
-
-// searchInput.addEventListener('keypress',(e)=>{
-//   if(e.key ==='Enter'){
-//     let searchValue=e.target.value;
-//     searchResult(searchValue);
-//     searchInput.value="";
-//   }
-// })
-
-// const searchResult=(searchValue)=>{
-//   let searchResultBox=document.querySelector('.mySwiper-list');
-//   searchResultBox.innerHTML="";
-
-//   resultArray=[];
-
-//   myData.doctors.forEach(group => {
-//     if(group.city === searchValue){
-//     resultArray.push(group)
-     
-//      }
-//   }
-//   );
-
-
-// if(resultArray.length > 0){
-//   let h1=document.createElement('h1');
-//   h1.appendChild(document.createTextNode('نتیجه     :'));
-//   searchResultBox.appendChild(h1);
-
-//   searchResult.forEach(group=>{
-//     searchResultBox.appendChild(createDoctorsBox(group));
-//   }
-//   );
-// }else{
-//   let h1=document.createElement('h1');
-//   h1.appendChild(document.createTextNode('نتیجه ای پیدا نشد  :'));
-//   searchResultBox.appendChild(h1);
-
-// }
-// }
-// const createDoctorsBox=(group)=>{
-//   searchResultBox.innerHTML=group;
-
-// }
 
 
 

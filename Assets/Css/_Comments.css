@@ -14,7 +14,7 @@
 }
 .swiper-button-prev_custom::after,
 .swiper-button-next_custom::after{
-  background-color:#ccc;
+  background-color:rgba(0, 0, 0, 1);
   opacity: 1.9;
     padding: 10px;
     border-radius: 100%;

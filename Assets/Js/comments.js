@@ -1,10 +1,11 @@
 
-    // ---------- Get Comments With Ajax
+    // Get Comments Data With Ajax-------------------------------------
 
 let commentsData;
  
 document.addEventListener('DOMContentLoaded',()=>{
-      //step 1:
+  
+  //step 1:
   let xhttp = new XMLHttpRequest();
 
   //step 2:
