@@ -19,7 +19,7 @@
     width: 22%;
     height: 250px;
     border-radius: 10px;
-    border: 1px solid #08B89D;
+    border: 1px solid silver;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -34,11 +34,11 @@
 }
 .services-item span h6{
     font-size: 12px !important;
-    color: #ccc;
+    color: #010101;
 }
 
 @keyframes boxShadowitem {
     100%{
-        box-shadow: 1px 1px 3px 2px #08B89D;
+        box-shadow: 1px 1px 1px 1px silver;
     }
 }

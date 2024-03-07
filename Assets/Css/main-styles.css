@@ -7,8 +7,6 @@
 @import './_Navbar.css';
 @import './_HeaderContent.css';
 @import './_Services-item.css';
-@import './_Introduce-Hospital.css';
-@import './_Counseling.css';
 @import './_MySwiper.css';
 @import './_Banner.css';
 @import './_Comments.css';
@@ -30,6 +28,8 @@
     box-sizing: border-box;
     font-family: 'MyFont'; 
     user-select: none;   
+    border: none;
+    outline: 0;
 }
 html{
     scroll-behavior: smooth !important;

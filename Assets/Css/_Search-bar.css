@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 .search-bar input{
     direction: rtl;

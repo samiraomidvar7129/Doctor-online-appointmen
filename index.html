@@ -37,16 +37,17 @@
 
 
       <!-- Start Header Nav -->
-      <div class="container-fluid " id="header-nav">
-        <div class="row">
-          <div class=" col  d-flex justify-content-around align-items-center">
+      <div class="container-fluid w-100 " id="header-nav">
+
+        <div class="row pt-3">
+          <div class="col px-3 d-flex justify-content-around align-items-center">
             <!--Start Dedicated scroll -->
           <div id="DedicatedScroll"></div>
           <!--END Dedicated scroll -->
-          <div class="header-item header-item1">
+          <div class=" col-lg-3  header-item header-item1">
         
             <!-- modal-login -->
-           <div class="col-lg-3 ">
+           <div class=" ">
             <span class="span-modal">
               <button
                 type="button"
@@ -106,11 +107,10 @@
                   />
                   <div class="display-hide" id="validate-userPassword"></div>
                 </div>
-                <div class="form-element">
-                  <label for="remember-me" class="checkmark">
-                    مرا به خاطر بسپار</label
-                  >
-                  <input type="checkbox" id="rememmber-me" />
+                <div class="form-element d-flex w-100 bg-warning ">
+                 <span> <label for="remember-me" class="checkmark">
+                  مرا به خاطر بسپار</label ></span>
+                  <input type="checkbox" id="rememmber-me"  />
                 </div>
                 <div class="form-element">
                   <button type="submit">عضویت</button>
@@ -122,36 +122,27 @@
             </div>
           </div>
           <!--END Modal Parent  -->
-
-          <div class="col-lg-3">
-            <div class="social-icons d-flex justify-content-center align-items-center">
-              <i class=" fa fa-facebook"></i>
-              <i class=" fa fa-facebook"></i>
-              <i class=" fa fa-facebook"></i>
-              <i class=" fa fa-facebook"></i>
-            </div>
-          </div>
-          <div class="col-lg-6">
-           <div class="col d-flex justify-content-center align-items-center">
-            <div class="col-4 d-flex justify-content-center align-items-center">
-              <p >به کلینیک خوش آمدید </p>
-              <i class="fas fa-clock"></i>
-
-            </div>
-            <div class="col">
-              <div class="col-8 d-flex justify-content-center align-items-center">
-                <p>شنبه - پنجشنبه  : ۸ صبح الی ۹ شب</p>
-              <i class="fas fa-clock"></i>
-              </div>
-            </div>
+          <div class="col-lg-7 flex-shrink-1  d-none d-md-flex  d-lg-flex justify-content-start align-items-center ">
+             <div class="col-6 d-flex justify-content-center align-items-center">
+               <span class="text-white px-2" >به کلینیک خوش آمدید </span>
+               <i class="fas fa-clock text-white "></i>
+             </div>
+             <div class="col-lg-6 d-flex justify-content-center align-items-center">
+              <span class="text-white px-2">شنبه - پنجشنبه  : ۸ صبح الی ۹ شب</span>
+              <i class="fas fa-clock text-white "></i>
+             </div>
            </div>
+          <div class="col-lg-2 d-flex justify-content-end ">
+
+            <!-- Start Switch LightMode -->
+            <div class="switch">
+                      <div class="fliker"></div>
+                      <div class="moon"></div>
+            </div>
+            <!-- END Switch LightMode -->
           </div>
-    
-        
-       
-  
           </div>
-       </div>
+        </div>
 
          <!-- Start Navbar Menu -->
           <div class="row bg-light mt-2 border border-bottom">
@@ -205,7 +196,7 @@
          <!-- END Navbar Menu -->
         
   
-        </div>
+      </div>
    
       <!-- END Header Nav -->
 
@@ -231,173 +222,81 @@
               <p> دکتر ساینا - سامانه رزرو نوبت دکتر آنلاین و خدمات مشاوره پزشکی</p>
               </div>
             </div>
-
-            <!-- Start Switch LightMode -->
-             <div class="switch">
-               <div class="fliker"></div>
-               <div class="moon"></div>
-             </div>
-            <!-- END Switch LightMode -->
-            
           </section>
         </div>
       </div>
       <!-- END Header Content -->
 
       <!-- Start Services Box -->
-      <div class="item" id="services">
-        <h5 class="my-10">چه خدماتی به شما ارائه میدهیم ؟</h5>
-        <div class="services-parent ">
-          <div
-            class="services-item mx-1 px-3 py-5"
-          >
-            <img
-              src="./Assets/imgs/icons/emergency.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>خدمات اورژانس</h5>
-              <h6 class=" text-center pt-3">خدمات فوری اورژانسی</h6>
-            </span>
-          </div>
-          <div
-            class="services-item  mx-1 d-flex justify-content-center align-items-center px-3 py-5"
-          >
-            <img
-              src="./Assets/imgs/icons/nobat.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>نوبت اینترنتی</h5>
-              <h6 class=" text-center pt-3">دریافت نوبت اینترنتی</h6>
-            </span>
-          </div>
-          <div
-            class="services-item  mx-1 d-flex justify-content-center align-items-center px-3 py-5"
-          >
-            <img
-              src="./Assets/imgs/icons/Laboratory.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5">خدمات آزمایش</h5>
-              <h6 class=" text-center pt-3">انجام آزمایشات تخصصی</h6>
-            </span>
-          </div>
-          <div
-            class="services-item mx-1 d-flex justify-content-center align-items-center px-3 py-5"
-          >
-            <img
-              src="./Assets/imgs/icons/counseling.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>مشاوره آنلاین</h5>
-              <h6 class=" text-center pt-3">مشاوره متنی و صوتی</h6>
-            </span>
-          </div>
+      <div class="container-fluid " id="services">
+        <h5 class="py-3 text-center">بهترین خدمات پزشکی و درمانی ما</h5>
+        <div class="row px-3">
+              <div class="col-md-6 col-lg-3 ">
+               <div class="services-item w-100">
+                <img
+                src="./Assets/imgs/icons/emergency.png"
+                alt="chemistry.png"
+                width="60px"
+                height="60px"
+              />
+              <span class="mx-3">
+                <h5> پزشک مشاور</h5>
+                <h6 class=" text-center pt-3">خدمات فوری اورژانسی</h6>
+              </span>
+               </div>
+              </div>
+              <div class="col-md-6 col-lg-3  ">
+                <div class="services-item w-100">
+                 <img
+                 src="./Assets/imgs/icons/emergency.png"
+                 alt="chemistry.png"
+                 width="60px"
+                 height="60px"
+               />
+               <span class="mx-3">
+                 <h5>خدمات اورژانس</h5>
+                 <h6 class=" text-center pt-3">خدمات فوری اورژانسی</h6>
+               </span>
+                </div>
+               </div>
+               <div class="col-md-6 col-lg-3  ">
+                <div class="services-item w-100">
+                 <img
+                 src="./Assets/imgs/icons/emergency.png"
+                 alt="chemistry.png"
+                 width="60px"
+                 height="60px"
+               />
+               <span class="mx-3">
+                 <h5> درمان کانال ریشه</h5>
+                 <h6 class=" text-center pt-3">خدمات فوری اورژانسی</h6>
+               </span>
+                </div>
+               </div>
+               <div class="col-md-6 col-lg-3  ">
+                <div class="services-item w-100">
+                 <img
+                 src="./Assets/imgs/icons/emergency.png"
+                 alt="chemistry.png"
+                 width="60px"
+                 height="60px"
+               />
+               <span class="mx-3">
+                 <h5> اورژانس دندانپزشکی</h5>
+                 <h6 class=" text-center pt-3">خدمات فوری اورژانسی</h6>
+               </span>
+                </div>
+               </div>
         </div>
       </div>
       <!-- END Services Box -->
-      <!-- Start Introduce Hospital -->
-      <div class="item my-5">
-        <div class="introduce">
-          <div class="introduce-img">
-            <img
-              src="./Assets/imgs/doccure/img-1.png"
-              class="img-fluid"
-              alt="img-1.png"
-            />
-          </div>
-          <div>
-            <div class="introduce-content">
-              <h5 class="mt-5 fw-bold px-3">چرا دکتر ساینا را انتخاب کنید ؟</h5>
-              <p class="px-3">
-                در هر زمان از شبانه روز، حتی ایام تعطیل به طور مستقیم با پزشکان
-                گفتگو کنید و زحمت حضور در صف های طولانی نوبت و هزینه رفت و آمد
-                را به حداقل برسانید همچنین ما تضمین می کنیم که گفتگوی شما با
-                پزشکان کاملا محرمانه می باشد
-              </p>
-              <button
-                type="button"
-                class="btn dark-blue-items p-3 fw-bold mt-2 mx-3"
-              >
-                <i class="fa fa-arrow-left mx-2"></i>
-                ادامه مطلب
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END Introduce Hospital -->
-      <!-- Start Benefits-of-counseling -->
-      <div class="item" id="Benefits-of-counseling">
-        <div class="Benefits-of-counseling_title">
-          مزایای مشاوره آنلاین پزشکی در سامانه فوق تخصصی
-          <span class="active">دکترساینا</span>
-        </div>
-        <div class="Benefits-of-counseling_wrapper-item">
-          <div class="Benefits-of-counseling_item">
-            <div class="Benefits-of-counseling_inner">
-              <div class="Benefits-of-img Benefits-of-img-1">
-                <img
-                  src="./Assets/imgs/icons/icons8-address-30.png"
-                  alt="icons8-address-30.png"
-                />
-              </div>
-              <div class="Benefits-of-counseling_text counseling_text-1">
-                <h3>کاربری بسیار ساده</h3>
-              </div>
-            </div>
-          </div>
-          <div class="Benefits-of-counseling_item">
-            <div class="Benefits-of-counseling_inner">
-              <div class="Benefits-of-img Benefits-of-img-2">
-                <img src="./Assets/imgs/icons/icons8-address-30.png" alt="" />
-              </div>
-              <div class="Benefits-of-counseling_text counseling_text-2">
-                <h3>حفظ حریم شخصی</h3>
-              </div>
-            </div>
-          </div>
-          <div class="Benefits-of-counseling_item">
-            <div class="Benefits-of-counseling_inner">
-              <div class="Benefits-of-img Benefits-of-img-3">
-                <img src="./Assets/imgs/icons/icons8-address-30.png" alt="" />
-              </div>
-              <div class="Benefits-of-counseling_text counseling_text-3">
-                <h3>صرفه جویی در زمان</h3>
-              </div>
-            </div>
-          </div>
-          <div class="Benefits-of-counseling_item">
-            <div class="Benefits-of-counseling_inner">
-              <div class="Benefits-of-img Benefits-of-img-4">
-                <img src="./Assets/imgs/icons/icons8-address-30.png" alt="" />
-              </div>
-              <div class="Benefits-of-counseling_text counseling_text-4">
-                <h3>ویزیت با بهترین پزشکان</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- END Benefits-of-counseling -->
+    
       
       <!-- Start Introduce Doctors -->
       <div class="item column" id="mySwiper">
         <div class="mySwiper_content">
           <div class="mySwiper m-auto my-5 text-center">
-            <h5 class="mySwiper_h1">پزشکان آماده همراهی شما</h5>
-            <h6 class="mt-3">بیش از 2500 پزشک آماده پاسخگویی به شما هستند</h6>
+            <h5 class="mySwiper_h1">پزشکان باتجربه و متخصص آماده همراهی شما</h5>
           </div>
           <div class="mySwiper-list">
           </div>
