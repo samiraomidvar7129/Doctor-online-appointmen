@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
             hospitalData.forEach(key=>{
              const hospitalListContainer = document.querySelector('.health-centersـinformation');
 
-// Get workShifts Data---------------------------------------------------------------
+  // Get workShifts Data---------------------------------------------------------------
 
              let workShiftsData="";
 
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
                    }
                    )
                   }}
-               }};
+    }};
 
 
 

@@ -116,25 +116,6 @@ closeBtnIcon.addEventListener('click',()=>{
 
 //modal Element---------------------
 
-const btnModal = document.querySelector(".btn-modal");
-const closeBtn = document.querySelector(".close-btn");
-const modalParent = document.querySelector(".modal-parent");
-
-showModal = () => {
-  modalParent.style.display = "block";
-  modalParent.style.transition = "all 0.5s cubic-bezier(0.7,-0.5,0.3,1.5)";
-};
-hideModal = () => {
-  modalParent.style.display = "none";
-};
-hideModalWithEsc = (e) => {
-  if (e.keyCode === 27) {
-    modalParent.style.display = "none";
-  }
-};
-btnModal.addEventListener("click", showModal);
-closeBtn.addEventListener("click", hideModal);
-document.body.addEventListener("keyup", hideModalWithEsc);
 
 // Form Validation with class-----
 
@@ -215,32 +196,6 @@ return "";
 new formValidation(document.getElementById("form-modal"));
 
 
-// Light Mode Scripts----------
-
-const SwitchElem = document.querySelector(".switch");
-
-darkTheme = () => {
-  document.body.classList.toggle("dark");
-
-  if (document.body.className.includes("dark")) {
-    //boolean
-    localStorage.setItem("theme", "dark");
-  } else {
-    localStorage.setItem("theme", "light");
-  }
-};
-
-SwitchElem.addEventListener("click", darkTheme);
-
-window.onload = () => {
-  let localStorageTheme = localStorage.getItem("theme");
-  if (localStorageTheme === "dark") {
-    document.body.classList.add("dark");
-  }
-};
-
-//----------------------------------
-
 
 
 //Get Data With Ajax , Api-------------
@@ -286,8 +241,6 @@ const createMainBox =(data) =>{
 }
 
 const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
-
-
 
   let boxItem = document.createElement("div");
   boxItem.classList.add("mySwiprt-list_item");
