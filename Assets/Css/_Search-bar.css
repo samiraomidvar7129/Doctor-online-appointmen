@@ -57,7 +57,7 @@
     opacity: 0;
 }
 .search-bar.active{
-    width: 350px;
+    width: 100%;
     border: none;
 }
 .search-bar.active input{

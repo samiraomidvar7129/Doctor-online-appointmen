@@ -81,6 +81,7 @@ ArrowAnimate();
 // --------------------------------------
 
 //OnlineConsultation Animate-------------
+
 var onlineConsultation =document.querySelector(".Online-consultation-text");
 
 const fadeOut =() =>{
@@ -241,7 +242,6 @@ window.onload = () => {
 //----------------------------------
 
 
-//-----------------------------------
 
 //Get Data With Ajax , Api-------------
 
@@ -286,6 +286,8 @@ const createMainBox =(data) =>{
 }
 
 const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
+
+
 
   let boxItem = document.createElement("div");
   boxItem.classList.add("mySwiprt-list_item");
@@ -333,11 +335,7 @@ const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
 
   let itemImg = document.createElement("img");
   itemImg.setAttribute("src", ImageUrl);
-  itemImg.style.width = "100%";
-  itemImg.style.height = "100%";
-  itemImg.style.objectFit = "cover";
-  itemImg.style.borderRadius="100%";
-  itemImg.style.marginLeft="22px"
+  // 
 
   spanImg.append(itemImg);
 
@@ -350,12 +348,46 @@ const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
   swiperLink.append(itemCaption);
 
 
+
   boxItem.append(swiperLink);
   
-  
+
+
   return boxItem;
+
 }
 
+
+// const createGroupBox =(id, Name, ImageUrl,NezamCode,Speciallity)=> {
+
+//   let mySwiper_List=document.getElementById('mySwiper-list');
+
+//   mySwiper_List.innerHTML+=`
+
+//   <div class="swiper mySwiper">
+//                    <div class="swiper-wrapper">
+//       <div class="swiper-slide ">
+//         <a href=${"details.html?group=" + id} class="mySwiper-list_item bg-danger ">
+//           <div class="d-flex justify-content-around align-items-center">
+//             <span class="d-block w-25 h-25">
+//               <img src=${ImageUrl} class="rounded-pill" alt="">
+//             </span>
+//             <div class="name">${Name} </div>
+//           </div>
+//           <div class="pt-5">
+//             <div>${Speciallity}</div>
+//             <h6 class="pt-3">${NezamCode}  : کد نظام پزشکی </h6>
+//           </div>
+         
+//         </a>
+//       </div>
+
+//                    </div>
+//                    <div class="swiper-pagination"></div>
+//               </div>
+  
+//   `
+// }
 
 
 

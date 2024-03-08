@@ -4,6 +4,7 @@
     margin-top: 50px;
     width: 100%;
     height: auto;
+    background-color: rgb(11,183,181);
 }
 
 .services-parent{
@@ -15,30 +16,33 @@
     flex-wrap: wrap;
 }
 
-.services-item{
+
+.services-item {
+    position: relative;
     width: 22%;
     height: 250px;
     border-radius: 10px;
-    border: 1px solid silver;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    animation: boxShadowitem 1s ease infinite;
-}
+    background-color: #fff ;
+
+  }
+
 .services-item img{
     width: 100px;
     height: 100px;
 }
+.services-item span h5{
+    font-size: 16px !important;
+    color: #010101;
+}
+
 .services-item span h6{
     font-size: 12px !important;
     color: #010101;
 }
 
-@keyframes boxShadowitem {
-    100%{
-        box-shadow: 1px 1px 1px 1px silver;
-    }
-}

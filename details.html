@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> اطلاعات پزشکان</title>
-    
+    <title>اطلاعات پزشکان</title>
+
     <!-- FavIcon -->
-    <link rel="icon" href="./Assets/imgs/logo/logo-v2 (1).svg">
+    <link rel="icon" href="./Assets/imgs/logo/logo-v2 (1).svg" />
     <!-- Import Wow.js Library -->
     <link
       rel="stylesheet"
@@ -27,292 +27,370 @@
 
     <link rel="stylesheet" href="./Assets/Css/main-styles.css" />
   </head>
-  <body >
-
-
+  <body>
     <!--Start Loader -->
-    <div class="loader">
+    <!-- <div class="loader">
       <img src="/Assets/imgs/loading/loading-2.jpg"  alt="Loading ....">
-    </div>
-      <!-- END Loader -->
-      <div class="wrapper">
-      
+    </div> -->
+    <!-- END Loader -->
+
     <!-- Start Header Nav -->
-    <div class="container-fluid header-navbar item " id="item-1">
-      <!--Start Dedicated scroll -->
-
-      
-      <div id="DedicatedScroll"></div>
-      <!--END Dedicated scroll -->
-      <div class="header-item header-item1">
-        <!-- Start Switch LightMode -->
-        <div class="switch">
-          <div class="fliker"></div>
-          <div class="moon"></div>
-        </div>
-        <!-- END Switch LightMode -->
-        <!-- modal-login -->
-        <span class="span-modal">
-          <button
-            type="button"
-            value=""
-            class="p-1 rounded btn-modal"
-            title="modal"
-          >
-            <i class="fa fa-user modal-icon"></i>
-          </button>
-        </span>
-        <!--Start Modal Parent -->
-        <div class="modal-parent">
-          <div class="close-btn">&times;</div>
-          <form
-            action=""
-            method="post"
-            class="form"
-            id="form-modal"
-            novalidate
-          >
-            <h2>ورود / عضویت</h2>
-            <div class="form-element">
-              <label for="user-name"> :نام و نام خانوادگی </label>
-              <input
-                type="text"
-                class="active"
-                id="user-name"
-                placeholder="  نام کاربری شما"
-                data-validation="notEmpty"
-              />
-              <div
-                class="display-hide show-erro"
-                id="validate-userName"
-              ></div>
+    <div class="container-fluid w-100" id="header-nav">
+      <div class="row pt-3">
+        <div class="col px-3 d-flex justify-content-around align-items-center">
+          <!--Start Dedicated scroll -->
+          <div id="DedicatedScroll"></div>
+          <!--END Dedicated scroll -->
+          <div class="col-lg-3 header-item header-item1">
+            <!-- modal-login -->
+            <div class=" ">
+              <span class="span-modal">
+                <button
+                  type="button"
+                  value=""
+                  class="p-1 rounded btn-modal"
+                  title="modal"
+                >
+                  <i class="fa fa-user modal-icon"></i>
+                </button>
+              </span>
             </div>
-            <div class="form-element">
-              <label for="user-email"> :ایمیل </label>
-              <input
-                type="text"
-                id="user-email"
-                placeholder="ایمیل شما"
-                data-validation="notEmpty isEmail"
-              />
-              <div
-                class="display-hide show-erro"
-                id="validate-userEmail"
-              ></div>
-            </div>
-            <div class="form-element">
-              <label for="user-password show-erro"> :رمزعبور </label>
-              <input
-                type="password"
-                id="user-password"
-                placeholder=" رمز عبور شما"
-                data-validation="isPassword"
-              />
-              <div class="display-hide" id="validate-userPassword"></div>
-            </div>
-            <div class="form-element">
-              <label for="remember-me" class="checkmark">
-                مرا به خاطر بسپار</label
+            <!--Start Modal Parent -->
+            <div class="modal-parent">
+              <div class="close-btn">&times;</div>
+              <form
+                action=""
+                method="post"
+                class="form"
+                id="form-modal"
+                novalidate
               >
-              <input type="checkbox" id="rememmber-me" />
+                <h2>ورود / عضویت</h2>
+                <div class="form-element">
+                  <label for="user-name"> :نام و نام خانوادگی </label>
+                  <input
+                    type="text"
+                    class="active"
+                    id="user-name"
+                    placeholder="  نام کاربری شما"
+                    data-validation="notEmpty"
+                  />
+                  <div
+                    class="display-hide show-erro"
+                    id="validate-userName"
+                  ></div>
+                </div>
+                <div class="form-element">
+                  <label for="user-email"> :ایمیل </label>
+                  <input
+                    type="text"
+                    id="user-email"
+                    placeholder="ایمیل شما"
+                    data-validation="notEmpty isEmail"
+                  />
+                  <div
+                    class="display-hide show-erro"
+                    id="validate-userEmail"
+                  ></div>
+                </div>
+                <div class="form-element">
+                  <label for="user-password show-erro"> :رمزعبور </label>
+                  <input
+                    type="password"
+                    id="user-password"
+                    placeholder=" رمز عبور شما"
+                    data-validation="isPassword"
+                  />
+                  <div class="display-hide" id="validate-userPassword"></div>
+                </div>
+                <div class="form-element d-flex w-100 bg-warning">
+                  <span>
+                    <label for="remember-me" class="checkmark">
+                      مرا به خاطر بسپار</label
+                    ></span
+                  >
+                  <input type="checkbox" id="rememmber-me" />
+                </div>
+                <div class="form-element">
+                  <button type="submit">عضویت</button>
+                </div>
+                <div class="form-element">
+                  <a href="">رمز خود را از یاد برده اید ? کلیک کنید</a>
+                </div>
+              </form>
             </div>
-            <div class="form-element">
-              <button type="submit">عضویت</button>
+          </div>
+          <!--END Modal Parent  -->
+          <div
+            class="col-lg-7 flex-shrink-1 d-none d-md-flex d-lg-flex justify-content-start align-items-center"
+          >
+            <div class="col-6 d-flex justify-content-center align-items-center">
+              <span class="text-white px-2">به کلینیک خوش آمدید </span>
+              <i class="fas fa-clock text-white"></i>
             </div>
-            <div class="form-element">
-              <a href="">رمز خود را از یاد برده اید ? کلیک کنید</a>
+            <div
+              class="col-lg-6 d-flex justify-content-center align-items-center"
+            >
+              <span class="text-white px-2"
+                >شنبه - پنجشنبه : ۸ صبح الی ۹ شب</span
+              >
+              <i class="fas fa-clock text-white"></i>
             </div>
-          </form>
+          </div>
+          <div class="col-lg-2 d-flex justify-content-end">
+            <!-- Start Switch LightMode -->
+            <div class="switch">
+              <div class="fliker"></div>
+              <div class="moon"></div>
+            </div>
+            <!-- END Switch LightMode -->
+          </div>
         </div>
       </div>
-      <!--END Modal Parent  -->
-      <!-- Start SearchForm -->
-      <div class="search-bar mt-1">
-        <input type="text" class="search-input" id="search-input" placeholder="جستجو کنید">
-        <div class="search-btn">
-          <i class="fa fa-search search-icon" id="search-icon"></i>
-        </div>
-        <div class="close-btn-icon">
-          <i class="close-icon fa fa-times"></i>
+
+      <!-- Start Navbar Menu -->
+      <div class="row bg-light mt-2 border border-bottom">
+        <div class="col d-flex justify-content-around align-items-center">
+          <div class="col-lg-3">
+            <div class="search-bar mt-1">
+              <input
+                type="text"
+                class="search-input"
+                id="search-input"
+                placeholder="جستجو کنید"
+              />
+              <div class="search-btn">
+                <i class="fa fa-search search-icon" id="search-icon"></i>
+              </div>
+              <div class="close-btn-icon">
+                <i class="close-icon fa fa-times"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="header-item">
+              <div
+                class="header-top-menu m-auto d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+              >
+                <nav>
+                  <li><a href="index.html" class="link hover-3"> خانه</a></li>
+                  <li>
+                    <a href="about.html" class="link hover-3"> درباره ما</a>
+                  </li>
+                  <li>
+                    <a href="services.html" class="link hover-3"> خدمات</a>
+                  </li>
+                  <li>
+                    <a href="questions.html" class="link hover-3"
+                      >از دکتر بپرسید</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog.html" class="link hover-3"> مجله سلامت</a>
+                  </li>
+                  <li>
+                    <a href="contactUs.html" class="link hover-3"> تماس باما</a>
+                  </li>
+                </nav>
+              </div>
+              <!-- Hamburger menu for mobile -->
+              <div class="hamburger d-block d-md-none">
+                <div class="hamburger-icon">
+                  <i class="fas fa-bars icon-bar"></i>
+                </div>
+                <ul class="hamburger-menu-list">
+                  <li><a href="index.html" class="link">خانه</a></li>
+                  <li>
+                    <a href="questions.html" class="link">از دکتر بپرسید</a>
+                  </li>
+                  <li><a href="blog.html" class="link">مجله سلامت</a></li>
+                  <li><a href="contactUs.html" class="link">تماس باما</a></li>
+                </ul>
+              </div>
+              <!-- Hamburger menu for mobile -->
+            </div>
+          </div>
+          <div class="col-lg2">
+            <span>
+              <img src="./Assets/imgs/logo/logo-v2.svg" alt="" />
+            </span>
+          </div>
         </div>
       </div>
-      <!-- END SearchForm -->
-      <!-- Start Menu -->
-      <div class="header-item header-item2 ">
-        <div class="header-top-menu m-auto d-none d-md-block d-lg-block d-xl-block d-xxl-block ">
-          <nav>
-            <li><a href="index.html" class="link "> خانه</a></li>
-            <li><a href="questions.html" class="link ">از دکتر بپرسید</a></li>
-            <li><a href="blog.html" class="link "> مجله سلامت</a></li>
-            <li><a href="contactUs.html" class="link "> تماس باما</a></li>
-          </nav>
-        </div>
-<!-- Hamburger menu for mobile -->
-<div class="hamburger d-block d-md-none ">
-<div class="hamburger-icon">
-     <i class="fas fa-bars icon-bar"></i>
-</div>
-<ul class="hamburger-menu-list">
-    <li><a href="index.html" class="link">خانه</a></li>
-    <li><a href="questions.html" class="link">از دکتر بپرسید</a></li>
-    <li><a href="blog.html" class="link">مجله سلامت</a></li>
-    <li><a href="contactUs.html" class="link">تماس باما</a></li>
-</ul>
-</div>
-<!-- Hamburger menu for mobile -->
-      </div>
-      <!-- END Menu -->
-      <!-- Start Logo -->
-      <div
-        class="header-item header-item3 d-none d-md-block d-lg-block d-xl-block d-xxl-block">
-        <span>
-          <img src="./Assets/imgs/logo/logo-v2.svg" alt="" />
-        </span>
-      </div>
-      <!-- END Logo -->
+      <!-- END Navbar Menu -->
     </div>
+
     <!-- END Header Nav -->
-         
-          <!-- Start Doctors InfoBox -->
-           <div class="item">
-          <div  id="Doctors-InfoBox">
-            <div class="doctors-heade-img">
-              <img src="./Assets/imgs/banner/banner-3.jpg" alt="">
-            </div>
-            <div class="doctors-information">
-              <div class="doctors-information_head">
-                <div class="doctors-information_heade-leftBox">
-                  <div class="doctors-information_heade-leftBox--links">
-                    <span class="Reservation"> <i class="fa fa-clock custom-icon"></i><a href=""> رزرو نوبت</a> </span>
-                    <span class="offer"> <i class="fa fa-check  custom-icon"></i><a href=""> پیشنهاد میکنم</a></span>
-                    <span class="not-suggest"> <i class="fa fa-times  custom-icon"></i><a href=""> پیشنهاد نمی کنم</a></span>
-                  </div>
-                </div>
-                <div class="doctors-information_heade-rightBox">
-                  <div class="heade-rightBox_itemLeft">
-                    <h5 id="doctor-title"></h5>
-                    <h6 id="doctor-Speciallity"> </h6>
-                    <h6 class="nezam-code"> کد نظام پزشکی  : <span id="nezamCode"></span></h6>
-                    <h6 > استان :<span class="state"></span></h6>
-                    <span class="doctor-location"><i class="fa fa-location location-icon"></i> <h4 class="location-text"> :  شهر محل طبابت  </h4> &nbsp;&nbsp;
-                       <span class="doctor-address"></span></span>
-                  </div>
-                  <div class="heade-rightBox_itemRight">
-                    <div class="heade-rightBox_itemRight-img">
-                      <img  id="doctor-image" src="" alt="doctor-title">
-                      <span class="online-status"></span>
-                    </div>
-                    <div class="heade-rightBox_itemRight-status">
-                      <h6>وضعیت : آنلاین</h6>
-                    </div>
-                   
-                  </div>
-                </div>
-              </div>
-              <div class="doctors-information_items">
-              </div>
-            </div>
-          </div>
-           </div>
-          <!-- Start Doctors InfoBox -->
 
-             <!-- Start health-centers -->
-          <div class="item">
-            <div class="health-centers">
-                <div class="health-centers_title">
-                  <h5>آدرس مراکزدرمانی و رزرو نویت</h5>
-                  <h6>این بخش شامل اطلاعات مراکز فعالیت  این پزشک و امکان رزرو نوبت آنلاین میباشد </h6>
-                </div>
-                <div class="health-centersـinformation">            
-               </div> 
-            </div>
-          </div>
-          <!-- END health-centers -->
-
-              <!-- Start Footer Section -->
-             <div class="item column" id="footer">
-        <footer  class="footer">
-          <div class="footer-item_2">
-            <div class="footer-form p-3">
-              <h4>عضویت در خبرنامه</h4>
-              <p class="text-justify my-4">
-                برای اطلاع از اخبار جدید در خبرنامه عضو شوید
-              </p>
-              <div class="footer-form_wrapper">
-                <form action="#" class="footer-form_wrapper-inner">
-                  <input type="email" placeholder="ورود آدرس ایمیل" class="footer-form_wrapper-inner--input p-2" />
-                  <button type="submit" class="footer-form_wrapper-inner--btn"><i class="fa fa-arrow-left footer-form_wrapper-inner--icon "></i></button>
-                </form>
-              </div>
-            </div>
-           </div>
-       <div class="footer-item_1">
-        <div class="footer-boxLeft p-3">
-          <h6>: بیمه های طرف قرارداد</h6>
-          <ul class="Insurance-imgs">
-            <li><img src="./Assets/imgs/Photo-of-insurances/img-1.png" alt=""></li>
-            <li><img src="./Assets/imgs/Photo-of-insurances/img-2.png" alt=""></li>
-            <li><img src="./Assets/imgs/Photo-of-insurances/img-3.png" alt=""></li>
-            <li><img src="./Assets/imgs/Photo-of-insurances/img-4.png" alt=""></li>
-          </ul>
+    <!-- Start Doctors InfoBox -->
+    <div class="item">
+      <div id="Doctors-InfoBox">
+        <div class="doctors-heade-img">
+          <img src="./Assets/imgs/banner/banner-3.jpg" alt="" />
         </div>
-        <div class="footer-boxCenter p-3">
-          <h6>لینک های مفید</h6>
-          <div class="footer-boxCenter_links">
-            <ul>
-              <li><a class="text-white" href="#">توصیه پزشکی</a></li>
-              <li><a class="text-white" href="#">پشتیبانی </a></li>
-              <li><a class="text-white" href="#"> تعرفه ها</a></li>
-              <li><a class="text-white" href="#"> قوانین</a></li>
-             </ul>
-            <ul>
-             <li><a class="text-white" href="#">صفحه اصلی</a></li>
-             <li><a class="text-white" href="#">  پرسش ها</a></li>
-             <li><a class="text-white" href="#">مجله سلامت</a></li>
-             <li><a class="text-white" href="#">ارتباط باما</a></li>
+        <div class="doctors-information">
+          <div class="doctors-information_head">
+            <div class="doctors-information_heade-leftBox">
+              <div class="doctors-information_heade-leftBox--links">
+                <span class="Reservation">
+                  <i class="fa fa-clock custom-icon"></i
+                  ><a href=""> رزرو نوبت</a>
+                </span>
+                <span class="offer">
+                  <i class="fa fa-check custom-icon"></i
+                  ><a href=""> پیشنهاد میکنم</a></span
+                >
+                <span class="not-suggest">
+                  <i class="fa fa-times custom-icon"></i
+                  ><a href=""> پیشنهاد نمی کنم</a></span
+                >
+              </div>
+            </div>
+            <div class="doctors-information_heade-rightBox">
+              <div class="heade-rightBox_itemLeft">
+                <h5 id="doctor-title"></h5>
+                <h6 id="doctor-Speciallity"></h6>
+                <h6 class="nezam-code">
+                  کد نظام پزشکی : <span id="nezamCode"></span>
+                </h6>
+                <h6>استان :<span class="state"></span></h6>
+                <span class="doctor-location"
+                  ><i class="fa fa-location location-icon"></i>
+                  <h4 class="location-text">: شهر محل طبابت</h4>
+                  &nbsp;&nbsp; <span class="doctor-address"></span
+                ></span>
+              </div>
+              <div class="heade-rightBox_itemRight">
+                <div class="heade-rightBox_itemRight-img">
+                  <img id="doctor-image" src="" alt="doctor-title" />
+                  <span class="online-status"></span>
+                </div>
+                <div class="heade-rightBox_itemRight-status">
+                  <h6>وضعیت : آنلاین</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="doctors-information_items"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Doctors InfoBox -->
+
+    <!-- Start health-centers -->
+    <div class="item">
+      <div class="health-centers">
+        <div class="health-centers_title">
+          <h5>آدرس مراکزدرمانی و رزرو نویت</h5>
+          <h6>
+            این بخش شامل اطلاعات مراکز فعالیت این پزشک و امکان رزرو نوبت آنلاین
+            میباشد
+          </h6>
+        </div>
+        <div class="health-centersـinformation"></div>
+      </div>
+    </div>
+    <!-- END health-centers -->
+
+    <!-- Start Footer Section -->
+    <div class="item column" id="footer">
+      <footer class="footer">
+        <div class="footer-item_2">
+          <div class="footer-form p-3">
+            <h4>عضویت در خبرنامه</h4>
+            <p class="text-justify my-4">
+              برای اطلاع از اخبار جدید در خبرنامه عضو شوید
+            </p>
+            <div class="footer-form_wrapper">
+              <form action="#" class="footer-form_wrapper-inner">
+                <input
+                  type="email"
+                  placeholder="ورود آدرس ایمیل"
+                  class="footer-form_wrapper-inner--input p-2"
+                />
+                <button type="submit" class="footer-form_wrapper-inner--btn">
+                  <i
+                    class="fa fa-arrow-left footer-form_wrapper-inner--icon"
+                  ></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-item_1">
+          <div class="footer-boxLeft p-3">
+            <h6>: بیمه های طرف قرارداد</h6>
+            <ul class="Insurance-imgs">
+              <li>
+                <img src="./Assets/imgs/Photo-of-insurances/img-1.png" alt="" />
+              </li>
+              <li>
+                <img src="./Assets/imgs/Photo-of-insurances/img-2.png" alt="" />
+              </li>
+              <li>
+                <img src="./Assets/imgs/Photo-of-insurances/img-3.png" alt="" />
+              </li>
+              <li>
+                <img src="./Assets/imgs/Photo-of-insurances/img-4.png" alt="" />
+              </li>
             </ul>
           </div>
-        </div>
-        <div class="footer-boxRight p-3" >
-          <h6 >در باره ما بیشتر بدانید</h6>
-          <div class="footer-boxRight_item">
-          <p class="text-right my-3">
-         سایت پزشکی یا وب سایت پزشکی یک وسیله ارتباطی بسیار راحت و مفید برای شناسایی پزشکان، مراکز درمانی، کلینیک های پزشکی و غیره است که 
-         راهی سریع برای ارتباط بهتر با بیماران، رزرو نوبت به روشی آسان و معرفی مراکز درمانی آنها است
-          </p>
-          <div class="footer-boxRight_item--social-icons">
-            <ul class="footer-boxRight_item--social-icons_ul">
-              <a href=""><i class="fab fa-twitter"></i></a>
-              <a href=""><i class="fab fa-linkedin"></i></a>
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-whatsapp"></i></a>
+          <div class="footer-boxCenter p-3">
+            <h6>لینک های مفید</h6>
+            <div class="footer-boxCenter_links">
+              <ul>
+                <li><a class="text-white" href="#">توصیه پزشکی</a></li>
+                <li><a class="text-white" href="#">پشتیبانی </a></li>
+                <li><a class="text-white" href="#"> تعرفه ها</a></li>
+                <li><a class="text-white" href="#"> قوانین</a></li>
               </ul>
-            <h6>  مارا دنبال کنید  :</h6>
+              <ul>
+                <li><a class="text-white" href="#">صفحه اصلی</a></li>
+                <li><a class="text-white" href="#"> پرسش ها</a></li>
+                <li><a class="text-white" href="#">مجله سلامت</a></li>
+                <li><a class="text-white" href="#">ارتباط باما</a></li>
+              </ul>
+            </div>
           </div>
+          <div class="footer-boxRight p-3">
+            <h6>در باره ما بیشتر بدانید</h6>
+            <div class="footer-boxRight_item">
+              <p class="text-right my-3">
+                سایت پزشکی یا وب سایت پزشکی یک وسیله ارتباطی بسیار راحت و مفید
+                برای شناسایی پزشکان، مراکز درمانی، کلینیک های پزشکی و غیره است
+                که راهی سریع برای ارتباط بهتر با بیماران، رزرو نوبت به روشی آسان
+                و معرفی مراکز درمانی آنها است
+              </p>
+              <div class="footer-boxRight_item--social-icons">
+                <ul class="footer-boxRight_item--social-icons_ul">
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                  <a href=""><i class="fab fa-facebook"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-whatsapp"></i></a>
+                </ul>
+                <h6>مارا دنبال کنید :</h6>
+              </div>
+            </div>
           </div>
         </div>
-       </div>
-        <a href="#up" id="arrow-up"><i class="fa fa-arrow-up arrow-up_icon" aria-hidden="true"></i></a>
+        <a href="#up" id="arrow-up"
+          ><i class="fa fa-arrow-up arrow-up_icon" aria-hidden="true"></i
+        ></a>
       </footer>
-             </div>
-            <!-- END Footer Section -->
-          </div>
+    </div>
+    <!-- END Footer Section -->
 
     <!-- Bootsrap Files-->
     <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
     <script src="./Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
-      
+
     <!-- My Script Files -->
-    <script   src="./Assets/Js/myScripts.js"></script>
+    <script src="./Assets/Js/myScripts.js"></script>
     <script src="./Assets/Js/details.js"></script>
 
-
-    <script>
-
-    </script>
+    <script></script>
   </body>
 </html>
-
