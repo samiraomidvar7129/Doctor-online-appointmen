@@ -9,7 +9,7 @@
     background-color: rgb(11,183,181);
     position: relative;
     margin-right: 7px;
-    top:2px;
+    top:4px;
     right: 2%;
     z-index: 11;
     border: 1px solid #fff;
@@ -201,15 +201,12 @@ padding:5px
     border: 1px solid  rgb(11,183,181);
     background-color: transparent;
     font-size: 12px;
-    color: #010101;
     transition: 0.5s ease-in-out;
 }
 .reserve-btn:hover{
     background-color:rgb(11,183,181) ;
 }
-.reserve-btn:hover a{
-    color: #ffff;
-}
+
 .contact-text span,
 .workTime span
 {
@@ -220,4 +217,3 @@ padding:5px
 color: rgb(11,183,181);
 ;
 }
-.workTime

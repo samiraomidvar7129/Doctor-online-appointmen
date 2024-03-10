@@ -35,46 +35,14 @@ document.addEventListener("scroll", function () {
 let DedicatedScroll = document.getElementById("DedicatedScroll");
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
-  // console.log(scrollTop);
   let documentHeight = document.body.clientHeight;
-  // console.log(documentHeight);
   let windowHeight = window.innerHeight;
-  // console.log(windowHeight);
   let scrollPercent = scrollTop / (documentHeight - windowHeight);
-  // console.log(scrollPercent);
   let scrollPercentRounded = Math.round(scrollPercent * 100);
-  // console.log(scrollPercentRounded);
   DedicatedScroll.style.width = scrollPercentRounded + "%";
 });
 
 //END Dedicated Scroll --------------
-
-// Animate Effect Arrow-Up-----------
-
-const ArrowUp = document.getElementById("arrow-up");
-window.addEventListener("scroll", (e) => {
-  if (window.scrollY > 600) {
-    ArrowUp.style.display = "block";
-    ArrowUp.classList.add("scrollshow");
-  } else {
-    ArrowUp.style.display = "";
-    ArrowUp.classList.remove("scrollshow");
-  }
-});
-
-ArrowUp.addEventListener("click", (e) => {
-  if (ArrowUp.classList.contains("scrollshow")) {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-});
-
-function ArrowAnimate() {
-  setInterval(function () {
-    ArrowUp.style.animation = "ArrowAnimate 1s linear infinite";
-    ArrowAnimate();
-  }, 1000);
-}
-ArrowAnimate();
 
 
 
@@ -110,11 +78,6 @@ closeBtnIcon.addEventListener('click',()=>{
   searchBar.classList.remove('active');
   searchInput.value=""
 })
-
-
-
-
-//modal Element---------------------
 
 
 // Form Validation with class-----

@@ -6,41 +6,47 @@
     <title>دکتر ساینا</title>
 
     <!-- FavIcon -->
-    <link rel="icon" href="/Assets/imgs/logo/logo-v2 (1).svg" />
+    <link rel="icon" href="Assets/imgs/logo/logo-v2 (1).svg" />
     <!-- Import Wow.js Library -->
 
     <!-- Import FontAwesome -->
     <link
       rel="stylesheet"
-      href="/Assets/Libs/fontawesome-pro-5.15.3-web/css/all.min.css"
+      href="Assets/Libs/fontawesome-pro-5.15.3-web/css/all.min.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
     <!-- Import Bootsrap 5 CDN -->
     <link
       rel="stylesheet"
-      href="/Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+      href="Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.rtl.min.css"
     />
 
     <!-- Import Styles File -->
-    <link rel="stylesheet" href="/Assets/Css/main-styles.css" />
+    <link rel="stylesheet" href="Assets/Css/main-styles.css" />
   </head>
   <body>
     <!-- Start Loading -->
-    <!-- <div class="loader">
-      <img src="/Assets/imgs/loading/loading-2.jpg"  alt="Loading ....">
-    </div> -->
+    <div class="loader">
+      <img src="Assets/imgs/loading/loading-2.jpg" alt="Loading ...." />
+    </div>
     <!-- END Loading -->
 
     <!-- Start Header Nav -->
     <div class="container-fluid w-100" id="header-nav">
-      <div class="row pt-3">
-        <div class="col px-3 d-flex justify-content-around align-items-center">
+      <div class="row pt-2">
+        <div class="col px-4 d-flex justify-content-around align-items-center">
           <!--Start Dedicated scroll -->
           <div id="DedicatedScroll"></div>
           <!--END Dedicated scroll -->
-          <div class="col-lg-3 header-item header-item1">
+          <div class="col-lg-4">
             <!-- modal-login -->
-            <div class=" ">
+            <div>
               <span class="span-modal">
                 <button
                   type="button"
@@ -117,9 +123,8 @@
               </form>
             </div>
           </div>
-          <!--END Modal Parent  -->
           <div
-            class="col-lg-7 flex-shrink-1 d-none d-md-flex d-lg-flex justify-content-start align-items-center"
+            class="col-lg-5 w-100 d-none d-md-flex d-lg-flex justify-content-start align-items-center"
           >
             <div
               class="col-6 workTime d-flex justify-content-center align-items-center"
@@ -136,9 +141,9 @@
               <i class="fas fa-clock text-white"></i>
             </div>
           </div>
-          <div class="col-lg-2 d-flex justify-content-end">
+          <div class="col-lg-3 d-flex justify-content-end">
             <!-- Start Switch LightMode -->
-            <div class="switch bg-warning">
+            <div class="switch">
               <div class="fliker"></div>
               <div class="moon"></div>
             </div>
@@ -146,11 +151,14 @@
           </div>
         </div>
       </div>
+
       <!-- Start Navbar Menu -->
       <div class="container-fluid p-0">
         <div class="row bg-light mt-2 border border-bottom">
           <div class="col d-flex justify-content-around align-items-center">
-            <div class="col-lg-3 d-flex justify-content-start align-items-center">
+            <div
+              class="col-lg-3 d-flex justify-content-start align-items-center"
+            >
               <!-- <div class="search-bar mt-1">
                 <input type="text" class="search-input" id="search-input" placeholder="جستجو کنید">
                 <div class="search-btn">
@@ -164,15 +172,15 @@
                 <div
                   class="reserve-btn d-flex justify-content-center align-items-center"
                 >
-                  <a href="reserve.html" class="reserve-btn--link">
+                  <a href="reserve.html" class="reserve-btn--link text-dark">
                     درخواست ملاقات</a
                   >
                 </div>
               </div>
               <div class="col d-flex justify-content-center align-items-center">
                 <div class="contact-text text-right px-2">
-                  <span> با ما تماس بگیرید</span>
-                  <span>۰۲۱-۳۵۴۸-۲۸۶۹</span>
+                  <span class="text-dark"> با ما تماس بگیرید</span>
+                  <span class="text-dark" dir="rtl">۰۲۱-۳۵۴۸-۲۸۶۹</span>
                 </div>
                 <span>
                   <i class="fa fa-phone phone-icon"></i>
@@ -185,23 +193,33 @@
                   class="header-top-menu m-auto d-none d-md-block d-lg-block d-xl-block d-xxl-block"
                 >
                   <nav>
-                    <li><a href="index.html" class="link hover-3"> خانه</a></li>
                     <li>
-                      <a href="about.html" class="link hover-3"> درباره ما</a>
+                      <a href="index.html" class="link hover-3 text-dark">
+                        خانه</a
+                      >
                     </li>
                     <li>
-                      <a href="services.html" class="link hover-3"> خدمات</a>
+                      <a href="about.html" class="link hover-3 text-dark">
+                        درباره ما</a
+                      >
                     </li>
                     <li>
-                      <a href="questions.html" class="link hover-3"
+                      <a href="services.html" class="link hover-3 text-dark">
+                        خدمات</a
+                      >
+                    </li>
+                    <li>
+                      <a href="questions.html" class="link hover-3 text-dark"
                         >از دکتر بپرسید</a
                       >
                     </li>
                     <li>
-                      <a href="blog.html" class="link hover-3"> مجله سلامت</a>
+                      <a href="blog.html" class="link hover-3 text-dark">
+                        مجله سلامت</a
+                      >
                     </li>
                     <li>
-                      <a href="contactUs.html" class="link hover-3">
+                      <a href="contactUs.html" class="link hover-3 text-dark">
                         تماس باما</a
                       >
                     </li>
@@ -239,24 +257,28 @@
     <!-- Start Header Content -->
     <div class="container-fluid">
       <div class="row">
-        <section class="header-content">
-          <div class="d-none d-md-block col-lg-7 p-0">
-            <img
-              src="/Assets/imgs/doctor-img/header-img.png"
-              alt="doctor-img"
-              class="w-100"
-            />
+        <section class="col header-content">
+          <div class="col pt-3 w-100 h-100 d-none d-sm-block">
+            <div class="header-content-boxImg w-100 h-100">
+              <img
+                src="Assets/imgs/doccure/hero.png"
+                alt="doctor-img"
+                class="w-100"
+              />
+            </div>
           </div>
-          <div class="col-lg-5 p-5">
+          <div class="col w-100 h-100 p-5">
             <div
               class="header-content-boxRight d-flex align-items-center flex-column"
             >
               <div class="mt-4 Online-consultation" id="Online-consultation">
                 <p class="Online-consultation-text">کلینیک آنلاین پزشکی</p>
               </div>
-              <h3 class="mt-4">کامل ترین راه حل سلامتی در دستان شماست</h3>
-              <p>
-                دکتر ساینا - سامانه رزرو نوبت دکتر آنلاین و خدمات مشاوره پزشکی
+              <h3 class="pt-2">کامل ترین راه حل سلامتی در دستان شماست</h3>
+              <p class="pt-4">
+                پورتال پزشکی این سایت مربوط به یک بیمارستان و یا مرکز پزشکی
+                می‌شود که حاوی اطلاعات جامعی از پزشکان، ساعات کاری، مکان هاو
+                رزرو نوبت اینرنتی میباشد
               </p>
             </div>
           </div>
@@ -266,63 +288,138 @@
     <!-- END Header Content -->
 
     <!-- Start Services Box -->
-    <div class="container-fluid" id="services">
-      <h5 class="pt-4 text-center">بهترین خدمات پزشکی و درمانی ما</h5>
-      <div class="row px-3 my-3">
-        <div class="col-md-6 col-lg-3">
-          <div class="services-item w-100">
-            <img
-              src="./Assets/imgs/icons/counseling.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>پزشک مشاور</h5>
-              <h6 class="text-center pt-3">خدمات فوری اورژانسی</h6>
-            </span>
+    <div class="container-fluid border border-bottom border-top" id="services">
+      <div class="row py-5 px-3">
+        <div class="col-md-8 col-lg-8">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="col-sm-6 col-md-3 w-100 h-100">
+                  <div class="services-item w-100">
+                    <img
+                      src="./Assets/imgs/icons/counseling.png"
+                      alt="chemistry.png"
+                      width="60px"
+                      height="60px"
+                    />
+                    <span class="mx-3">
+                      <h5>مشاوره فوری</h5>
+                      <h6 class="text-center pt-3">
+                        امکان دریافت مشاوره آنلابن فوری با پزشک منتخب شما
+                      </h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-sm-6 col-md-3 w-100 h-100">
+                  <div class="services-item w-100">
+                    <img
+                      src="./Assets/imgs/icons/emergency.png"
+                      alt="chemistry.png"
+                      width="60px"
+                      height="60px"
+                    />
+                    <span class="mx-3">
+                      <h5>خدمات اورژانس</h5>
+                      <h6 class="text-center pt-3">
+                        ارائه خدمات اورژانس تصویری و تلفنی با پاسخگویی سریع
+                      </h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-sm-6 col-md-3 w-100 h-100">
+                  <div class="services-item w-100">
+                    <img
+                      src="./Assets/imgs/icons/Laboratory.png"
+                      alt="chemistry.png"
+                      width="60px"
+                      height="60px"
+                    />
+                    <span class="mx-3">
+                      <h5>راه حل ارتوپدی</h5>
+                      <h6 class="text-center pt-3">
+                        خدمات ارتوپدی و درمان بیماریهای مفاصل توسط متخصصین
+                      </h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-sm-6 col-md-3 w-100 h-100">
+                  <div class="services-item w-100">
+                    <img
+                      src="./Assets/imgs/icons/favicon.png"
+                      alt="chemistry.png"
+                      width="60px"
+                      height="60px"
+                    />
+                    <span class="mx-3">
+                      <h5>خدمات دندان</h5>
+                      <h6 class="text-center pt-3">
+                        ارائه نکات مراقبت های بهداشتی دهان و دندان بیماران
+                      </h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-sm-6 col-md-3 w-100 h-100">
+                  <div class="services-item w-100">
+                    <img
+                      src="./Assets/imgs/icons/favicon.png"
+                      alt="chemistry.png"
+                      width="60px"
+                      height="60px"
+                    />
+                    <span class="mx-3">
+                      <h5>بهبود سریع</h5>
+                      <h6 class="text-center pt-3">
+                        امکان بهبود سریع بیمار با استفاده از پزشکان متخصص
+                      </h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-sm-6 col-md-3 w-100 h-100">
+                  <div class="services-item w-100">
+                    <img
+                      src="./Assets/imgs/icons/favicon.png"
+                      alt="chemistry.png"
+                      width="60px"
+                      height="60px"
+                    />
+                    <span class="mx-3">
+                      <h5>حضور بیمار</h5>
+                      <h6 class="text-center pt-3">
+                        ارجاع و انتقال فوری و ایمن بیمار به مراکز درمانی و تخصصی
+                      </h6>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="services-item w-100">
-            <img
-              src="./Assets/imgs/icons/emergency.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>خدمات اورژانس</h5>
-              <h6 class="text-center pt-3">خدمات فوری اورژانسی</h6>
-            </span>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="services-item w-100">
-            <img
-              src="./Assets/imgs/icons/Laboratory.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>درمان کانال ریشه</h5>
-              <h6 class="text-center pt-3">خدمات فوری اورژانسی</h6>
-            </span>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="services-item w-100">
-            <img
-              src="./Assets/imgs/icons/favicon.png"
-              alt="chemistry.png"
-              width="60px"
-              height="60px"
-            />
-            <span class="mx-3">
-              <h5>اورژانس دندانپزشکی</h5>
-              <h6 class="text-center pt-3">خدمات فوری اورژانسی</h6>
-            </span>
+
+        <div class="col-md-4 col-lg-4 bg-light border border-1 border-start">
+          <div
+            class="services-box-content text-right d-flex flex-column align-items-center"
+          >
+            <sapn class="text-right pt-4 service-title">خدمات</sapn>
+            <h4 class="service-h4 pt-3 text-dark">
+              بهتریت خدمات و درمان آنلاین پرطرفدار ما برای مشتریان
+            </h4>
+            <p class="text-center pt-4 service-p text-dark">
+              موفقیت بیمارستان ها و ارائه دهندگان خدمات پزشکی و بهداشتی بستگی به
+              کیفیت خدمات آنها دارد. اما زمانی که ما اطلاعات زیادی برای تصمیم
+              گیری نداریم، اهمیت این موضوع بیشتر می شود. اکثر مردم از یک سایت .
+              پزشکی برای دریافت اطلاعات استفاده می کنند
+            </p>
           </div>
         </div>
       </div>
@@ -341,132 +438,145 @@
       </div>
     </div>
     <!-- END Introduce Doctors -->
-    <!-- Start Banner -->
-    <!-- <div class="container-fluid my-5" id="banner">
-      <div class="row">
-        <div class="banner-wrapper">
-          <div class="banner-wrapper-img">
-            <a href="#">
-              <img
-                src="./Assets/imgs/banner/banner-2.jpg"
-                title="banner-img"
-                alt="banner-img.jpg"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- END Banner -->
 
-    <!-- Start Footer Section -->
-    <!-- <div class="item column" id="footer">
-      <footer class="footer">
-        <div class="footer-item_2">
-          <div class="footer-form p-3">
-            <h4>عضویت در خبرنامه</h4>
-            <p class="text-justify my-4">
-              برای اطلاع از اخبار جدید در خبرنامه عضو شوید
-            </p>
-            <div class="footer-form_wrapper">
-              <form action="#" class="footer-form_wrapper-inner">
-                <input
-                  type="email"
-                  placeholder="ورود آدرس ایمیل"
-                  class="footer-form_wrapper-inner--input p-2"
-                />
-                <button type="submit" class="footer-form_wrapper-inner--btn">
-                  <i
-                    class="fa fa-arrow-left footer-form_wrapper-inner--icon"
-                  ></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="footer-item_1">
-          <div class="footer-boxLeft p-3">
-            <h6>: بیمه های طرف قرارداد</h6>
-            <ul class="Insurance-imgs">
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-1.png" alt="" />
-              </li>
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-2.png" alt="" />
-              </li>
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-3.png" alt="" />
-              </li>
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-4.png" alt="" />
-              </li>
-            </ul>
-          </div>
-          <div class="footer-boxCenter p-3">
-            <h6>لینک های مفید</h6>
-            <div class="footer-boxCenter_links">
-              <ul>
-                <li><a class="text-white" href="#">توصیه پزشکی</a></li>
-                <li><a class="text-white" href="#">پشتیبانی </a></li>
-                <li><a class="text-white" href="#"> تعرفه ها</a></li>
-                <li><a class="text-white" href="#"> قوانین</a></li>
-              </ul>
-              <ul>
-                <li><a class="text-white" href="#">صفحه اصلی</a></li>
-                <li><a class="text-white" href="#"> پرسش ها</a></li>
-                <li><a class="text-white" href="#">مجله سلامت</a></li>
-                <li><a class="text-white" href="#">ارتباط باما</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-boxRight p-3">
-            <h6>در باره ما بیشتر بدانید</h6>
-            <div class="footer-boxRight_item">
-              <p class="text-right my-3">
-                سایت پزشکی یا وب سایت پزشکی یک وسیله ارتباطی بسیار راحت و مفید
-                برای شناسایی پزشکان، مراکز درمانی، کلینیک های پزشکی و غیره است
-                که راهی سریع برای ارتباط بهتر با بیماران، رزرو نوبت به روشی آسان
-                و معرفی مراکز درمانی آنها است
+    <!-- Start Features -->
+    <div class="container-fluid my-5" id="features">
+      <div class="row">
+        <div class="col py-4 d-flex justify-content-around align-items-center">
+          <div class="col-sm-6">
+            <div
+              class="features-box-content p-3 d-flex text-right flex-column align-items-center"
+            >
+              <span class="pt-3 features-txt">امکانات ما</span>
+              <h5 class="pt-3">
+                پزشکان و پرستاران برای ارائه خدمات پزشکی برای همه بیماران در
+                دسترس میباشند
+              </h5>
+              <p class="pt-3 features-p">
+                سریعترین و معتبرترین وبسایت در بین ارائه دهندگان خدمات پزشکی و
+                بهداشتی در سراسر ایران
               </p>
-              <div class="footer-boxRight_item--social-icons">
-                <ul class="footer-boxRight_item--social-icons_ul">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-linkedin"></i></a>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </ul>
-                <h6>مارا دنبال کنید :</h6>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mt-2">
+                  <div
+                    class="w-100 features-box-item rounded-3 bg-light d-flex justify-content-center align-items-center"
+                  >
+                    <p class="text-dark">تیم درمانی باکیفیت بالا</p>
+                    <i class="fa fa-tint features-icon"></i>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                  <div
+                    class="w-100 features-box-item rounded-3 bg-light d-flex justify-content-center align-items-center"
+                  >
+                    <p class="text-dark">   بیمارستان چند تخصصی</p>
+                    <i class="fa fa-arrow-left features-icon"></i>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                  <div
+                    class="w-100 features-box-item rounded-3 bg-light d-flex justify-content-center align-items-center"
+                  >
+                    <p class="text-dark">خدمات دندانپزشکی </p>
+                    <i class="fa fa-arrow-left features-icon"></i>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                  <div
+                    class="w-100 features-box-item bg-light rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                    <p class="text-dark">طرف قرارداد تمامی بیمه ها</p>
+                    <i class="fa fa-arrow-left features-icon"></i>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                  <div
+                    class="w-100 features-box-item bg-light rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                    <p class="text-dark"> متخصصین حرفه ای پزشکی</p>
+                    <i class="fa fa-arrow-left features-icon"></i>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                  <div
+                    class="w-100 features-box-item bg-light rounded-3 d-flex justify-content-center align-items-center"
+                  >
+                    <p class="text-dark">پاسخگویی سریع و درمان تضمینی</p>
+                    <i class="fa fa-arrow-left features-icon"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div
+            class="col-sm-6 h-100 d-none d-sm-block d-lg-block d-xl-block d-xxl-block"
+          >
+            <div class="features-box-img w-100">
+              <img
+                src="Assets/imgs/doccure/feature.png"
+                class="w-100 pt-5 d-flex justify-content-center align-items-center"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        <a href="#up" id="arrow-up"
-          ><i class="fa fa-arrow-up arrow-up_icon" aria-hidden="true"></i
-        ></a>
-      </footer>
-    </div> -->
+      </div>
+    </div>
+    <!-- END Features -->
+
+    <!-- Start Footer Section -->
+
     <!-- END Footer Section -->
 
-
-
-
-
-
-
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Bootsrap Files-->
-    <script src="/Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
-    <script src="/Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
-    <script src="/Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
-
+    <script src="Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
 
     <!-- My Script Files -->
-    <script src="/Assets/Js/details.js"></script>
-    <script src="/Assets/Js/darkMode.js"></script>
-    <script src="/Assets/Js/modal.js"></script>
-    <script src="/Assets/Js/myScripts.js"></script>
+    <script src="Assets/Js/details.js"></script>
+    <script src="Assets/Js/arrowUp.js"></script>
+    <script src="Assets/Js/darkMode.js"></script>
+    <script src="Assets/Js/modal.js"></script>
+    <script src="Assets/Js/myScripts.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        freeMode: true,
+        loop: true,
+        autoplay: {
+          delay: 400,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          425: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+        },
+      });
+    </script>
   </body>
 </html>

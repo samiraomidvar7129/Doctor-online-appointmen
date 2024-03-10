@@ -1,4 +1,4 @@
-/* .loader{
+.loader{
     position: fixed;
     z-index: 99;
     top: 0;
@@ -32,4 +32,4 @@
     100%{
         transform: rotate(360deg);
     }
-} */
+}

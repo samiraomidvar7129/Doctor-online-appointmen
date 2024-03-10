@@ -8,7 +8,7 @@
 @import './_HeaderContent.css';
 @import './_Services-item.css';
 @import './_MySwiper.css';
-@import './_Banner.css';
+@import './_Features.css';
 @import './_Contact.css';
 @import './_Footer.css';
 @import './_Doctors-advice.css';
@@ -25,7 +25,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'MyFont'; 
-    user-select: none;   
     border: none;
     outline: 0;
 }
@@ -56,20 +55,5 @@ a{
     color: #08B89D;
 }
 
-.header-top,.item,.header-item1{
-    display:flex; 
-    align-items: center;
-}
-.header-item{
-    display: flex;
-} 
-/* .div-style{
-    width: 600px;
-    height: 400px;
-    padding: 30px;
-} */
-.div-item{
-    width: 200px;
-    height: 300px;
-}
+
 

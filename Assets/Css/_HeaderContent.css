@@ -13,10 +13,8 @@
     height: 100%;
 }
 .header-content-boxRight p{
-    font-size: 15px;
-    color: #aaa;
+    font-size: 13px;
     line-height: 33px;
-    margin-top: 20px;
 }
 
 div.Online-consultation p{
@@ -26,7 +24,9 @@ div.Online-consultation p{
     animation:  opacity;
 }
 
-
+.header-content-boxImg{
+    overflow: hidden;
+}
 
 
 
