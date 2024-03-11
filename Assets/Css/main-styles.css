@@ -20,40 +20,28 @@
 
 
 
-*{
+*,
+*::after,
+*::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'MyFont'; 
     border: none;
     outline: 0;
-}
-html{
-    scroll-behavior: smooth !important;
-}
-
-li,ul,li{
     list-style: none;
 }
+html,body{
+    scroll-behavior: smooth !important;
+}
+a,
+a:active,
+a:hover{
+    text-decoration: none;
+}
+
 small{
     text-align: right !important;
 }
-
-a,
-a:hover,
-a:active{
-    text-decoration: none;
-}
-a:hover,
-.a:active{
-    color: #010101;
-}
-a{
-    color: #828080;
-}
-.active{
-    color: #08B89D;
-}
-
 
 
