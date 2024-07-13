@@ -2,106 +2,25 @@ body{
     position: relative;
 }
 
-.span-modal button{
+.header-nav_login--itemRight{
+    width: 80px;
+    height: 100%;
+background-color: rgb(14,130,253);
+margin-left: 5px;
+padding: 5px;
+border-radius: 4px;
+font-size: 15px;
+}
     width: 30px;
     height: 30px;
     border: none;
     outline:none;
     background-color: #fff;
     margin-top: 3px;
-}
-.span-modal button .modal-icon{
-    font-size: 14px;
-    color: rgb(11,183,181);
+
+.login-icon{
+    font-size: 12px;
+    color: #ffff;
 }
 
-.modal-parent{
-    text-align: right;
-    position: fixed;
-    top: 10px;
-    left: 50%;
-    display: none;
-    transform: translate(-50%,10%) scale(1.2);
-    width:300px;
-    height: auto;
-    padding: 15px;
-    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
-    border-radius: 10px;
-    background-color:#fff;
-    z-index: 20;
-}
-.active{
-    border: 1px solid #08B89D;
-}
-.modal-parent .close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(11,183,181); 
-    color: #fff;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 15px;
-    cursor: pointer;
-}
 
-.modal-parent  .form h2{
-    text-align: center;
-    margin: 10px 0 20px;
-    font-size:16px;
-}
-
-.modal-parent  .form .form-element{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: end;
-}
-
-.modal-parent  .form .form-element label{
-    margin-left: 25px;
-    font-size: 13px ;
-    color: #000;
-    text-align: right;
-}
-
- .modal-parent  .form .form-element input[type="text"],
- .modal-parent  .form .form-element input[type="password"]{
-    margin-top: 5px;
-    display: block;
-    width: 100%;
-    padding: 5px;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 5px;
- }
-::placeholder{
-    font-size: 7px !important;
-    font-weight: 600;
-}
-
-.modal-parent  .form .form-element button{
-    width: 100%;
-    height: 25px;
-    font-size: 10px;
-    background-color: rgb(11,183,181);  
-    color: #fff;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.modal-parent .form .form-element a{
- display: block;
- text-align: right;
- font-size: 10px;
- color: #1a79ca;
- font-weight:600;
-}
-
-.display-hide{
-    display: none;
-    width: 100%;
-    height: 10px;
-}

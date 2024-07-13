@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,263 +37,127 @@
     </div>
     <!-- END Loading -->
 
-    <!-- Start Header Nav -->
-    <div class="container-fluid w-100" id="header-nav">
-      <div class="row pt-2">
-        <div class="col px-4 d-flex justify-content-around align-items-center">
-          <!--Start Dedicated scroll -->
-          <div id="DedicatedScroll"></div>
-          <!--END Dedicated scroll -->
-          <div class="col-lg-4">
-            <!-- modal-login -->
-            <div>
-              <span class="span-modal">
-                <button
-                  type="button"
-                  value=""
-                  class="p-1 rounded btn-modal"
-                  title="modal"
-                >
-                <i class=" fa fa-regular fa-user modal-icon"></i>
-                </button>
-              </span>
+      <!-- Start Navbar Menu -->
+      <div class="container-fluid w-100" id="header-nav">
+      <div class="container p-0">
+        <div class="row d-flex justify-content-center align-items-center text-center bg-light">
+          <div class="col-md-3 col-lg-3 col-xl-3 col-xl-3 d-none d-sm-block">
+            <div class="header-nav_logoBox">
+              <img src="./Assets/imgs/logo/logo.png" alt="logo-img" />
             </div>
-            <!--Start Modal Parent -->
-            <div class="modal-parent">
-              <div class="close-btn">&times;</div>
-              <form
-                action=""
-                method="post"
-                class="form"
-                id="form-modal"
-                novalidate
+          </div>   
+          <div class="col-md-6 col-lg-6 col-xl-6 col-xl-6">
+            <div class="header-nav_item pt-2 d-flex justify-content-start align-items-end">
+              <div
+                class="header-nav_item--menu  d-none d-md-block d-lg-block d-xl-block d-xxl-block"
               >
-                <h2>ورود / عضویت</h2>
-                <div class="form-element">
-                  <label for="user-name"> :نام و نام خانوادگی </label>
-                  <input
-                    type="text"
-                    class="active"
-                    id="user-name"
-                    placeholder="  نام کاربری شما"
-                    data-validation="notEmpty"
-                  />
-                  <div
-                    class="display-hide show-erro"
-                    id="validate-userName"
-                  ></div>
-                </div>
-                <div class="form-element">
-                  <label for="user-email"> :ایمیل </label>
-                  <input
-                    type="text"
-                    id="user-email"
-                    placeholder="ایمیل شما"
-                    data-validation="notEmpty isEmail"
-                  />
-                  <div
-                    class="display-hide show-erro"
-                    id="validate-userEmail"
-                  ></div>
-                </div>
-                <div class="form-element">
-                  <label for="user-password show-erro"> :رمزعبور </label>
-                  <input
-                    type="password"
-                    id="user-password"
-                    placeholder=" رمز عبور شما"
-                    data-validation="isPassword"
-                  />
-                  <div class="display-hide" id="validate-userPassword"></div>
-                </div>
-                <div class="form-element d-flex w-100 bg-warning">
-                  <span>
-                    <label for="remember-me" class="checkmark">
-                      مرا به خاطر بسپار</label
-                    ></span
-                  >
-                  <input type="checkbox" id="rememmber-me" />
-                </div>
-                <div class="form-element">
-                  <button type="submit">عضویت</button>
-                </div>
-                <div class="form-element">
-                  <a href="">رمز خود را از یاد برده اید ? کلیک کنید</a>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-5 w-100 d-none d-md-flex d-lg-flex justify-content-start align-items-center" >
-            <div
-              class="col-6 workTime d-flex flex-row-reverse  justify-content-center align-items-center"
-            >
-              <span class="text-white px-2">  :  شبکه های اجتماعی </span>
-              <div class="social-icons d-flex justify-content-center align-items-center">
-                <a href="#"><i class="fab  fa-linkedin-in social-icons text-white mx-1"></i></a>
-                <a href="#"><i class="fab fa-instagram social-icons text-white mx-1"></i></a>
-                <a href="#"><i class="fab  fa-twitter social-icons text-white mx-1"></i></a>
-                <a href="#"><i class="fab  fa-facebook-f social-icons text-white mx-1"></i></a>
+                <ul class="header-nav_item--menu-list d-flex justify-content-center align-items-center">
+                  <li>
+                    <a href="index.html" class="header-nav_item--link hover-3 text-dark">
+                      خانه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                       دکترها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                      بیماران</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html" class="header-nav_item--link hover-3 text-dark">
+                      درباره ما</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="header-nav_item--link hover-3 text-dark">
+                      خدمات</a
+                    >
+                  </li>
                 
+                  <li>
+                    <a href="contactUs.html" class="header-nav_item--link hover-3 text-dark">
+                      تماس باما</a
+                    >
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div
-              class="col-lg-6 workTime d-flex justify-content-center align-items-center"
-            >
-              <span class="text-white px-2"
-                >ساعات کاری : شنبه - پنجشنبه :  ۸ صبح الی ۹ شب</span
-              >
-              <i class="far fa-clock text-white"></i>
+              <!-- Hamburger menu for mobile -->
+              <div class="hamburger d-block d-md-none">
+                <div class="hamburger-icon">
+                  <i class="fas fa-bars icon-bar"></i>
+                </div>
+                <ul class="hamburger-menu-list">
+                  <li><a href="index.html" class="link">خانه</a></li>
+                  <li>
+                    <a href="questions.html" class="link">از دکتر بپرسید</a>
+                  </li>
+                  <li><a href="blog.html" class="link">مجله سلامت</a></li>
+                  <li><a href="contactUs.html" class="link">تماس باما</a></li>
+                </ul>
+              </div>
+              <!-- Hamburger menu for mobile -->
             </div>
           </div>
-          <div class="col-lg-3 d-flex justify-content-end">
-            <!-- Start Switch LightMode -->
+          <div class="col-md-3 col-lg-3 col-xl-3 col-xl-3 d-flex justify-content-center align-items-center">
+           <div class="header-nav_login--wrapper d-flex justify-content-center align-items-center">
+            <div class="header-nav_login--itemRight text-light ">
+              <i class="fa fa-lock login-icon"></i>
+              <span class="login-btn">ورود</span>
+            </div>
+           <div class="header-nav_login--itemLeft">
             <div class="switch">
               <div class="fliker"></div>
               <div class="moon"></div>
             </div>
-            <!-- END Switch LightMode -->
+           </div>
+           </div>
           </div>
         </div>
       </div>
-
-      <!-- Start Navbar Menu -->
-      <div class="container-fluid p-0">
-        <div class="row bg-light mt-2 border border-bottom">
-          <div class="col d-flex justify-content-around align-items-center">
-            <div
-              class="col-lg-3 d-flex justify-content-start align-items-center"
-            >
-              <!-- <div class="search-bar mt-1">
-                <input type="text" class="search-input" id="search-input" placeholder="جستجو کنید">
-                <div class="search-btn">
-                  <i class="fa fa-search search-icon" id="search-icon"></i>
-                </div>
-                <div class="close-btn-icon">
-                  <i class="close-icon fa fa-times"></i>
-                </div>
-              </div> -->
-              <div class="col">
-                <div
-                  class="reserve-btn d-flex justify-content-center align-items-center"
-                >
-                  <a href="reserve.html" class="reserve-btn--link text-dark">
-                    درخواست ملاقات</a
-                  >
-                </div>
-              </div>
-              <div class="col d-flex justify-content-center align-items-center">
-                <div class="contact-text text-right px-2">
-                  <span class="text-dark"> با ما تماس بگیرید</span>
-                  <span class="text-dark" dir="rtl">۰۲۱-۳۵۴۸-۲۸۶۹</span>
-                </div>
-                <span>
-                  <i class="fa fa-phone phone-icon"></i>
-                </span>
-              </div>
-            </div>
-            <div class="col-lg-7">
-              <div class="header-item">
-                <div
-                  class="header-top-menu m-auto d-none d-md-block d-lg-block d-xl-block d-xxl-block"
-                >
-                  <nav>
-                    <li>
-                      <a href="index.html" class="link hover-3 text-dark">
-                        خانه</a
-                      >
-                    </li>
-                    <li>
-                      <a href="about.html" class="link hover-3 text-dark">
-                        درباره ما</a
-                      >
-                    </li>
-                    <li>
-                      <a href="services.html" class="link hover-3 text-dark">
-                        خدمات</a
-                      >
-                    </li>
-                    <li>
-                      <a href="questions.html" class="link hover-3 text-dark"
-                        >از دکتر بپرسید</a
-                      >
-                    </li>
-                    <li>
-                      <a href="blog.html" class="link hover-3 text-dark">
-                        مجله سلامت</a
-                      >
-                    </li>
-                    <li>
-                      <a href="contactUs.html" class="link hover-3 text-dark">
-                        تماس باما</a
-                      >
-                    </li>
-                  </nav>
-                </div>
-                <!-- Hamburger menu for mobile -->
-                <div class="hamburger d-block d-md-none">
-                  <div class="hamburger-icon">
-                    <i class="fas fa-bars icon-bar"></i>
-                  </div>
-                  <ul class="hamburger-menu-list">
-                    <li><a href="index.html" class="link">خانه</a></li>
-                    <li>
-                      <a href="questions.html" class="link">از دکتر بپرسید</a>
-                    </li>
-                    <li><a href="blog.html" class="link">مجله سلامت</a></li>
-                    <li><a href="contactUs.html" class="link">تماس باما</a></li>
-                  </ul>
-                </div>
-                <!-- Hamburger menu for mobile -->
-              </div>
-            </div>
-            <div class="col-lg-2">
-              <span>
-                <img src="./Assets/imgs/logo/logo-v2.svg" alt="" />
-              </span>
-            </div>
-          </div>
-        </div>
       </div>
-      <!-- END Navbar Menu -->
     </div>
-    <!-- END Header Nav -->
+      <!-- END Navbar Menu -->
 
     <!-- Start Header Content -->
-    <div class="container-fluid">
+    <div class="container ">
       <div class="row">
-        <section class="col header-content">
-          <div class="col pt-3 w-100 h-100 d-none d-sm-block">
-            <div class="header-content-boxImg w-100 h-100">
-              <img
-                src="Assets/imgs/doccure/header-img.png"
-                alt="doctor-img"
-                class="w-100"
-              />
-            </div>
-          </div>
-          <div class="col w-100 h-100 p-5">
-            <div
-              class="header-content-boxRight d-flex align-items-center flex-column"
-            >
-              <div class="mt-4 Online-consultation" id="Online-consultation">
-                <p class="Online-consultation-text">کلینیک آنلاین پزشکی</p>
-              </div>
-              <h3 class="pt-2">کامل ترین راه حل سلامتی در دستان شماست</h3>
-              <p class="pt-4">
-                پورتال پزشکی این سایت مربوط به یک بیمارستان و یا مرکز پزشکی
-                می‌شود که حاوی اطلاعات جامعی از پزشکان، ساعات کاری، مکان هاو
-                رزرو نوبت اینرنتی میباشد
+        <div class="col-sm-6 col-md-6 col-lg-6  col-xl-6 col-xxl-6  ">
+          <div
+            class="header-content_boxRight  w-100 h-100 d-flex justify-content-center align-items-center flex-column"
+          >
+            <div class=" header-content_boxRight--title   mt-4 d-flex" id="Online-consultation">
+              <p>
+                مشورت با               <p class="Online-consultation-text">  بهترین پزشکان</p>
+                در نزدیکی شما
               </p>
             </div>
+            <p class=" header-content_boxRight--mute pt-4">
+              پورتال پزشکی این سایت مربوط به یک بیمارستان و یا مرکز پزشکی
+              می‌شود که حاوی اطلاعات جامعی از پزشکان، ساعات کاری، مکان هاو
+              رزرو نوبت اینرنتی میباشد
+            </p>
           </div>
-        </section>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-3  d-none d-sm-block">
+          <div class="header-content-boxImg w-100 h-100 m-auto ">
+            <img
+              src="Assets/imgs/doccure/banner-img.png"
+              alt="doctor-img"
+              class="w-100"
+            />
+          </div>
+        </div>
       </div>
     </div>
     <!-- END Header Content -->
 
     <!-- Start Services Box -->
-    <div class="container-fluid " id="services">
-      <div class="row ">
+    <div class="container-fluid" id="services">
+      <div class="row">
         <div class="col-md-8 col-lg-8 p-0">
           <!-- Swiper -->
           <div class="swiper mySwiper">
@@ -446,7 +310,7 @@
     <!-- Start Features -->
     <div class="container-fluid my-5" id="features">
       <div class="row">
-        <div class="col  d-flex justify-content-around align-items-center">
+        <div class="col d-flex justify-content-around align-items-center">
           <div class="col-sm-6">
             <div
               class="features-box-content p-3 d-flex text-right flex-column align-items-center"
@@ -468,23 +332,23 @@
                     class="w-100 features-box-item rounded-3 bg-light d-flex justify-content-center align-items-center"
                   >
                     <p class="text-dark px-2">تیم درمانی باکیفیت بالا</p>
-                    <i class=" far fa-check-circle check-icon"></i>
+                    <i class="far fa-check-circle check-icon"></i>
                   </div>
                 </div>
                 <div class="col-md-6 mt-2">
                   <div
                     class="w-100 features-box-item rounded-3 bg-light d-flex justify-content-center align-items-center"
                   >
-                    <p class="text-dark px-2">   بیمارستان چند تخصصی</p>
-                    <i class=" far fa-check-circle check-icon"></i>
+                    <p class="text-dark px-2">بیمارستان چند تخصصی</p>
+                    <i class="far fa-check-circle check-icon"></i>
                   </div>
                 </div>
                 <div class="col-md-6 mt-2">
                   <div
                     class="w-100 features-box-item rounded-3 bg-light d-flex justify-content-center align-items-center"
                   >
-                    <p class="text-dark px-2">خدمات دندانپزشکی </p>
-                    <i class=" far fa-check-circle check-icon"></i>
+                    <p class="text-dark px-2">خدمات دندانپزشکی</p>
+                    <i class="far fa-check-circle check-icon"></i>
                   </div>
                 </div>
                 <div class="col-md-6 mt-2">
@@ -492,35 +356,33 @@
                     class="w-100 features-box-item bg-light rounded-3 d-flex justify-content-center align-items-center"
                   >
                     <p class="text-dark px-2">طرف قرارداد تمامی بیمه ها</p>
-                    <i class=" far fa-check-circle check-icon"></i>
+                    <i class="far fa-check-circle check-icon"></i>
                   </div>
                 </div>
                 <div class="col-md-6 mt-2">
                   <div
                     class="w-100 features-box-item bg-light rounded-3 d-flex justify-content-center align-items-center"
                   >
-                    <p class="text-dark px-2"> متخصصین حرفه ای پزشکی</p>
-                    <i class=" far fa-check-circle check-icon"></i>
+                    <p class="text-dark px-2">متخصصین حرفه ای پزشکی</p>
+                    <i class="far fa-check-circle check-icon"></i>
                   </div>
                 </div>
                 <div class="col-md-6 mt-2">
                   <div
                     class="w-100 features-box-item bg-light rounded-3 d-flex justify-content-center align-items-center"
                   >
-                    <p class="text-dark px-2"> پشتیبانی ۲۴ ساعته   </p>
-                    <i class=" far fa-check-circle check-icon"></i>
+                    <p class="text-dark px-2">پشتیبانی ۲۴ ساعته</p>
+                    <i class="far fa-check-circle check-icon"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="col-sm-6 h-100 d-none d-md-block "
-          >
+          <div class="col-sm-6 h-100 d-none d-md-block">
             <div class="features-box-img w-100">
               <img
                 src="Assets/imgs/doccure/01.png"
-                class="w-100  d-flex justify-content-center align-items-center"
+                class="w-100 d-flex justify-content-center align-items-center"
                 alt=""
               />
             </div>
@@ -531,24 +393,69 @@
     <!-- END Features -->
 
     <!-- Start Footer Section -->
-    <footer class="container-fluid" id="footeer">
-      <div class="row">
-        <div class="col d-flex justify-content-around align-items-center">
-          <div class="col-md-3">
+    <footer class="container-fluid py-3 h-auto" id="footer">
+      <div class="row d-flex flex-row-reverse justify-content-around align-items-center">
+          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
             <div class="member-item">
-              <p></p>
+              <p>
+                سلام دوست عزیز، ممنون که ما رو دنبال می‌کنی. اگر به راهنمایی
+                فوری نیاز داری حتما برامون ایمیل بزن تا در اسرع وقت باهات تماس
+                بگیریم.
+              </p>
               <form action="index.php">
-                <input type="email" name="email" id="email-input" placeholder="ایمیل خود را وارد کنید">
+                <input
+                  type="email"
+                  name="email"
+                  id="email-input"
+                  placeholder="ایمیل خود را وارد کنید"
+                />
                 <button type="submit" class="submit-btn">مشترک شدن</button>
               </form>
-
             </div>
-
           </div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-        </div>
+          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="access-links  d-flex  justify-content-center flex-column align-items-center">
+              <span class="text-center py-2">لینک های سریع</span>
+              <ul class=" d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3">
+                <li><a href="#">قرار ملاقات</a></li>
+                <li><a href="#">حریم خصوصی </a></li>
+                <li><a href="#">شرایط و ضوابط</a></li>
+                <li><a href="#">سوالات متداول</a></li>
+                <li><a href="#">درباره ما</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="location-links  bg-info   d-flex  justify-content-center flex-column align-items-center ">
+              <span class="text-center py-2">لینک های مفید</span>
+              <ul class="  d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3 ">
+                <li class=" text-start location-txt pt-2 d-flex justify-content-around align-items-center" >
+                  موقعیت : خراسان رضوی - مشهد - خیابان پاستور - ساختمان پزشکان ۷۳
+                  <i class="far fa-location location-icons"></i>
+                </li>
+                <li class=" text-start txt-phone location-txt pt-2 d-flex justify-content-end align-items-center" >
+                  .۲۱ - ۳۵۴۸- ۲۹۶۹ :  تلفن 
+                  <i class="far fa-phone location-icons"></i>
+                </li>
+                <li class=" text-start location-txt pt-2 d-flex justify-content-around align-items-center">
+                  yasaminomid9643@gmail.com : ایمیل 
+                   <i class="fas fa-envelope  location-icons"></i></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
+            <div class="blog-item">
+              <ul class="d-flex flex-wrap justify-content-around align-items-center">
+                <li><a href="#"><img src="Assets/imgs/blog/blog-1.jpg" class="w-50 px-2" alt=""></a></li>
+                <li><a href="#"><img src="Assets/imgs/blog/blog-2.jpg" class="w-50 px-2" alt=""></a></li>
+                <li><a href="#"><img src="Assets/imgs/blog/blog-3.jpg" class="w-50 px-2" alt=""></a></li>
+                <li><a href="#"><img src="Assets/imgs/blog/blog-1.jpg" class="w-50 px-2" alt=""></a></li>
+                <li><a href="#"><img src="Assets/imgs/blog/blog-2.jpg" class="w-50 px-2" alt=""></a></li>
+                <li><a href="#"><img src="Assets/imgs/blog/blog-3.jpg" class="w-50 px-2" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
       </div>
     </footer>
 
