@@ -18,6 +18,23 @@
     font-size: 12px;
     line-height: 32px;
 }
+
+.header-content_boxRight--item{
+background-color: rgb(14,130,253);
+border-radius: 5px;
+padding: 10px;
+text-align: center;
+}
+
+.header-content_boxRight--link{
+    color: #ffff;
+    font-size: 14px;
+}
+
+
+
+
+
 .header-content-boxImg{
     overflow: hidden;
 }
