@@ -58,3 +58,20 @@
     text-align: right;
     font-size: 14px;
 }
+
+
+.introduce-titleBox{
+    position: relative;
+}
+.introduce-title::before{
+    content: "+";
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 2;
+    color:  rgb(14,130,253);
+}
