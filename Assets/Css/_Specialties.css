@@ -20,7 +20,11 @@
     height: 100%;
     object-fit: cover;
   } */
+.Specialties-items{
+    border: 1px solid  rgb(14,130,253);
+    border-radius: 6px;
+}
 
   .Specialties-items_txt {
-    font-size: 11px;
+    font-size: 12px;
   }
