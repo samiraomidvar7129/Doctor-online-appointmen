@@ -24,6 +24,21 @@
     border: 1px solid  rgb(14,130,253);
     border-radius: 6px;
 }
+.specialties-titleBox{
+    position: relative;
+}
+.specialties-title::before{
+    content: "+";
+    width: 20px;
+    height: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    z-index: 2;
+    color:  rgb(14,130,253);
+}
 
   .Specialties-items_txt {
     font-size: 12px;
