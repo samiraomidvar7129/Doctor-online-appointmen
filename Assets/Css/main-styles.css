@@ -26,12 +26,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'MyFont'; 
+    font-family: 'myFont'; 
     border: none;
     outline: 0;
     list-style: none;
 }
-html,body{
+html{
     scroll-behavior: smooth !important;
 }
 a,
