@@ -13,6 +13,10 @@
     right: 2%;
     z-index: 11;
     border: 1px solid #fff;
+    transition: all .5s ease;
+}
+.switch:hover{
+    background-color:  rgba(27, 101, 179, 0.842);
 }
 .fliker{
     width: 25px;

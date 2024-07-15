@@ -24,13 +24,16 @@ background-color: rgb(14,130,253);
 border-radius: 5px;
 padding: 10px;
 text-align: center;
+transition: all .5s ease;
 }
 
 .header-content_boxRight--link{
-    color: #ffff;
-    font-size: 14px;
+    font-size: 12px;
+   
 }
-
+.header-content_boxRight--item:hover{
+    background-color:  rgba(27, 101, 179, 0.842);
+}
 .header-content-boxImg{
     overflow: hidden;
 }

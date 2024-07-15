@@ -1,26 +1,18 @@
-body{
-    position: relative;
+.header-nav_login--itemRight {
+  width: 80px;
+  height: 100%;
+  background-color: rgb(14, 130, 253);
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  transition: all 0.5s ease;
 }
 
-.header-nav_login--itemRight{
-    width: 80px;
-    height: 100%;
-background-color: rgb(14,130,253);
-margin-left: 5px;
-padding: 5px;
-border-radius: 4px;
-font-size: 15px;
+.header-nav_login--itemRight:hover {
+  background-color: rgba(27, 101, 179, 0.842);
 }
-    width: 30px;
-    height: 30px;
-    border: none;
-    outline:none;
-    background-color: #fff;
-    margin-top: 3px;
-
-.login-icon{
-    font-size: 12px;
-    color: #ffff;
+.login-icon {
+  font-size: 12px;
+  color: #ffff;
 }
-
-
