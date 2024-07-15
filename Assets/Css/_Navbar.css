@@ -100,13 +100,7 @@
     --_p: 100%;
     --_s: .3s;
 }
-a#counseling{
-    color: #010101;
-}
-a#counseling:hover,
-a#counseling:active{
-    color: #010101;
-}
+
 .header-nav_logoBox{
     display: flex;
     justify-content: flex-end;
