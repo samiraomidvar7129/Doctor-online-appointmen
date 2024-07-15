@@ -116,11 +116,11 @@ const createGroupBox = (id, Name, ImageUrl, NezamCode, Speciallity) => {
          <a href=${ "details.html?group=" + id } 
          class="mySwiper-list_item d-flex flex-column justify-content-center align-items-center   d-block w-100 h-100 ">
            <div class="class="mySwiper-list_item--imgBox">
-               <img src=${ImageUrl} class="rounded-pill d-block w-100 h-100 cover" alt="doctor-img">
+               <img src=${ImageUrl} class=" doctor-ImageUrl rounded-pill d-block w-100 h-100 cover" alt="doctor-img">
            </div>
-           <div class="name pt-3">${Name} </div>
-           <div class="pt-3">${Speciallity}</div>
-             <div class="pt-3">${NezamCode}  : کد نظام پزشکی </div>      
+           <div class="doctor-name pt-3">${Name} </div>
+           <div class=" doctor-Speciallity pt-3">${Speciallity}</div>
+             <div class=" doctor-NezamCode pt-3">${NezamCode}  : کد نظام پزشکی </div>      
            </a>
       </div>
           
