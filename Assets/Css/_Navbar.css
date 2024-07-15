@@ -83,6 +83,7 @@
 .header-nav_item--link{
     margin:0 10px;
     font-size: 12px;
+    font-weight: normal;
 }
 .hover-3 {
     --b: 0.1em;   /* the thickness of the line */
