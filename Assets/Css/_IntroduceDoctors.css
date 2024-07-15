@@ -7,15 +7,8 @@
     background-color: rgb(14,130,253);
     color: #fff;
 }
-.doctor-reserve{
-    font-size: 12px !important;
-    color: #ffff;
-    background-color: rgb(14,130,253);
-}
-.mySwiper-list_item:hover > .doctor-reserve{
-    background-color: #ffff;
-    color: rgb(14,130,253) ;
-}
+
+
 .doctor-ImageUrl {
     width:100px;
     height:100px;

@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop: true,
     autoplay: {
-      delay: 600,
+      delay: 800,
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -16,7 +16,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 10,
       },
       1024: {
