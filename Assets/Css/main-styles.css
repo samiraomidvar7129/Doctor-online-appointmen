@@ -1,16 +1,16 @@
 @import './_Fonts.css';
+@import './_Loader.css';
 @import './_DedicatedScroll.css';
 @import './_Login.css';
 @import './_Search-bar.css';
-@import './_Loader.css';
 @import './_Navbar.css';
 @import './_HeaderContent.css';
 @import './_Specialties.css';
+@import './_IntroduceDoctors.css';
 @import './_Contact.css';
 @import './_Footer.css';
 @import './_Doctors-advice.css';
 @import './_Doctors-Search.css';
-@import './_Responsive.css';
 
 
 
