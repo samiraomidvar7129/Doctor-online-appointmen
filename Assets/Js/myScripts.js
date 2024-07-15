@@ -113,15 +113,18 @@ const createGroupBox = (id, Name, ImageUrl, NezamCode, Speciallity) => {
   var mainBox = document.querySelector(".swiper-wrapper");
   mainBox.innerHTML+= `
    <div class="swiper-slide ">
-         <a href=${ "details.html?group=" + id } 
-         class="mySwiper-list_item d-flex flex-column justify-content-center align-items-center   d-block w-100 h-100 ">
-           <div class="class="mySwiper-list_item--imgBox">
-               <img src=${ImageUrl} class=" doctor-ImageUrl rounded-pill d-block w-100 h-100 cover" alt="doctor-img">
+         <div 
+         class="mySwiper-list_item p-3 d-flex flex-column justify-content-center align-items-center w-100 h-100 ">
+           <div class="class="mySwiper-list_item--imgBox d-flex justify-content-center align-items-center w-100 h-100">
+               <img src=${ImageUrl} class="doctor-ImageUrl rounded-pill d-block  alt="doctor-img">
            </div>
            <div class="doctor-name pt-3">${Name} </div>
            <div class=" doctor-Speciallity pt-3">${Speciallity}</div>
-             <div class=" doctor-NezamCode pt-3">${NezamCode}  : کد نظام پزشکی </div>      
-           </a>
+             <div class=" doctor-NezamCode pt-3">${NezamCode}  : کد نظام پزشکی </div>
+             <div class="doctor-reserve py-2 d-flex  justify-content-center align-items-center mt-3 w-100 >
+             <a  href=${ "details.html?group=" + id } Class="d-block w-100 h-100 p-2 text-center" >رزرو نوبت</a>
+             </div>      
+           </div>
       </div>
           
   `;
