@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>دکتر ساینا</title>
+    <title> تماس باما</title>
 
     <!-- FavIcon -->
-    <link rel="icon" href="/Assets/imgs/logo/logo-v2 (1).svg" />
-    <!-- Import Wow.js Library -->
+    <link rel="icon" href="/Assets/imgs/logo/logo.png" />
+
 
     <!-- Import FontAwesome -->
     <link
@@ -21,192 +21,128 @@
       href="/Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
     />
 
-    <!-- Import OWL Carousel Files -->
-    <link
-      rel="alternate"
-      href="/Assets/Css/OwlCarousel/owl.carousel.min.css"
-    />
-    <link
-      rel="alternate"
-      href=".Assets/Css/OwlCarousel/owl.theme.green.min.css"
-    />
+   
 
     <!-- Import Styles File -->
     <link rel="stylesheet" href="/Assets/Css/main-styles.css" />
   </head>
   <body>
 
+<!-- END Loading -->
 
+    <!-- Start DedicatedScroll Division -->
 
-   <!-- Start Loading -->
-   <div class="loader">
-    <img src="/Assets/imgs/loading/loading-2.jpg"  alt="Loading ....">
-  </div>
-  <!-- END Loading -->
+    <div id="dedicatedScroll"></div>
 
- <!-- Start Header Nav -->
- <div class="container-fluid w-100 " id="header-nav">
+    <!-- END DedicatedScroll Division -->
 
-  <div class="row pt-3">
-    <div class="col px-3 d-flex justify-content-around align-items-center">
-      <!--Start Dedicated scroll -->
-    <div id="DedicatedScroll"></div>
-    <!--END Dedicated scroll -->
-    <div class=" col-lg-3  header-item header-item1">
-  
-      <!-- modal-login -->
-     <div class=" ">
-      <span class="span-modal">
-        <button
-          type="button"
-          value=""
-          class="p-1 rounded btn-modal"
-          title="modal"
-        >
-          <i class="fa fa-user modal-icon"></i>
-        </button>
-      </span>
-     </div>
-      <!--Start Modal Parent -->
-      <div class="modal-parent">
-        <div class="close-btn">&times;</div>
-        <form
-          action=""
-          method="post"
-          class="form"
-          id="form-modal"
-          novalidate
-        >
-          <h2>ورود / عضویت</h2>
-          <div class="form-element">
-            <label for="user-name"> :نام و نام خانوادگی </label>
-            <input
-              type="text"
-              class="active"
-              id="user-name"
-              placeholder="  نام کاربری شما"
-              data-validation="notEmpty"
-            />
-            <div
-              class="display-hide show-erro"
-              id="validate-userName"
-            ></div>
-          </div>
-          <div class="form-element">
-            <label for="user-email"> :ایمیل </label>
-            <input
-              type="text"
-              id="user-email"
-              placeholder="ایمیل شما"
-              data-validation="notEmpty isEmail"
-            />
-            <div
-              class="display-hide show-erro"
-              id="validate-userEmail"
-            ></div>
-          </div>
-          <div class="form-element">
-            <label for="user-password show-erro"> :رمزعبور </label>
-            <input
-              type="password"
-              id="user-password"
-              placeholder=" رمز عبور شما"
-              data-validation="isPassword"
-            />
-            <div class="display-hide" id="validate-userPassword"></div>
-          </div>
-          <div class="form-element d-flex w-100 bg-warning ">
-           <span> <label for="remember-me" class="checkmark">
-            مرا به خاطر بسپار</label ></span>
-            <input type="checkbox" id="rememmber-me"  />
-          </div>
-          <div class="form-element">
-            <button type="submit">عضویت</button>
-          </div>
-          <div class="form-element">
-            <a href="">رمز خود را از یاد برده اید ? کلیک کنید</a>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!--END Modal Parent  -->
-    <div class="col-lg-7 flex-shrink-1  d-none d-md-flex  d-lg-flex justify-content-start align-items-center ">
-       <div class="col-6 d-flex justify-content-center align-items-center">
-         <span class="text-white px-2" >به کلینیک خوش آمدید </span>
-         <i class="fas fa-clock text-white "></i>
-       </div>
-       <div class="col-lg-6 d-flex justify-content-center align-items-center">
-        <span class="text-white px-2">شنبه - پنجشنبه  : ۸ صبح الی ۹ شب</span>
-        <i class="fas fa-clock text-white "></i>
-       </div>
-     </div>
-    <div class="col-lg-2 d-flex justify-content-end ">
-
-      <!-- Start Switch LightMode -->
-      <div class="switch">
-                <div class="fliker"></div>
-                <div class="moon"></div>
-      </div>
-      <!-- END Switch LightMode -->
-    </div>
-    </div>
-  </div>
-
-   <!-- Start Navbar Menu -->
-    <div class="row bg-light mt-2 border border-bottom">
-      <div class="col d-flex justify-content-around align-items-center">
-        <div class="col-lg-3 ">
-          <div class="search-bar mt-1">
-            <input type="text" class="search-input" id="search-input" placeholder="جستجو کنید">
-            <div class="search-btn">
-              <i class="fa fa-search search-icon" id="search-icon"></i>
+      <!-- Start Navbar Menu -->
+      <div class="container-fluid  " id="header-nav">
+      <div class="row  bg-light">
+        <section class="header-nav_items d-flex justify-content-between align-items-center ">
+          <div class="col-md-3 col-lg-3 col-xl-3 col-xl-3 d-none d-md-block">
+            <div class="header-nav_logoBox  w-50 h-100 m-auto">
+              <img src="./Assets/imgs/logo/logo.png" class="d-block w-100 h-100" alt="logo-img" />
             </div>
-            <div class="close-btn-icon">
-              <i class="close-icon fa fa-times"></i>
+          </div>   
+          <div class="col-md-6 col-lg-6 col-xl-6 col-xl-6">
+            <div class="header-nav_item pt-2 d-flex justify-content-center align-items-center">
+              <div
+                class="header-nav_item--menu  d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+              >
+                <ul class="header-nav_item--menu-list d-flex justify-content-center align-items-center">
+                  <li>
+                    <a href="index.html" class="header-nav_item--link hover-3 text-dark">
+                      خانه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                       دکترها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                      بیماران</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html" class="header-nav_item--link hover-3 text-dark">
+                      درباره ما</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="header-nav_item--link hover-3 text-dark">
+                      خدمات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contactUs.html" class="header-nav_item--link hover-3 text-dark">
+                      تماس باما</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Hamburger menu for mobile -->
+              <div class="hamburger d-block d-md-none">
+                <div class="hamburger-icon">
+                  <i class="fas fa-bars icon-bar"></i>
+                </div>
+                <ul class="hamburger-menu-list">
+                  <li>
+                    <a href="index.html" class="header-nav_item--link hover-3 text-dark">
+                      خانه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                       دکترها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                      بیماران</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html" class="header-nav_item--link hover-3 text-dark">
+                      درباره ما</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="header-nav_item--link hover-3 text-dark">
+                      خدمات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contactUs.html" class="header-nav_item--link hover-3 text-dark">
+                      تماس باما</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Hamburger menu for mobile -->
             </div>
           </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 col-xl-3 d-flex justify-content-center align-items-center">
+           <div class="header-nav_login--wrapper d-flex justify-content-center align-items-center">
+            <div class="header-nav_login--itemRight d-flex justify-content-between align-items-center text-light ">
+              
+              <a href="login.html" class="login-btn  d-block text-light w-100 h-100">ورود | ثبت نام</a>
+            </div>
+           <div class="header-nav_login--itemLeft">
+            <div class="switch">
+              <div class="fliker"></div>
+              <div class="moon"></div>
+            </div>
+           </div>
+           </div>
+          </div>
+        </section>
         </div>
-         <div class="col-lg-7  ">
-      <div class="header-item  ">
-        <div class="header-top-menu m-auto d-none d-md-block d-lg-block d-xl-block d-xxl-block ">
-          <nav>
-            <li><a href="index.html" class="link  hover-3 "> خانه</a></li>
-            <li><a href="about.html" class="link hover-3"> درباره ما</a></li>
-            <li><a href="services.html" class="link hover-3"> خدمات</a></li>
-            <li><a href="questions.html" class="link hover-3">از دکتر بپرسید</a></li>
-            <li><a href="blog.html" class="link hover-3"> مجله سلامت</a></li>
-            <li><a href="contactUs.html" class="link hover-3"> تماس باما</a></li>
-          </nav>
-        </div>
-      <!-- Hamburger menu for mobile -->
-         <div class="hamburger d-block d-md-none ">
-<div class="hamburger-icon">
-     <i class="fas fa-bars icon-bar"></i>
-</div>
-<ul class="hamburger-menu-list">
-    <li><a href="index.html" class="link">خانه</a></li>
-    <li><a href="questions.html" class="link">از دکتر بپرسید</a></li>
-    <li><a href="blog.html" class="link">مجله سلامت</a></li>
-    <li><a href="contactUs.html" class="link">تماس باما</a></li>
-</ul>
-         </div>
-      <!-- Hamburger menu for mobile -->
       </div>
-         </div>
-         <div class="col-lg2">
-          <span>
-            <img src="./Assets/imgs/logo/logo-v2.svg" alt="" />
-          </span>
-         </div>
-      </div>
-     
-    </div>
-   <!-- END Navbar Menu -->
-  
-
-</div>
-
-<!-- END Header Nav -->
+   
+      <!-- END Navbar Menu -->
 
       <!-- Start Contact Section -->
       <div class="item column my-5" id="contact">

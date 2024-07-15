@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 10,
     loop: true,
     autoplay: {
@@ -20,7 +20,7 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 10,
       },
     },
