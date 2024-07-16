@@ -102,13 +102,14 @@ const createMainBox = (data) => {
       myData.doctors[item].Name,
       myData.doctors[item].ImageUrl,
       myData.doctors[item].NezamCode,
+      myData.doctors[item].city,
       myData.doctors[item].Speciallity
     );
 
   }
 };
 
-const createGroupBox = (id, Name, ImageUrl, NezamCode, Speciallity) => {
+const createGroupBox = (id, Name, ImageUrl, NezamCode,city, Speciallity) => {
   var mainBox = document.querySelector(".swiper-wrapper");
   mainBox.innerHTML+= `
    <div class="swiper-slide ">
@@ -119,7 +120,11 @@ const createGroupBox = (id, Name, ImageUrl, NezamCode, Speciallity) => {
            </div>
            <div class="doctor-name pt-3">${Name} </div>
            <div class=" doctor-Speciallity pt-3">${Speciallity}</div>
-             <div class=" doctor-NezamCode pt-3">${NezamCode}  : کد نظام پزشکی </div>
+           <div class="d-flex justify-content-between align-items-center w-100">
+                        <div class=" doctor-NezamCode pt-3">    ن-پ :  ${NezamCode} </div>
+                        <div class=" doctor-city pt-3">  ${city} </div>
+
+           </div>
                 
            </a>
       </div>      
