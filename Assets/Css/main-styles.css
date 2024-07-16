@@ -24,7 +24,7 @@
     box-sizing: border-box;
     font-family: 'myFont'; 
     border: none;
-    outline: 0;
+    outline: none !important;
     list-style: none;
 }
 html{
