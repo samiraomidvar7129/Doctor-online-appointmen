@@ -24,12 +24,6 @@
     color: #fff;
 }
 
-
-.doctor-ImageUrl {
-    width:100px;
-    height:100px;
-    object-fit: cover;
-}
 .doctor-Speciallity,
 .doctor-NezamCode,
 .doctor-city {
