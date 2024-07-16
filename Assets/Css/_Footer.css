@@ -1,13 +1,46 @@
-#footer{
-    background-color: rgb(14,130,253);
-}
-.location-txt{
+
+.description-item_txt--p,
+.member-item_txt
+{
     font-size: 12px;
+    line-height: 32px;
+}
+.location-links_inner--item  span{
+    font-size: 11px;
+    margin-right: 7px;
+}
+.location-links_inner--item .location-icons,
+.location-links_inner--item .email-icons,
+.location-links_inner--item .phone-icons{
+    font-size: 12px !important;
 }
 
-.location-icons{
-margin-left: 20px
+.access-links_title,.location-links_title{
+    font-size: 14px;
+    font-weight: normal;
 }
-.txt-phone{
-    margin-left: 50px ;
+.access-links_inner--link{
+    font-size: 11px;
+    color: #010101;
+}
+
+#email-input{
+    border:  1px solid rgb(14,130,253);
+}
+#email-input{
+    font-size: 12px;
+    padding-right: 6px;
+    color: rgb(14,130,253);
+    caret-color: rgb(14,130,253);
+    text-align: right !important;
+}
+#email-input::placeholder{
+    color: rgb(14,130,253);
+}
+.submit-btn{
+    width: 40px;
+    height: 35px;
+    font-size: 11px;
+    background-color:rgb(14,130,253) ;
+    color: #ffff;
 }

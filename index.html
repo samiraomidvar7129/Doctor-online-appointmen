@@ -345,69 +345,67 @@
     <!-- END Features -->
 
     <!-- Start Footer Section -->
-    <footer class="container-fluid py-3 h-auto" id="footer">
-      <div class="row d-flex flex-row-reverse justify-content-around align-items-center">
-          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
+    <footer class="footer py-3 h-auto border border-top">
+      <div class="container ">
+        <div class="row d-flex flex-row-reverse justify-content-center align-items-center">
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
             <div class="member-item">
-              <p>
-                سلام دوست عزیز، ممنون که ما رو دنبال می‌کنی. اگر به راهنمایی
-                فوری نیاز داری حتما برامون ایمیل بزن تا در اسرع وقت باهات تماس
-                بگیریم.
+              <p class="member-item_txt">
+                سلام دوست عزیز، ممنون که ما رو دنبال می‌کنی   
               </p>
-              <form action="index.php">
-                <input
+              <form action="index.php" method="post" class="d-flex justify-content-center align-items-center">
+                <input class="py-2"
                   type="email"
                   name="email"
                   id="email-input"
                   placeholder="ایمیل خود را وارد کنید"
                 />
-                <button type="submit" class="submit-btn">مشترک شدن</button>
+                <button type="submit" class="submit-btn" value="">ارسال</button>
               </form>
             </div>
           </div>
-          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
             <div class="access-links  d-flex  justify-content-center flex-column align-items-center">
-              <span class="text-center py-2">لینک های سریع</span>
-              <ul class=" d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3">
-                <li><a href="#">قرار ملاقات</a></li>
-                <li><a href="#">حریم خصوصی </a></li>
-                <li><a href="#">شرایط و ضوابط</a></li>
-                <li><a href="#">سوالات متداول</a></li>
-                <li><a href="#">درباره ما</a></li>
+              <div class=" access-links_title text-center pt-3 ">لینک های سریع</div>
+              <ul class="access-links_inner d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3">
+                <li class="mt-2"><a class="access-links_inner--link" href="#">قرار ملاقات</a></li>
+                <li class="mt-2"><a class="access-links_inner--link" href="#">حریم خصوصی </a></li>
+                <li class="mt-2"><a class="access-links_inner--link" href="#">شرایط و ضوابط</a></li>
               </ul>
             </div>
           </div>
-          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <div class="location-links  bg-info   d-flex  justify-content-center flex-column align-items-center ">
-              <span class="text-center py-2">لینک های مفید</span>
-              <ul class="  d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3 ">
-                <li class=" text-start location-txt pt-2 d-flex justify-content-around align-items-center" >
-                  موقعیت : خراسان رضوی - مشهد - خیابان پاستور - ساختمان پزشکان ۷۳
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
+            <div class="location-links    d-flex  justify-content-center flex-column align-items-center ">
+              <div class=" location-links_title text-center ">لینک های مفید</div>
+              <div class="location-links_inner  d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3 ">
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center" >
                   <i class="far fa-location location-icons"></i>
-                </li>
-                <li class=" text-start txt-phone location-txt pt-2 d-flex justify-content-end align-items-center" >
-                  .۲۱ - ۳۵۴۸- ۲۹۶۹ :  تلفن 
-                  <i class="far fa-phone location-icons"></i>
-                </li>
-                <li class=" text-start location-txt pt-2 d-flex justify-content-around align-items-center">
-                  yasaminomid9643@gmail.com : ایمیل 
-                   <i class="fas fa-envelope  location-icons"></i></i>
-                </li>
-              </ul>
+                  <span>    مشهد - خیابان پاستور      </span>
+                </div>
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center" >
+                  <i class="far fa-phone phone-icons"></i>
+                  <span> ۰۹۳۳۹۶۱۰۸۴۱    </span>
+                </div>
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center">
+                  <i class="fas fa-envelope  email-icons"></i>
+                  <span> info@gmail.com </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class=" col-sm-6 col-md-3 col-lg-3 col-xl-3">
-            <div class="blog-item">
-              <ul class="d-flex flex-wrap justify-content-around align-items-center">
-                <li><a href="#"><img src="Assets/imgs/blog/blog-1.jpg" class="w-50 px-2" alt=""></a></li>
-                <li><a href="#"><img src="Assets/imgs/blog/blog-2.jpg" class="w-50 px-2" alt=""></a></li>
-                <li><a href="#"><img src="Assets/imgs/blog/blog-3.jpg" class="w-50 px-2" alt=""></a></li>
-                <li><a href="#"><img src="Assets/imgs/blog/blog-1.jpg" class="w-50 px-2" alt=""></a></li>
-                <li><a href="#"><img src="Assets/imgs/blog/blog-2.jpg" class="w-50 px-2" alt=""></a></li>
-                <li><a href="#"><img src="Assets/imgs/blog/blog-3.jpg" class="w-50 px-2" alt=""></a></li>
-              </ul>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
+            <div class="description-item d-flex flex-column justify-content-between align-items-center">
+              <div class="description-item_logo mb-3">
+                <img src="/Assets/imgs/logo/logo.png" class=" d-block w-50 h-50 cover m-auto" alt="logo-img">
+              </div>
+              <div class="description-item_txt">
+                <p class="description-item_txt--p">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                </p>
+              </div>
             </div>
           </div>
+        </div>
       </div>
     </footer>
 
