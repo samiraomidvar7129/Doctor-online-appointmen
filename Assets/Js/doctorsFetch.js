@@ -112,7 +112,7 @@ const createMainBox = (data) => {
 const createGroupBox = (id, Name, ImageUrl, NezamCode,city, Speciallity) => {
   var mainBox = document.querySelector(".swiper-wrapper");
   mainBox.innerHTML+= `
-   <div class="swiper-slide d-flex justify-content-center align-items-center text-center">
+   <div class="swiper-slide bg-light d-flex justify-content-center align-items-center text-center">
          <a href=${ "details.html?group=" + id } 
          class="mySwiper-list_item p-3 d-flex flex-column justify-content-center align-items-center w-100 h-100 ">
            <div class="class="mySwiper-list_item--imgBox d-flex justify-content-center align-items-center w-100 h-100">

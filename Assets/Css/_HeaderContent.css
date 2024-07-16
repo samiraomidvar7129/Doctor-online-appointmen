@@ -23,7 +23,6 @@
 background-color: rgb(14,130,253);
 border-radius: 5px;
 padding: 10px;
-text-align: center;
 transition: all .5s ease;
 }
 
@@ -37,9 +36,7 @@ transition: all .5s ease;
 .header-content-boxImg{
     overflow: hidden;
 }
-.header-content-boxImg img{
-    object-fit: cover;
-}
+
 
 
 
