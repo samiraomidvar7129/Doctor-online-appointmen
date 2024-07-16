@@ -52,25 +52,8 @@ const fadeOut = () => {
 
 fadeOut();
 
-// -------------------------------------
-// SearchBar Scripts
 
-// let  searchBtn=document.querySelector('.search-btn');
-// let searchInput=document.getElementById('search-input')
-// let searchBar=document.querySelector('.search-bar');
-// let closeBtnIcon=document.querySelector('.close-btn-icon');
-
-// searchBtn.addEventListener('click',()=>{
-//   searchBar.classList.add('active');
-//   searchBar.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
-//   closeBtnIcon.style.transition='all 0.5s cubic-bezier(0.7,-0.5, 0.3 ,1.5)';
-// });
-// closeBtnIcon.addEventListener('click',()=>{
-//   searchBar.classList.remove('active');
-//   searchInput.value=""
-// })
-
-//Get Data With Ajax , Api-------------
+//Get Data With Ajax , Api-----------------------------------------------------------------
 
 var myData;
 
@@ -80,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //step 2:
 
-  var url = "/Assets/json/ghalb.json";
+  var url = "/Assets/json/doctorsList.json";
   xhttp.open("GET", url);
 
   //step 3:
