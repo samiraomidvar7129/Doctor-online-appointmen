@@ -212,95 +212,71 @@
       <!-- END Contact Section -->
 
     <!-- Start Footer Section -->
-
-    <div class="item column" id="footer">
-      <footer class="footer">
-        <div class="footer-item_2">
-          <div class="footer-form p-3">
-            <h4>عضویت در خبرنامه</h4>
-            <p class="text-justify my-4">
-              برای اطلاع از اخبار جدید در خبرنامه عضو شوید
-            </p>
-            <div class="footer-form_wrapper">
-              <form action="#" class="footer-form_wrapper-inner">
-                <input
+    <footer class="footer py-3 h-auto border border-top">
+      <div class="container ">
+        <div class="row d-flex flex-row-reverse justify-content-center align-items-center">
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
+            <div class="member-item">
+              <p class="member-item_txt">
+                سلام دوست عزیز، ممنون که ما رو دنبال می‌کنی   
+              </p>
+              <form action="index.php" method="post" class="d-flex justify-content-center align-items-center">
+                <input class="py-2"
                   type="email"
-                  placeholder="ورود آدرس ایمیل"
-                  class="footer-form_wrapper-inner--input p-2"
+                  name="email"
+                  id="email-input"
+                  placeholder="ایمیل خود را وارد کنید"
                 />
-                <button type="submit" class="footer-form_wrapper-inner--btn">
-                  <i
-                    class="fa fa-arrow-left footer-form_wrapper-inner--icon"
-                  ></i>
-                </button>
+                <button type="submit" class="submit-btn" value="">ارسال</button>
               </form>
             </div>
           </div>
-        </div>
-        <div class="footer-item_1">
-          <div class="footer-boxLeft p-3">
-            <h6> :  بیمه های طرف قرارداد</h6>
-            <ul class="Insurance-imgs">
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-1.png" alt="" />
-              </li>
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-2.png" alt="" />
-              </li>
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-3.png" alt="" />
-              </li>
-              <li>
-                <img src="./Assets/imgs/Photo-of-insurances/img-4.png" alt="" />
-              </li>
-            </ul>
-          </div>
-          <div class="footer-boxCenter p-3">
-            <h6>لینک های مفید</h6>
-            <div class="footer-boxCenter_links">
-              <ul>
-                <li><a class="text-white" href="#">توصیه پزشکی</a></li>
-                <li><a class="text-white" href="#">پشتیبانی </a></li>
-                <li><a class="text-white" href="#"> تعرفه ها</a></li>
-                <li><a class="text-white" href="#"> قوانین</a></li>
-              </ul>
-              <ul>
-                <li><a class="text-white" href="#">صفحه اصلی</a></li>
-                <li><a class="text-white" href="#"> پرسش ها</a></li>
-                <li><a class="text-white" href="#">مجله سلامت</a></li>
-                <li><a class="text-white" href="#">ارتباط باما</a></li>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
+            <div class="access-links  d-flex  justify-content-center flex-column align-items-center">
+              <div class=" access-links_title text-center pt-3 ">لینک های سریع</div>
+              <ul class="access-links_inner d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3">
+                <li class="mt-2"><a class="access-links_inner--link" href="#">قرار ملاقات</a></li>
+                <li class="mt-2"><a class="access-links_inner--link" href="#">حریم خصوصی </a></li>
+                <li class="mt-2"><a class="access-links_inner--link" href="#">شرایط و ضوابط</a></li>
               </ul>
             </div>
           </div>
-          <div class="footer-boxRight p-3">
-            <h6>در باره ما بیشتر بدانید</h6>
-            <div class="footer-boxRight_item">
-              <p class="text-right my-3">
-                سایت پزشکی یا وب سایت پزشکی یک وسیله ارتباطی بسیار راحت و مفید
-                برای شناسایی پزشکان، مراکز درمانی، کلینیک های پزشکی و غیره است
-                که راهی سریع برای ارتباط بهتر با بیماران، رزرو نوبت به روشی آسان
-                و معرفی مراکز درمانی آنها است
-              </p>
-              <div class="footer-boxRight_item--social-icons">
-                <ul class="footer-boxRight_item--social-icons_ul">
-                  <a href=""><i class="fab fa-twitter"></i></a>
-                  <a href=""><i class="fab fa-linkedin"></i></a>
-                  <a href=""><i class="fab fa-facebook"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
-                  <a href=""><i class="fab fa-whatsapp"></i></a>
-                </ul>
-                <h6>مارا دنبال کنید :</h6>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
+            <div class="location-links    d-flex  justify-content-center flex-column align-items-center ">
+              <div class=" location-links_title text-center ">لینک های مفید</div>
+              <div class="location-links_inner  d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3 ">
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center" >
+                  <i class="far fa-location location-icons"></i>
+                  <span>    مشهد - خیابان پاستور      </span>
+                </div>
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center" >
+                  <i class="far fa-phone phone-icons"></i>
+                  <span> ۰۹۳۳۹۶۱۰۸۴۱    </span>
+                </div>
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center">
+                  <i class="fas fa-envelope  email-icons"></i>
+                  <span> info@gmail.com </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
+            <div class="description-item d-flex flex-column justify-content-between align-items-center">
+              <div class="description-item_logo mb-3">
+                <img src="/Assets/imgs/logo/logo.png" class=" d-block w-50 h-50 cover m-auto" alt="logo-img">
+              </div>
+              <div class="description-item_txt">
+                <p class="description-item_txt--p">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <a href="#up" id="arrow-up"
-          ><i class="fa fa-arrow-up arrow-up_icon" aria-hidden="true"></i
-        ></a>
-      </footer>
-    </div>
-    <!-- END Footer Section -->
+      </div>
+    </footer>
 
+    <!-- END Footer Section -->
 
 
     <!-- Bootsrap Files-->
