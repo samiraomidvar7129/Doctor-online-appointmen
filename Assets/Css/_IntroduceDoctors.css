@@ -31,7 +31,8 @@
     object-fit: cover;
 }
 .doctor-Speciallity,
-.doctor-NezamCode{
+.doctor-NezamCode,
+.doctor-city {
     font-size: 11px;
 }
 .doctor-name{
@@ -39,6 +40,10 @@
 }
 .doctor-name,
 .doctor-Speciallity,
-.doctor-NezamCode{
+.doctor-NezamCode {
     color: #010101;
 }
+.doctor-city {
+   color: rgb(14,130,253);
+}
+
