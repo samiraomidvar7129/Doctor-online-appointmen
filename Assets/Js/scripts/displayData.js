@@ -37,11 +37,11 @@ export const displayComments = (comments) => {
     commentsContainer.innerHTML = comments[comment].map(
       (item) => `
     <div class="swiper-slide bg-info p-3 d-flex flex-column justify-content-center align-items-center text-center">
-         <div>
+         <div class="comments-imgBox">
          <img src=${item.userImg} alt="user-img"/>
          </div>
-         <div><p>${item.userComment}</p></div>
-         <div>${item.userName}</div>
+         <div class="comments-textBox mt-2"><p class="comments-textBox_p">${item.userComment}</p></div>
+         <div class="comments-nameBox mt-2">${item.userName}</div>
        </div>      
    `
     );
