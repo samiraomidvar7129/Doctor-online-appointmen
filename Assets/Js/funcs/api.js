@@ -1,22 +1,43 @@
-const fetchDoctorsList=()=>{
-      //step 1:
-  var xhttp = new XMLHttpRequest();
+import axios from "axios";
 
-  //step 2:
-  const BASE_URL="/Assets/json"
+ //step 1:
 
-  //step 3:
+ const BASE_URL = "/Assets/json";
 
-  var url = `${BASE_URL}/doctorsList.json`;
-  xhttp.open("GET", url);
+const fetchDoctorsList = async () => {
+ 
+  try {
+    const response = await axios.get(`${BASE_URL}/doctorsList.json`);
 
-  //step 4:
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var data = JSON.parse(xhttp.responseText);
-      createMainBox(data);
+    return response.data;
+  } catch (error) {
+    console.error("Error fetching doctorsList");
+  }
+};
+const fetchComments = async () => {
+
+  
+    try {
+      const response = await axios.get(`${BASE_URL}/doctorsList.json`);
+  
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching doctorsList");
     }
   };
-}
+  const fetchBlogs = async () => {
 
-const
+  
+    try {
+      const response = await axios.get(`${BASE_URL}/doctorsList.json`);
+  
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching doctorsList");
+    }
+  };
+  
+  
+
+
+export default{fetchDoctorsList}
