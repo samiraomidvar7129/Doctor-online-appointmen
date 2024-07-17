@@ -47,3 +47,20 @@ export const displayComments = (comments) => {
    `;
   });
 };
+
+export const displayBlogs = (blogs) => {
+  const blogsContainer = document.querySelector(".mySwiper");
+
+  blogsContainer.innerHTML = blogs.map((blog) => {
+    const blogsSwiper = document.querySelector(".swiper-wrapper");
+
+    blogsSwiper.innerHTML += `
+    <div class="swiper-slide bg-info d-flex justify-content-center align-items-center text-center">
+         <div>
+         <img src=${blog.img} alt="user-img"/>
+         </div>
+         <div><p>${blog.desc}</p></div>
+       </div>      
+   `;
+  });
+};
