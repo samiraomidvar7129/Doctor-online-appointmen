@@ -1,7 +1,7 @@
 import{fetchDoctorsList} from './fetchDoctors';
 import {fetchComments} from './fetchComments';
 import {fetchBlogs} from './fetchBlogs';
-import {displayDoctors} from './displayData';
+import {displayDoctors,displayComments} from './displayData';
 
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -11,7 +11,8 @@ document.addEventListener('DOMContentLoaded',()=>{
         fetchBlogs()
 
         .then(([doctors])=>{
-            displayDoctors(doctors)
+            displayDoctors(doctors),
+            displayComments(comments)
         })
     ])
 })

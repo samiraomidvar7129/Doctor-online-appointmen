@@ -28,3 +28,22 @@ export const displayDoctors = (doctors) => {
    `;
   });
 };
+
+
+export const displayComments = (comments) => {
+  const commentsContainer = document.querySelector(".mySwiper");
+
+  commentsContainer.innerHTML = comments.map((comment) => {
+    const commentsSwiper = document.querySelector(".swiper-wrapper");
+
+    commentsSwiper.innerHTML += `
+    <div class="swiper-slide bg-info d-flex justify-content-center align-items-center text-center">
+         <div>
+         <img src=${comment.userImg} alt="user-img"/>
+         </div>
+         <div><p>${comment.userComment}</p></div>
+         <div>${comment.userName}</div>
+       </div>      
+   `;
+  });
+};
