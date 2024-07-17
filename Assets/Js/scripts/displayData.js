@@ -1,10 +1,11 @@
+
+
 export const displayDoctors = (doctors) => {
-  const doctorsContainer = document.querySelector(".mySwiper");
+  const doctorsContainer = document.querySelector(".swiper-wrapper");
+  console.log(doctors)
 
-  doctorsContainer.innerHTML = doctors.map((doctor) => {
-    const doctorsList = document.querySelector(".swiper-wrapper");
-
-    doctorsList.innerHTML += `
+  doctorsContainer.innerHTML = doctors.map(doctor => `
+  
     <div class="swiper-slide bg-light d-flex justify-content-center align-items-center text-center">
           <a href=${"details.html?group=" + doctor.id} 
           class="mySwiper-list_item p-3 d-flex flex-column justify-content-center align-items-center w-100 h-100 ">
@@ -25,18 +26,14 @@ export const displayDoctors = (doctors) => {
                  
             </a>
        </div>      
-   `;
-  });
+   
+  `).join('');
 };
 
-
 export const displayComments = (comments) => {
-  const commentsContainer = document.querySelector(".mySwiper");
+  const commentsContainer = document.querySelector(".swiper-wrapper");
 
-  commentsContainer.innerHTML = comments.map((comment) => {
-    const commentsSwiper = document.querySelector(".swiper-wrapper");
-
-    commentsSwiper.innerHTML += `
+  commentsContainer.innerHTML = comments.map(comment =>`
     <div class="swiper-slide bg-info d-flex justify-content-center align-items-center text-center">
          <div>
          <img src=${comment.userImg} alt="user-img"/>
@@ -44,23 +41,18 @@ export const displayComments = (comments) => {
          <div><p>${comment.userComment}</p></div>
          <div>${comment.userName}</div>
        </div>      
-   `;
-  });
+   `).join('');
 };
 
 export const displayBlogs = (blogs) => {
-  const blogsContainer = document.querySelector(".mySwiper");
+  const blogsContainer = document.querySelector(".swiper-wrapper");
 
-  blogsContainer.innerHTML = blogs.map((blog) => {
-    const blogsSwiper = document.querySelector(".swiper-wrapper");
-
-    blogsSwiper.innerHTML += `
+  blogsContainer.innerHTML = blogs.map(blog => `
     <div class="swiper-slide bg-info d-flex justify-content-center align-items-center text-center">
          <div>
          <img src=${blog.img} alt="user-img"/>
          </div>
          <div><p>${blog.desc}</p></div>
        </div>      
-   `;
-  });
+   `).join('');
 };

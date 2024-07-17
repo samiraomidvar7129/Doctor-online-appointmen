@@ -1,9 +1,3 @@
-import{fetchDoctorsList} from './funcs/api';
-
-
-
-
-
 //Loading -----------------------
 
 const loadingElement = document.querySelector(".loader");
@@ -43,9 +37,9 @@ window.addEventListener("scroll", () => {
   DedicatedScroll.style.width = scrollPercentRounded + "%";
 });
 
-//END Dedicated Scroll ---------------------------------------------------------------
+//END Dedicated Scroll --------------
 
-//OnlineConsultation Animate----------------------------------------------------------
+//OnlineConsultation Animate-------------
 
 var onlineConsultation = document.querySelector(".Online-consultation-text");
 
@@ -59,72 +53,31 @@ const fadeOut = () => {
 fadeOut();
 
 
+//Get Data With Ajax , Api-----------------------------------------------------------------
 
+// var myData;
 
-// ------------------------------------------------------------------------------------
+// document.addEventListener("DOMContentLoaded", function () {
+//   //step 1:
+//   var xhttp = new XMLHttpRequest();
 
-document.addEventListener('DOMContentLoaded',()=>{
-  loadDoctorsList();
-})
+//   //step 2:
+//   const BASE_URL="/Assets/json"
 
+//   //step 3:
 
+//   var url = `${BASE_URL}/doctorsList.json`;
+//   xhttp.open("GET", url);
 
-const loadDoctorsList=async()=>{
-  const doctors=await fetchDoctorsList();
-
-  const doctorsContainer = document.querySelector(".swiper-wrapper");
-
-  doctors.forEach(doctor=>{
-    doctorsContainer.innerHTML+= `
-    <div class="swiper-slide bg-light d-flex justify-content-center align-items-center text-center">
-          <a href=${ "details.html?group=" + doctor.id } 
-          class="mySwiper-list_item p-3 d-flex flex-column justify-content-center align-items-center w-100 h-100 ">
-            <div class="class="mySwiper-list_item--imgBox d-flex justify-content-center align-items-center w-100 h-100">
-                <img src=${doctor.ImageUrl} class="doctor-ImageUrl rounded-pill d-block w-100 h-100 cover  alt="doctor-img">
-            </div>
-            <div class="doctor-name pt-3">${doctor.Name} </div>
-            <div class=" doctor-Speciallity pt-3">${doctor.Speciallity}</div>
-            <div class="d-flex justify-content-between align-items-center w-100">
-                         <div class=" doctor-NezamCode pt-3">    ن-پ :  ${doctor.NezamCode} </div>
-                         <div class=" doctor-city pt-3">  ${doctor.city} </div>
- 
-            </div>
-                 
-            </a>
-       </div>      
-   `
-  })
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//   //step 4:
+//   xhttp.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//       var data = JSON.parse(xhttp.responseText);
+//       createMainBox(data);
+//     }
+//   };
+//   xhttp.send();
+// });
 
 // const createMainBox = (data) => {
 //   myData = data;

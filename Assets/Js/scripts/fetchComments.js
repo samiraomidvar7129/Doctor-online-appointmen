@@ -1,4 +1,4 @@
-import {axiosInstance} from './axiosConfig';
+import {axiosInstance} from './axiosConfig.js';
 
 export const fetchComments=()=>{
     return axiosInstance.get('comments.json')
