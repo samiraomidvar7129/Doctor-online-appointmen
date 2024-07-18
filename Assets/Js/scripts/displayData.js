@@ -1,3 +1,4 @@
+
 export const displayDoctors = (doctors) => {
   const doctorsContainer = document.querySelector(".swiper-wrapper");
   for (let doctor in doctors) {
@@ -5,7 +6,7 @@ export const displayDoctors = (doctors) => {
       (item) => `
   
     <div class="swiper-slide bg-light d-flex justify-content-center align-items-center text-center">
-          <a href=${"details.html?group=" + item.id} 
+          <a href="details.html?group=${ item.id}"
           class="mySwiper-list_item p-3 d-flex flex-column justify-content-center align-items-center w-100 h-100 ">
             <div class="class="mySwiper-list_item--imgBox d-flex justify-content-center align-items-center w-100 h-100">
                 <img src=${
@@ -54,11 +55,11 @@ export const displayBlogs = (blogs) => {
   for (let blog in blogs) {
     blogsContainer.innerHTML = blogs[blog].map(
       (item) => `
-    <div class="swiper-slide bg-info  p-3 d-flex flex-column justify-content-center align-items-center text-center">
-         <div>
+    <div class="swiper-slide  p-3 d-flex flex-column justify-content-center align-items-center text-center">
+         <div class="blog-imgBox">
          <img src=${item.img} class="d-block w-100 h-100 cover" alt="user-img"/>
          </div>
-         <div><p>${item.desc}</p></div>
+         <div class="blog-description mt-3"><p>${item.desc}</p></div>
        </div>      
    `
     );
