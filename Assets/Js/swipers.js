@@ -59,7 +59,7 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop: true,
     autoplay: {
-      delay: 1200,
+      delay: 2300,
       disableOnInteraction: false,
     },
     breakpoints: {

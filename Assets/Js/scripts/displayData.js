@@ -1,6 +1,8 @@
 
 export const displayDoctors = (doctors) => {
-  const doctorsContainer = document.querySelector(".swiper-wrapper");
+  
+  
+  const doctorsContainer = document.querySelector(".swiper-wrapper")
   for (let doctor in doctors) {
     doctorsContainer.innerHTML = doctors[doctor].map(
       (item) => `
@@ -27,12 +29,15 @@ export const displayDoctors = (doctors) => {
        </div>      
    
   `
-    );
+    )
+
   }
+
+
 };
 
 export const displayComments = (comments) => {
-  const commentsContainer = document.querySelector("#comments");
+  const commentsContainer = document.querySelector("#comments")
 
   for (let comment in comments) {
     commentsContainer.innerHTML = comments[comment].map(
@@ -45,12 +50,12 @@ export const displayComments = (comments) => {
          <div class="comments-nameBox mt-2">${item.userName}</div>
        </div>      
    `
-    );
+    )
   }
 };
 
 export const displayBlogs = (blogs) => {
-  const blogsContainer = document.querySelector("#blogs");
+  const blogsContainer = document.querySelector("#blogs")
 
   for (let blog in blogs) {
     blogsContainer.innerHTML = blogs[blog].map(
@@ -62,6 +67,6 @@ export const displayBlogs = (blogs) => {
          <div class="blog-description mt-3"><p>${item.desc}</p></div>
        </div>      
    `
-    );
+    )
   }
 };
