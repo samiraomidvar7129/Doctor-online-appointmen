@@ -1,0 +1,23 @@
+#searchBar-wrapper{
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid  rgb(14,130,253);
+}
+.searchBar-wrapper_form input{
+    border-left: 1px solid rgba(14, 75, 140, 0.412);
+    padding-right: 10px;
+    caret-color: rgb(14,130,253);
+    font-size: 12px;
+
+}
+#search-specialty{
+    border: none;
+}
+.search-icon{
+    color: #ffff;
+}
+#search-btn{
+    background-color:rgb(14,130,253) ;
+    border-top-left-radius:10px;
+    border-bottom-left-radius: 10px;
+}
