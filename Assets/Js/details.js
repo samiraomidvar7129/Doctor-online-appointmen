@@ -41,10 +41,23 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector('.doctor-address').innerHTML=myData.doctors[index].city;
             document.getElementById('nezamCode').innerHTML=myData.doctors[index].NezamCode;
             document.getElementById('doctor-image').setAttribute('src',myData.doctors[index].ImageUrl);
+            document.getElementById('doctors-address').innerHTML+=`
+            <div class="d-flex justify-content-center align-items-center">
+            <i class="fa fa-map-marker address-icon"></i>
+            <span>آدرس مطب : </span>
+            <div>${myData.doctors[index].officeAddress}</div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+            <i class="fa fa-mobile address-icon"></i>
+             <span> شماره تماس : </span>
+            <div>${myData.doctors[index].phoneNumber}</div>
+            </div>
+            `
 
             let doctorsInformationItems=document.querySelector('#doctors-information_items');
             doctorsInformationItems.innerHTML=`
-            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1 ">
+           <div class="row mt-3">
+             <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-4 mt-sm-1 ">
             <div class="d-flex flex-column justify-content-center align-items-center">
             <i class="fa fa-gift"></i>                
               <span class="doctors-information_item mt-2">
@@ -55,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
 
 
-          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1">
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-4 mt-sm-1">
            <div class="d-flex flex-column justify-content-center align-items-center"> 
            <i class="fa fa-file"></i>                
             <span class="doctors-information_item mt-2">
@@ -63,10 +76,12 @@ document.addEventListener("DOMContentLoaded", function () {
               <span class="article doctors-information_item--number">${myData.doctors[index].articles}</span>
             </span></div>
           </div>
+           </div>
 
 
-
-          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1">
+     <div class="row mt-5">
+     
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-4 mt-sm-1">
             <div class="d-flex flex-column justify-content-center align-items-center">
             <i class=" fa fa-comments"></i>                
             <span class="doctors-information_item mt-2">
@@ -77,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1">
+          <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mt-4 mt-sm-1">
             <div class="d-flex flex-column justify-content-center align-items-center">
             <i class="fa fa-exclamation"></i>                
              <span class="doctors-information_item mt-2">
@@ -85,20 +100,23 @@ document.addEventListener("DOMContentLoaded", function () {
               <span class="answers doctors-information_item--number">${myData.doctors[index].answers}</span>
              </span></div>
           </div>
+     </div>
 
+<div class="row mt-5">
 
-          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5 mt-sm-1">               
-             <div class="d-flex flex-column justify-content-center align-items-center">
-              <div id="star-rating" class=" d-flex justify-content-center align-items-center">
-                <span class="star px-1" data-value="1">&#9733;</span>
-                <span class="star px-1" data-value="2">&#9733;</span>
-                <span class="star px-1" data-value="3">&#9733;</span>
-                <span class="star px-1" data-value="4">&#9733;</span>
-                <span class="star px-1" data-value="5">&#9733;</span>
-              </div>
-              <p id="result" class="mt-3"></p>
-             </div>
-          </div>
+<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-5 mt-sm-1">               
+<div class="d-flex flex-column justify-content-center align-items-center">
+ <div id="star-rating" class=" d-flex justify-content-center align-items-center">
+   <span class="star px-1" data-value="1">&#9733;</span>
+   <span class="star px-1" data-value="2">&#9733;</span>
+   <span class="star px-1" data-value="3">&#9733;</span>
+   <span class="star px-1" data-value="4">&#9733;</span>
+   <span class="star px-1" data-value="5">&#9733;</span>
+ </div>
+ <p id="result" class="mt-3"></p>
+</div>
+</div>
+</div>
           
             `
 
@@ -138,7 +156,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });  
  }}
+
+
+
+
+   
+
     }};
+
+  
+ // Validate reservation-form
+
+const reservationForm=()=>{
+  let reservationForm=document.querySelector('#reservation-form');
+
+    reservationForm.addEventListener('submit',(event)=>{
+      event.preventDefault();
+      console.log("submited")
+      
+
+      const reservation={
+        fullName:document.getElementById('reservation-fullName').value,
+        phoneNumber:document.getElementById('reservation-phoneNumber').value,
+        nationalCode:document.getElementById('national-code').value,
+        reserveDate:document.getElementById('reserve-date').value,
+        reserveTime:document.getElementById('reserve-time').value,
+        doctorGroup:group
+      }
+
+      localStorage.setItem('reservation',JSON.stringify(reservation));
+
+      alert(`نوبت شما برای ${myData.doctors[index].Name} ثبت شد`);
+      
+      window.location.href='index.html';
+
+    })
+}
+  
+   
+
+
+
 
 
 
