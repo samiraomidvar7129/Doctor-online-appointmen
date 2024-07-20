@@ -185,9 +185,29 @@ reservationForm.addEventListener('click',()=>{
   localStorage.setItem('reservation',JSON.stringify(reservation));
   
 
-  alert(`نوبت شما  ثبت شد`);
-  
-  window.location.href='index.html';
+if(reservation){
+  swal({
+    title: "سپاسگزاریم ! ",
+  text: "نوبت شما با موفقیت ثبت شد",
+  icon: "success",
+  button: "تایید"
+  })
+  .then(() => {
+    window.location.href="index.html"
+  });
+}else if(!reservation){
+  swal({
+    title: "متاسفیم ! ",
+  text: " اطلاعات ثبت نشد لطفا مجدد تلاش کنید",
+  icon: "danger",
+  button: "تایید"
+  }) .then(() => {
+    window.location.href="details.html"
+  });
+}
+
+
+
 }
 
 )
