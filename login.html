@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>  ثبت نام  </title>
+
+    <!-- FavIcon -->
+    <link rel="icon" href="Assets/imgs/logo/favicon.png" />
+
+    <!-- Import FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="Assets/Libs/fontawesome-pro-5.15.3-web/css/all.min.css"
+    />
+
+   
+    <!-- Import Bootsrap 5 CDN -->
+    <link
+      rel="stylesheet"
+      href="Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.rtl.min.css"
+    />
+
+    <!-- Import Styles File -->
+    <link rel="stylesheet" href="Assets/Css/main-styles.css" />
+  </head>
+  <body>
+
+    <!-- Start Loading -->
+    <div class="loader d-flex justify-content-center align-items-center w-100 h-100 bg-light">
+      <span>...Loading</span>
+      <img src="Assets/imgs/loading/loader-img-2.jfif" alt="Loading ...." />
+    </div>
+    <!-- END Loading -->
+
+    <!-- Start DedicatedScroll Division -->
+
+    <div id="dedicatedScroll"></div>
+
+    <!-- END DedicatedScroll Division -->
+
+      <!-- Start Navbar Menu -->
+      <div class="container-fluid  " id="header-nav">
+      <div class="row  bg-light">
+        <section class="header-nav_items d-flex justify-content-between align-items-center ">
+          <div class="col-md-3 col-lg-3 col-xl-3 col-xl-3 d-none d-md-block">
+            <div class="header-nav_logoBox  w-50 h-100 m-auto">
+              <img src="./Assets/imgs/logo/logo.png" class="d-block w-100 h-100 cover" alt="logo-img" />
+            </div>
+          </div>   
+          <div class="col-md-6 col-lg-6 col-xl-6 col-xl-6">
+            <div class="header-nav_item pt-2 d-flex justify-content-center align-items-center">
+              <div
+                class="header-nav_item--menu  d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+              >
+                <ul class="header-nav_item--menu-list d-flex justify-content-center align-items-center">
+                  <li>
+                    <a href="index.html" class="header-nav_item--link hover-3 text-dark">
+                      خانه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                       دکترها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                      بیماران</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html" class="header-nav_item--link hover-3 text-dark">
+                      درباره ما</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="header-nav_item--link hover-3 text-dark">
+                      خدمات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contactUs.html" class="header-nav_item--link hover-3 text-dark">
+                      تماس باما</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Hamburger menu for mobile -->
+              <div class="hamburger d-block d-md-none">
+                <div class="hamburger-icon">
+                  <i class="fas fa-bars icon-bar"></i>
+                </div>
+                <ul class="hamburger-menu-list">
+                  <li>
+                    <a href="index.html" class="header-nav_item--link hover-3 text-dark">
+                      خانه</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                       دکترها</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="header-nav_item--link hover-3 text-dark">
+                      بیماران</a
+                    >
+                  </li>
+                  <li>
+                    <a href="about.html" class="header-nav_item--link hover-3 text-dark">
+                      درباره ما</a
+                    >
+                  </li>
+                  <li>
+                    <a href="services.html" class="header-nav_item--link hover-3 text-dark">
+                      خدمات</a
+                    >
+                  </li>
+                  <li>
+                    <a href="contactUs.html" class="header-nav_item--link hover-3 text-dark">
+                      تماس باما</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Hamburger menu for mobile -->
+            </div>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 col-xl-3 d-flex justify-content-center align-items-center">
+           <div class="header-nav_login--wrapper d-flex justify-content-center align-items-center">
+            <div class="header-nav_login--itemRight d-flex justify-content-between align-items-center text-light ">
+              
+              <a href="login.html" class="login-btn  d-block text-light w-100 h-100">ورود | ثبت نام</a>
+            </div>
+           <div class="header-nav_login--itemLeft">
+            <div class="switch">
+              <div class="fliker"></div>
+              <div class="moon"></div>
+            </div>
+           </div>
+           </div>
+          </div>
+        </section>
+        </div>
+      </div>
+   
+      <!-- END Navbar Menu -->
+
+    <!-- Start LoginForm -->
+    <div class="container mt-5">
+        <div class="row">
+          <div id="contctUs-wrapper" class="d-flex w-75 m-auto flex-column  justify-content-center align-items-center">
+            <h6 class="contctUs-wrapper_title my-2"> برای رزرو نوبت لطفا در سایت ثبت نام کنید !</h6>
+            <div class="contact-us_inner  w-100 mt-4 ">
+              <div class="contact-us_form  d-flex  justify-content-center align-items-center w-100 h-100 p-2">
+                <form action="index.php" method="post" class=" w-100 contact-us_form--inner m-0 d-flex flex-column justify-content-center align-items-center">
+                  <div class="form-element mt-2  d-flex justify-content-between align-items-center w-100 ">
+                    <input autofocus
+                      class=" w-100 p-2"
+                      type="text"
+                      value=""
+                      name="UserName"
+                      id="UserName"
+                      placeholder="نام "
+                    />
+                    <input
+                      class=" w-100 p-2"
+                      type="text"
+                      value=""
+                      name="userLastName"
+                      id="userLastName"
+                      placeholder="نام خانوادگی"
+                    />
+                  </div>
+                  <div class="form-element mt-2 d-flex justify-content-between align-items-center w-100 ">
+                    <input
+                      class=" w-100 p-2"
+                      type="text"
+                      value=""
+                      name="userEmail"
+                      id="userEmail"
+                      placeholder="ایمیل "
+                    />
+                    <input
+                      class=" w-100 p-2"
+                      type="text"
+                      value=""
+                      name="userNumber"
+                      id="userNumber"
+                      placeholder=" شماره تماس"
+                    />
+                  </div>
+                  <textarea class=" userMessage w-100 mt-3 p-3" name="userMessage" id="userMessage" cols="30" rows="10" placeholder="پیام خود را تایپ کنید"></textarea>
+                  <button type="submit" value="" class="contact-btn-form d-block w-100 p-2 my-2">ارسال فرم</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END LoginForm -->
+  
+
+    <!-- Start Footer Section -->
+    <footer class="footer mt-5 py-3 h-auto border border-top">
+      <div class="container ">
+        <div class="row d-flex flex-row-reverse  justify-content-center align-items-center">
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3 mt-4 mt-sm-1">
+            <div class="member-item d-flex  flex-column justify-content-center align-items-center text-center">
+              <p class="member-item_txt">
+                سلام دوست عزیز، ممنون که ما رو دنبال می‌کنی   
+              </p>
+              <form action="index.php" method="post" class="d-flex justify-content-center align-items-center">
+                <input class="py-2"
+                  type="email"
+                  name="email"
+                  id="email-input"
+                  placeholder="ایمیل خود را وارد کنید"
+                />
+                <button type="submit" class="submit-btn" value="">ارسال</button>
+              </form>
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3 mt-4 mt-sm-1">
+            <div class="access-links  d-flex  justify-content-center flex-column align-items-center">
+              <div class=" access-links_title text-center pt-3 ">لینک های سریع</div>
+              <ul class="access-links_inner d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3">
+                <li class="mt-2"><a class="access-links_inner--link" href="#">قرار ملاقات</a></li>
+                <li class="mt-2"><a class="access-links_inner--link" href="#">حریم خصوصی </a></li>
+                <li class="mt-2"><a class="access-links_inner--link" href="#">شرایط و ضوابط</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3 mt-4 mt-sm-1">
+            <div class="location-links    d-flex  justify-content-center flex-column align-items-center ">
+              <div class=" location-links_title text-center ">لینک های مفید</div>
+              <div class="location-links_inner  d-flex justify-content-center align-items-center flex-column p-0  pt-3 px-3 ">
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center" >
+                  <i class="far fa-location location-icons"></i>
+                  <span>    مشهد - خیابان پاستور      </span>
+                </div>
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center" >
+                  <i class="far fa-phone phone-icons"></i>
+                  <span> ۰۹۳۳۹۶۱۰۸۴۱    </span>
+                </div>
+                <div class=" location-links_inner--item mt-3 d-flex justify-content-center align-items-center">
+                  <i class="fas fa-envelope  email-icons"></i>
+                  <span> info@gmail.com </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3 mt-5 mt-sm-1">
+            <div class="description-item d-flex flex-column justify-content-between align-items-center">
+              <div class="description-item_logo mb-3">
+                <img src="/Assets/imgs/logo/logo.png" class=" d-block w-50 h-50 cover m-auto" alt="logo-img">
+              </div>
+              <div class="description-item_txt">
+                <p class="description-item_txt--p">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- END Footer Section -->
+
+    <!-- Bootsrap Files-->
+    <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
+
+    <!-- My Script Files-->
+
+    <script src="Assets/Js/darkMode.js"></script>
+    <script src="Assets/Js/doctorsFetch.js"></script>
+
+
+  
+
+  </body>
+</html>
