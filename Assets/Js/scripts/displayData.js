@@ -15,7 +15,10 @@ export const displayDoctors = (doctors) => {
             <div class=" doctor-NezamCode pt-3">    ن-پ :  ${item.NezamCode} </div>
             <div class=" doctor-city pt-3">  ${item.city} </div>
             </div>
-            <div class=" costor-reserve_box mt-2"><a class"costor-reserve_link" href="details.html?group=${item.id}">نوبت بگیرید</a></div>
+            <div class=" doctor-reserve_box d-flex justify-content-center align-items-center w-100 mt-4 py-2">
+            <a class"doctor-reserve_link d-block w-100 h-100 " href="details.html?group=${item.id}">نوبت بگیرید</a>
+             <i class="fa fa-arrow-left doctor-reserve_icon"></i>
+            </div>
             </div>
        </div>      
    
@@ -30,9 +33,9 @@ export const displayComments = (comments) => {
   for (let comment in comments) {
     commentsContainer.innerHTML = comments[comment].map(
       (item) => `
-    <div class="swiper-slide bg-info p-3 d-flex flex-column justify-content-center align-items-center text-center">
-         <div class="comments-imgBox">
-         <img src=${item.userImg} alt="user-img"/>
+    <div class="swiper-slide p-3 d-flex flex-column justify-content-center align-items-center text-center">
+         <div class="comments-imgBox w-100">
+         <img src=${item.userImg} class="d-block w-100 h-100 cover" alt="user-img"/>
          </div>
          <div class="comments-textBox mt-2"><p class="comments-textBox_p">${item.userComment}</p></div>
          <div class="comments-nameBox mt-2">${item.userName}</div>

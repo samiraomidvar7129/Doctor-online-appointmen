@@ -1,127 +1,42 @@
-#Doctors-InfoBox{
-display: flex;
-flex-direction: column;
-width: 100%;
-}
 
-.doctors-heade-img{
-    width: 100%;
-    height: 150px;
-    position: relative;
-}
-.doctors-heade-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   
-}
 
-.doctors-information{
-    width: 100%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 1px 1px 5px 3px #ccc;
+.doctors-heade-img {
+    height: 200px;
+    background: url('/Assets/imgs/banner/banner.jpg') no-repeat;
+    background-size: cover;
 }
-/* --------------------doctors-information_head--------------- */
-
-.doctors-information_head{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height:auto;
-}
-.doctors-information_heade-leftBox{
-    width: 60%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-}
-.doctors-information_heade-leftBox--links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.doctors-information_heade-leftBox--links span{
-    margin-left: 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 5px;
-}
-.doctors-information_heade-leftBox--links .offer{
-    background-color: rgb(36, 184, 36);
-}
-.doctors-information_heade-leftBox--links .offer:hover{
-    background-color: rgb(31, 148, 31);
-}
-.doctors-information_heade-leftBox--links .not-suggest{
-    background-color: red;
-}
-.doctors-information_heade-leftBox--links .not-suggest:hover{
-    background-color: rgb(236, 101, 101);
-}
-.doctors-information_heade-leftBox--links .Reservation{
-    background-color: #ccc;
-}
-.doctors-information_heade-leftBox--links span .custom-icon{
+.doctors-heade-img_title{
     color: #ffff;
-    font-size: 18px;
-    padding:  5px 0 3px 0;
-}
-.doctors-information_heade-leftBox--links span i{
-    color: white !important;
-}
-.doctors-information_heade-leftBox--links span a{
-    font-size: 10px;
-    color: #010101 !important;
-}
-.doctors-information_heade-rightBox{
-    width: 40%; 
-    display: flex;
-    justify-content: flex-start;
-    align-items: end;
-}
-.heade-rightBox_itemRight{
-    width: 50%;
-    height: 100px ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.heade-rightBox_itemRight-img{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: -30px;
-    right: 30%;
-    z-index: 20;
 }
 .heade-rightBox_itemRight-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
-    position: relative;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(14,130,253);
 }
-.heade-rightBox_itemRight-img .online-status{
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    position: absolute;
-    bottom: 3px;
-    right:10px;
-    background-color: rgb(85, 135, 10);
-}
+
 .heade-rightBox_itemRight-status h6{
-    margin: 50px 0 0 0 ;
     font-size: 12px;
-    text-align: right;
 }
+#doctors-information_items{
+    border: 1px solid rgb(14,130,253);
+    
+}
+
+
+.doctors-information_item--number,
+.doctors-information_item--title{
+    font-size: 12px;
+}
+
+#result{
+    font-size: 12px;
+}
+
+
+
+
+
 .heade-rightBox_itemLeft{
     width: 50%;
     height: 100px;
@@ -155,7 +70,7 @@ width: 100%;
 .heade-rightBox_itemLeft span .location-icon{
     margin:0 0 10px 10px;
     font-size: 10px;
-    color: red;
+    color: rgb(14,130,253);
 }
 
 /* ------------------------doctors-information_items-------------- */
@@ -187,6 +102,22 @@ width: 100%;
 .fa-gift,
 .fa-file,
 .fa-comments,
-.fa-exclamation{
-    color:goldenrod;
+.fa-exclamation,
+.doctor-address
+{
+    color: rgb(14,130,253);
+}
+.offer,
+.not-suggest,
+.Reservation
+{
+    background-color: rgb(14,130,253) !important;
+    color: #ffff;
+    font-size: 10px;
+}
+.custom-icon{
+    margin-right: 5px;
+}
+.star{
+    color: rgba(234, 175, 13, 0.87);
 }

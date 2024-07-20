@@ -148,57 +148,62 @@
     
        <!-- END Navbar Menu -->
 
-    <!-- Start Doctors InfoBox -->
-    <div class="item">
-      <div id="Doctors-InfoBox">
-        <div class="doctors-heade-img">
-          <img src="/Assets/imgs/banner/banner.jpg" alt="info-banner" />
+       <div class="container-fluid">
+        <div class="row m-auto">
+          <div class="doctors-heade-img w-100 d-flex justify-content-center align-items-center">
+            <h5 class="doctors-heade-img_title">همین حالا نوبت بگیرید</h5>
+          </div>
         </div>
-        <div class="doctors-information" dir="ltr">
-          <div class="doctors-information_head">
-            <div class="doctors-information_heade-leftBox">
-              <div class="doctors-information_heade-leftBox--links">
-                <span class="Reservation">
-                  <i class="fa fa-clock custom-icon"></i
-                  ><a href=""> رزرو نوبت</a>
-                </span>
-                <span class="offer">
-                  <i class="fa fa-check custom-icon"></i
-                  ><a href=""> پیشنهاد میکنم</a></span
-                >
-                <span class="not-suggest">
-                  <i class="fa fa-times custom-icon"></i
-                  ><a href=""> پیشنهاد نمی کنم</a></span
-                >
-              </div>
+       </div>
+
+    <!-- Start Doctors InfoBox -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 test-item mt-3">
+          <div class="doctors-information_heade-rightBox d-flex flex-row-reverse justify-content-center align-items-center">
+            <div class="heade-rightBox_itemLeft d-flex flex-column justify-content-center align-items-center">
+              <h5 id="doctor-title"></h5>
+              <h6 id="doctor-Speciallity"></h6>
+              <h6 class="nezam-code">
+                کد نظام پزشکی : <span id="nezamCode"></span>
+              </h6>
+              <h6>استان :<span class="state"></span></h6>
+              <span class="doctor-location">
+                &nbsp;&nbsp; <span class="doctor-address"></span>
+                <h4 class="location-text">   شهر محل طبابت   :    </h4>
+                <i class="fa fa-location location-icon"></i>
+              </span>
             </div>
-            <div class="doctors-information_heade-rightBox">
-              <div class="heade-rightBox_itemLeft">
-                <h5 id="doctor-title"></h5>
-                <h6 id="doctor-Speciallity"></h6>
-                <h6 class="nezam-code">
-                  کد نظام پزشکی : <span id="nezamCode"></span>
-                </h6>
-                <h6>استان :<span class="state"></span></h6>
-                <span class="doctor-location"
-                  ><i class="fa fa-location location-icon"></i>
-                  <h4 class="location-text">: شهر محل طبابت</h4>
-                  &nbsp;&nbsp; <span class="doctor-address"></span
-                ></span>
+            <div class="heade-rightBox_itemRight">
+              <div class="heade-rightBox_itemRight-img w-100">
+                <img id="doctor-image" class=" d-block cover" src="" alt="doctor-img" />
               </div>
-              <div class="heade-rightBox_itemRight">
-                <div class="heade-rightBox_itemRight-img">
-                  <img id="doctor-image" src="" alt="doctor-title" />
-                  <span class="online-status"></span>
-                </div>
-                <div class="heade-rightBox_itemRight-status">
-                  <h6>وضعیت : آنلاین</h6>
-                </div>
+              <div class="heade-rightBox_itemRight-status mt-2">
+                <h6>وضعیت : آنلاین</h6>
               </div>
             </div>
           </div>
-          <div class="doctors-information_items"></div>
         </div>
+        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 test-item mt-5 mt-sm-2">
+          <div class="doctors-information_heade-leftBox d-flex justify-content-center align-items-center">
+            <div class="Reservation  mx-1 p-2 d-flex justify-content-center align-items-center">
+              <a href="" class="text-light"> رزرو نوبت</a>
+              <i class="fa fa-clock custom-icon"></i>
+            </div>
+            <div class="offer d-flex  mx-1 p-2 justify-content-center align-items-center">
+              <a href="" class="text-light"> پیشنهاد میکنم</a>
+              <i class="fa fa-check custom-icon"></i>
+            </div >
+            <div class="not-suggest mx-1  p-2 d-flex justify-content-center align-items-center">
+              <a href="" class="text-light"> پیشنهاد نمی کنم</a>
+              <i class="fa fa-times custom-icon"></i >
+            </div >
+          </div>
+        </div>     
+      </div>
+
+      <div class="row mt-5 py-3 d-flex justify-content-center align-items-center text-center m-auto" id="doctors-information_items">
+          <!-- Load Data From Api -->
       </div>
     </div>
     <!-- Start Doctors InfoBox -->
@@ -209,7 +214,7 @@
   <div class="container ">
     <div class="row d-flex flex-row-reverse justify-content-center align-items-center">
       <div class=" col-sm-12 col-md-3 col-lg-3 col-xl-3col-xxl-3">
-        <div class="member-item">
+        <div class="member-item d-flex flex-column  justify-content-center align-items-center text-center">
           <p class="member-item_txt">
             سلام دوست عزیز، ممنون که ما رو دنبال می‌کنی   
           </p>
@@ -272,14 +277,16 @@
 <!-- END Footer Section -->
 
     <!-- Bootsrap Files-->
-    <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
-    <script src="./Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- Font Awesome -->
-    <script src="./Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
+    <script src="Assets/Libs/fontawesome-pro-5.15.3-web/js/all.min.js"></script>
 
-    <!-- My Script Files -->
-    <script src="./Assets/Js/doctorsFetch.js"></script>
-    <script src="./Assets/Js/details.js"></script>
+
+    <script src="Assets/Js/darkMode.js"></script>
+    <script src="Assets/Js/doctorsFetch.js"></script>
+    <script src="Assets/Js/details.js"></script>
+   
 
     <script></script>
   </body>

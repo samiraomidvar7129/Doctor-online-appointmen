@@ -42,50 +42,69 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('nezamCode').innerHTML=myData.doctors[index].NezamCode;
             document.getElementById('doctor-image').setAttribute('src',myData.doctors[index].ImageUrl);
 
-            let doctorsInformationItems=document.querySelector('.doctors-information_items');
+            let doctorsInformationItems=document.querySelector('#doctors-information_items');
             doctorsInformationItems.innerHTML=`
-            <div class="doctors-information_items-inner">
+            <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1 ">
+            <div class="d-flex flex-column justify-content-center align-items-center">
             <i class="fa fa-gift"></i>                
-              <span>
-                <h6>جوایز</h6>
-                <span  class="gifts">${myData.doctors[index].gifts}</span>
+              <span class="doctors-information_item mt-2">
+                <h6 class="doctors-information_item--title">جوایز</h6>
+                <span  class="gifts doctors-information_item--number">${myData.doctors[index].gifts}</span>
               </span>
+            </div>
           </div>
-          <div class="doctors-information_items-inner">
-            <i class="fa fa-file"></i>                
-            <span>
-              <h6  >مقالات</h6>
-              <span class="article">${myData.doctors[index].articles}</span>
-            </span>
+
+
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1">
+           <div class="d-flex flex-column justify-content-center align-items-center"> 
+           <i class="fa fa-file"></i>                
+            <span class="doctors-information_item mt-2">
+              <h6  class="doctors-information_item--title" >مقالات</h6>
+              <span class="article doctors-information_item--number">${myData.doctors[index].articles}</span>
+            </span></div>
           </div>
-          <div class="doctors-information_items-inner">
+
+
+
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1">
+            <div class="d-flex flex-column justify-content-center align-items-center">
             <i class=" fa fa-comments"></i>                
-            <span>
-              <h6>نظرات</h6>
-              <span class="comments">${myData.doctors[index].comments}</span>
-            </span>
+            <span class="doctors-information_item mt-2">
+              <h6 class="doctors-information_item--title">نظرات</h6>
+              <span class="comments doctors-information_item--number">${myData.doctors[index].comments}</span>
+            </span></div>
           </div>
-          <div class="doctors-information_items-inner">
+
+
+
+          <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 mt-4 mt-sm-1">
+            <div class="d-flex flex-column justify-content-center align-items-center">
             <i class="fa fa-exclamation"></i>                
-             <span>
-              <h6>پاسخ ها</h6>
-              <span class="answers">${myData.doctors[index].answers}</span>
-             </span>
+             <span class="doctors-information_item mt-2">
+              <h6 class="doctors-information_item--title">پاسخ ها</h6>
+              <span class="answers doctors-information_item--number">${myData.doctors[index].answers}</span>
+             </span></div>
           </div>
-          <div class="doctors-information_items-inner">               
-             <div>
-              <div id="star-rating">
-                <span class="star" data-value="1">&#9733;</span>
-                <span class="star" data-value="2">&#9733;</span>
-                <span class="star" data-value="3">&#9733;</span>
-                <span class="star" data-value="4">&#9733;</span>
-                <span class="star" data-value="5">&#9733;</span>
+
+
+          <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 mt-5 mt-sm-1">               
+             <div class="d-flex flex-column justify-content-center align-items-center">
+              <div id="star-rating" class=" d-flex justify-content-center align-items-center">
+                <span class="star px-1" data-value="1">&#9733;</span>
+                <span class="star px-1" data-value="2">&#9733;</span>
+                <span class="star px-1" data-value="3">&#9733;</span>
+                <span class="star px-1" data-value="4">&#9733;</span>
+                <span class="star px-1" data-value="5">&#9733;</span>
               </div>
-              <p id="result"></p>
+              <p id="result" class="mt-3"></p>
              </div>
           </div>
           
             `
+
+
+
+
 
  // Stars Rating  --------------------------------------------------------------------
 
@@ -117,66 +136,8 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       star.classList.remove("selected");
     }
-  });
-               }
-
- // Get Hospitals Data---------------------------------------------------------------
-
-            const hospitalData=myData.doctors[index].hospitals;
-
-            hospitalData.forEach(key=>{
-             const hospitalListContainer = document.querySelector('.health-centersـinformation');
-
-  // Get workShifts Data---------------------------------------------------------------
-
-             let workShiftsData="";
-
-             key.workShifts.forEach(items=>{
-               workShiftsData+=`
-               
-               <div class="information--head-table_item ">
-               <div class="workingTime-box" ><br><br><br>
-                 ${items.workingTime}
-               </div>
-                </div>
-               
-               `
-             })
-
-             hospitalListContainer.innerHTML+=`
-              <div class="content-box">
-                    <div class="health-centersـinformation--head">
-                     <div class="health-centersـinformation--head-boxleft">
-                       <div class="information--head-boxleft_item">
-                         <div class="information--head-boxleft_item-img ">
-                          <img src=${key.img} alt="">
-                         </div>
-                       </div>
-                     </div>
-                     <div class="health-centersـinformation--head-boxright">
-                       <div class="information--head-boxright_item">
-                         <h6 class="hospital-name">${key.name}</h6>
-                         <i class="fa fa-location head-boxright_item-icon"></i>
-                       </div>
-                       <p class="hospital-address">${key.address}</p>
-                     </div>
-                    </div>  
-                    <div class="health-centersـinformation--head-table">
-                    ${workShiftsData}
-                    <div class="Rules-box">
-                    <h5>  :  توضیحات و قوانین </h5>
-                    <ul>
-                    <li>  .عودت وجه پرداختی تنها در صورت عدم حضور پزشک امکانپذیر میباشد </li>
-                    <li> .در صورت پرداخت آزاد وجه پرداختی به هیچ عنوان عودت داده نخواهد شد </li>
-                    <li> .ثبت نام و رزرو نهائی پس از عملیات پرداخت و دریافت کد رهگیری پایان میپذیرد </li>
-                    </ul>
-                    </div>
-                    </div>  
-                  </div> 
-              `
-          })
-           
-        }
+  });  
+ }}
     }};
 
 

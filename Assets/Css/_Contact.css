@@ -1,60 +1,42 @@
-
-.contact-us{
-   width: 700px;
-   height: auto;
-   padding: 10px;
-}
 .contact-us_form {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background:url('/Assets/imgs/banner/bg-contact.jpg') no-repeat;
-    background-size: cover;
-    background-position: right 0 bottom 0  ;
-    border: 1px solid #10dabc;
-    padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgb(14, 130, 253);
 }
-
-.form-element{
-    margin-top: 15px;
+.contact-title_p{
+    font-size: 13px;
 }
-.form-element input{
-    border-radius: 3px;
-    border: none;
-    border: 1px solid lightgray;
-    padding: 10px;
-    width: 50%;
+.contctUs-wrapper_title{
+  font-size: 16px;
 }
-.form-element label{
-    font-size: 12px;
-    padding: 5px;
-    text-wrap: nowrap;
+.form-element input {
+  border: none;
+  border: 1px solid rgb(14, 130, 253);
+  margin-right: 1px;
+  text-align: right;
+  font-size: 12px;
+  color: #010101;
+  caret-color: rgb(14, 130, 253);
 }
-::-webkit-input-placeholder{
-    color: #ccc;
-    text-align: right;
-    direction: rtl;
-    font-size: 10px !important;
+.form-element input::placeholder {
+  color: rgb(14, 130, 253);
 }
-
 
 input#UserNumber::-webkit-outer-spin-button,
-input#UserNumber::-webkit-inner-spin-button{
-    -webkit-appearance: none !important;
+input#UserNumber::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
 }
-textarea{
-    width: 100%;
-    resize: none;
-    margin: 20px 10px;
-        padding: 15px;
-        border: none;
-        border:  1px solid lightgray;
+
+.userMessage {
+  resize: none;
+  border: none;
+  border: 1px solid rgb(14, 130, 253);
+  text-align: right;
+  font-size: 12px;
+  color: rgb(14, 130, 253) !important;
 }
-.contact-btn-form{
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #0ccaad;
-    color: #fff;
+.contact-btn-form {
+  border: none;
+  background-color: rgb(14, 130, 253);
+  color: #ffff;
+  font-size: 13px;
 }

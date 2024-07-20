@@ -12,11 +12,24 @@
 .mySwiper-list_item{
     border: 1px solid rgb(14,130,253);
     border-radius: 6px;
-    transition: all .5s ease;
 }
-.mySwiper-list_item:hover{
-    background-color: rgb(14,130,253);
-    color: #fff;
+
+.introduce-title{
+    position: relative;
+    font-size: 15px;
+}
+
+.introduce-title::before{
+    content: "+";
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    z-index: 2;
+    color:  rgb(14,130,253);
 }
 
 .doctor-Speciallity,
@@ -33,6 +46,28 @@
     color: #010101;
 }
 .doctor-city {
-   color: rgb(244, 30, 26);
+    color:rgb(14,130,253);
+}
+.doctor-reserve_box{
+    border-radius: 6px;
+    border: 1px solid  rgb(14,130,253);
+    transition: all .5s ease;
+}
+.doctor-reserve_box:hover{
+    background-color: rgb(14,130,253);
+    color: #fff;
+}
+.doctor-reserve_box:hover a,
+.doctor-reserve_box:hover .doctor-reserve_icon
+{
+    color: #fff;
+}
+.doctor-reserve_box a{
+    font-size: 12px;
+}
+.doctor-reserve_box .doctor-reserve_icon{
+    font-size: 12px;
+     color:rgb(14,130,253);
+    margin-right: 6px;
 }
 
