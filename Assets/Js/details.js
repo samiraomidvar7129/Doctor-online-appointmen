@@ -160,40 +160,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
    
 
-    }};
+    }
 
+
+// Validate reservation-form
+
+let reservationForm=document.querySelector('#send');
+
+reservationForm.addEventListener('click',()=>{
   
- // Validate reservation-form
 
-const reservationForm=()=>{
-  let reservationForm=document.querySelector('#reservation-form');
+  const reservation={
+    fullName:document.getElementById('reservation-fullName').value,
+    phoneNumber:document.getElementById('reservation-phoneNumber').value,
+    nationalCode:document.getElementById('national-code').value,
+    reserveDate:document.getElementById('reserve-date').value,
+    reserveTime:document.getElementById('reserve-time').value,
+    doctorGroup:group
+  }
 
-    reservationForm.addEventListener('submit',(event)=>{
-      event.preventDefault();
-      console.log("submited")
-      
+  localStorage.setItem('reservation',JSON.stringify(reservation));
+  
 
-      const reservation={
-        fullName:document.getElementById('reservation-fullName').value,
-        phoneNumber:document.getElementById('reservation-phoneNumber').value,
-        nationalCode:document.getElementById('national-code').value,
-        reserveDate:document.getElementById('reserve-date').value,
-        reserveTime:document.getElementById('reserve-time').value,
-        doctorGroup:group
-      }
-
-      localStorage.setItem('reservation',JSON.stringify(reservation));
-
-      alert(`نوبت شما برای ${myData.doctors[index].Name} ثبت شد`);
-      
-      window.location.href='index.html';
-
-    })
+  alert(`نوبت شما  ثبت شد`);
+  
+  window.location.href='index.html';
 }
+
+)
   
-   
+
+  };
+
+
+  
+ 
+
 
 
 
