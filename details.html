@@ -287,7 +287,7 @@
                       </div>
                     </div>
                     <div class="modal-body">
-                      <form id="reservation-form" action="index.php" method="post">
+                      <form class="reservation-form_parent" action="index.php" method="post">
                         <div class="mt-3">
                           <input
                             type="text"
@@ -531,6 +531,11 @@
     </footer>
 
     <!-- END Footer Section -->
+     
+ <!-- Axios CDN -->
+
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
     <!-- Bootsrap Files-->
     <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
@@ -542,10 +547,9 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-    <script src="Assets/Js/details.js"></script>
     <script src="Assets/Js/generalScripts.js"></script>
     <script src="Assets/Js/darkMode.js"></script>
+    <script  type="module" src="Assets/Js/details.js"></script>
 
-    <script></script>
   </body>
 </html>

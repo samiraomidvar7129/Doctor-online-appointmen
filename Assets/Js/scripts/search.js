@@ -1,3 +1,3 @@
-import{fetchDoctorsList} from './fetchDoctors.js';
-console.log(fetchDoctorsList)
+// import{fetchDoctorsList} from './fetchDoctors.js';
+// console.log(fetchDoctorsList)
 

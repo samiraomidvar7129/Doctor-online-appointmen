@@ -1,6 +1,6 @@
 import {axiosInstance} from './axiosConfig.js';
 
-export const fetchDoctorsList=()=>{
+export  const fetchDoctorsList=()=>{
     return axiosInstance.get('doctorsList.json')
     .then(response=>response.data)
     .catch(error=>{
