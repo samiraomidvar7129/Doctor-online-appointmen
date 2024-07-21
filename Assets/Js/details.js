@@ -156,22 +156,60 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });  
  }}
-
-
-
-
-
-   
-
     }
 
 
 // Validate reservation-form
 
-let reservationForm=document.querySelector('#send');
+// let reservationForm=document.querySelector('#send');
 
-reservationForm.addEventListener('click',()=>{
+// reservationForm.addEventListener('click',()=>{
   
+
+//   const reservation={
+//     fullName:document.getElementById('reservation-fullName').value,
+//     phoneNumber:document.getElementById('reservation-phoneNumber').value,
+//     nationalCode:document.getElementById('national-code').value,
+//     reserveDate:document.getElementById('reserve-date').value,
+//     reserveTime:document.getElementById('reserve-time').value,
+//     doctorGroup:group
+//   }
+
+//   localStorage.setItem('reservation',JSON.stringify(reservation));
+  
+
+// if(reservation){
+//   swal({
+//     title: "سپاسگزاریم ! ",
+//   text: "نوبت شما با موفقیت ثبت شد",
+//   icon: "success",
+//   button: "تایید"
+//   })
+//   .then(() => {
+//     window.location.href="index.html"
+//   });
+// }else if(!reservation){
+//   swal({
+//     title: "متاسفیم ! ",
+//   text: " اطلاعات ثبت نشد لطفا مجدد تلاش کنید",
+//   icon: "danger",
+//   button: "تایید"
+//   }) .then(() => {
+//     window.location.href="details.html"
+//   });
+// }
+
+
+
+// }
+
+// )
+
+
+let reservationForm=document.getElementById('reservation-form');
+
+reservationForm.addEventListener('submit',(event)=>{
+  event.preventDefault();
 
   const reservation={
     fullName:document.getElementById('reservation-fullName').value,
@@ -211,6 +249,7 @@ if(reservation){
 }
 
 )
+  
   
 
   };

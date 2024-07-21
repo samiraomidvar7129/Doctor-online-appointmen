@@ -41,11 +41,11 @@ window.addEventListener("scroll", () => {
 
 //OnlineConsultation Animate-------------
 
- var onlineConsultation = document.querySelector(".Online-consultation-text");
+ let onlineConsultation =document.getElementById("Online-consultation-text");
 
  const fadeOut = () => {
    setInterval(function () {
-     onlineConsultation.style.animation = "opacity 0.7s linear infinite";
+    onlineConsultation.style.animation="opacity 0.7s linear infinite"
      fadeOut();
    }, 100);
  };
