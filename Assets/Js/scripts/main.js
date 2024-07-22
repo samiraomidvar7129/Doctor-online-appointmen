@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     Promise.all([
         fetchDoctorsList(),
         fetchComments(),
-        fetchBlogs()  
+        fetchBlogs() ,
     ])
     .then(([doctors,comments,blogs])=>{
         displayDoctors(doctors),
