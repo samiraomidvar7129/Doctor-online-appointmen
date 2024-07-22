@@ -194,10 +194,11 @@
     <div class="container mt-4 mt-sm-3 mt-md-2  p-0 " id="searchBar-wrapper">
       <div class="row m-auto p-0 h-100">
         <div class="searchBar-wrapper_form w-100 h-100 p-0  d-flex justify-content-center  align-items-center" id="earchBar-wrapper_form">
-          <input class="w-100  h-100" type="text" id="search-name" placeholder="نام پزشک : ">
-          <input class="w-100  h-100" type="text" id="search-city" placeholder="شهر : ">
-          <input class="w-100  h-100" type="text" id="search-specialty" placeholder="تخصص : ">
-          <button type="search" class="d-block w-25 h-100" id="search-btn"><i class="fa fa-search search-icon"></i></button>
+          <div class="d-flex justify-content-center  align-items-center w-100 h-100">
+            <span >  نام پزشک   : </span>
+            <input class="w-100  h-100" type="text" id="search-name" >
+          </div>
+          <button type="submit" class="d-block w-25 h-100" value="" id="search-btn">جستجو</i></button>
         </div>
       </div>
     </div>
@@ -272,6 +273,7 @@
       </div>
     </div>
   </div>
+  <div id="result"></div>
     </div>
     <!-- END Introduce Doctors -->
 

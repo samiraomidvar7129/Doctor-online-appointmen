@@ -2,6 +2,7 @@ import{fetchDoctorsList} from './fetchDoctors.js';
 import {fetchComments} from './fetchComments.js';
 import {fetchBlogs} from './fetchBlogs.js';
 import {displayDoctors,displayComments,displayBlogs} from './displayData.js';
+import { setUpSearch } from './search.js';
 
 
 document.addEventListener('DOMContentLoaded',()=>{
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         fetchDoctorsList(),
         fetchComments(),
         fetchBlogs() ,
+        setUpSearch()
     ])
     .then(([doctors,comments,blogs])=>{
         displayDoctors(doctors),
