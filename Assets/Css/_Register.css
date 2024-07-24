@@ -1,0 +1,22 @@
+.register_inner {
+    border: 1px solid rgb(14, 130, 253);
+    height: 400px;
+}
+.regiter-form_btn{
+    background-color: rgb(14, 130, 253);
+    color: #ffff;
+    transition: all 0.5s ease;
+}
+
+.regiter-form_btn:hover {
+    background-color: rgba(27, 101, 179, 0.842);
+  }
+  .register_form--inner input{
+    padding-right: 10px;
+    color: rgb(14, 130, 253) !important;
+  }
+  
+  input#register-number::-webkit-outer-spin-button,
+input#register-number::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+}

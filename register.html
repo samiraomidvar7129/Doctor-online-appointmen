@@ -131,7 +131,7 @@
            <div class="header-nav_login--wrapper d-flex justify-content-center align-items-center">
             <div class="header-nav_login--itemRight d-flex justify-content-between align-items-center text-light ">
               
-              <a href="register.html" class="login-btn  d-block text-light w-100 h-100">ورود | ثبت نام</a>
+                <a href="register.html" class="login-btn  d-block text-light w-100 h-100">ورود | ثبت نام</a>
             </div>
            <div class="header-nav_login--itemLeft">
             <div class="switch">
@@ -147,43 +147,66 @@
    
       <!-- END Navbar Menu -->
 
-    <!-- Start LoginForm -->
+    <!-- Start Register -->
+
     <div class="container mt-5">
         <div class="row">
-          <div id="contctUs-wrapper" class="d-flex w-75 m-auto flex-column  justify-content-center align-items-center">
-            <h6 class="contctUs-wrapper_title my-2"> برای رزرو نوبت لطفا در سایت ثبت نام کنید !</h6>
-            <div class="contact-us_inner  w-100 mt-4 ">
-              <div class="contact-us_form  d-flex  justify-content-center align-items-center w-100 h-100 p-2">
-                <form action="login.php" method="post" class="w-100 login_form--inner m-0 ">
+          <div id="register-wrapper" class="d-flex w-75 m-auto flex-column  justify-content-center align-items-center">
+            <h6 class="register-wrapper_title my-2"> برای رزرو نوبت لطفا در سایت ثبت نام کنید !</h6>
+            <div class="register_inner w-75  mt-4 ">
+              <div class="register_form  d-flex  justify-content-end align-items-start w-100 h-100 p-2">
+                <form action="register.php" method="post" class="w-100 register_form--inner m-0 ">
                   <div class="form-element mt-5   w-100 ">
                     <input autofocus
                       class=" w-100 py-2"
                       type="text"
                       value=""
-                      name="login-fullName"
-                      id="login-fullName"
+                      name="register-fullName"
+                      id="register-fullName"
                       placeholder="نام و نام خانوادگی "
+                    />
+                  </div>
+                  <div class="form-element mt-4   w-100 ">   
+                    <input
+                      class=" w-100 py-2"
+                      type="number"
+                      value=""
+                      name="register-number"
+                      id="register-number"
+                      placeholder=" شماره تماس"
                     />
                   </div>
                   <div class="form-element mt-4   w-100 ">
                     <input
                       class=" w-100 py-2"
+                      type="text"
+                      value=""
+                      name="register-email"
+                      id="register-email"
+                      placeholder="ایمیل "
+                    />
+                   
+                  </div>   
+                  <div class="form-element mt-4   w-100 ">
+                    <input
+                      class=" w-100 py-2"
                       type="password"
                       value=""
-                      name="login-password"
-                      id="login-password"
+                      name="register-password"
+                      id="register-password"
                       placeholder="رمزعبور "
                     />
                    
                   </div>             
-                  <button type="submit" value="" class="login-form_btn d-block w-100 p-2 mt-5">  ورود به سایت</button>
+                  <button type="submit" value="" class="regiter-form_btn d-block w-100 p-2 mt-5"> ثبت نام</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    <!-- END LoginForm -->
+    </div>
+
+    <!-- END Register -->
   
 
     <!-- Start Footer Section -->
