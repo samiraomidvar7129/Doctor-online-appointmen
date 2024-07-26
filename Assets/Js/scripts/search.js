@@ -51,9 +51,12 @@ const handleSearch=async()=>{
          
         `
         })
+    }else{
+        result.innerHTML="متاسفانه پزشک مورد نظر یافت نشد"
     }
 searchName.value=""
 }
+
 searchBtn.addEventListener("click",handleSearch)
 
 

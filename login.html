@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>  ثبت نام  </title>
+    <title>   ورود به سایت </title>
 
     <!-- FavIcon -->
     <link rel="icon" href="Assets/imgs/logo/favicon.png" />
@@ -154,7 +154,8 @@
             <h6 class="contctUs-wrapper_title my-2"> برای رزرو نوبت لطفا در سایت ثبت نام کنید !</h6>
             <div class="contact-us_inner  w-100 mt-4 ">
               <div class="contact-us_form  d-flex  justify-content-center align-items-center w-100 h-100 p-2">
-                <form action="login.php" method="post" class="w-100 login_form--inner m-0 ">
+                <form action="login.php" method="post" id="login_form--inner"
+                 class="w-100 login_form--inner m-0 ">
                   <div class="form-element mt-5   w-100 ">
                     <input autofocus
                       class=" w-100 py-2"
@@ -253,6 +254,10 @@
 
     <!-- END Footer Section -->
 
+         <!-- Sweet Alert-->
+         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
     <!-- Bootsrap Files-->
     <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
     <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
@@ -263,6 +268,7 @@
 
     <script src="Assets/Js/darkMode.js"></script>
     <script src="Assets/Js/generalScripts.js"></script>
+    <script type="module" src="Assets/Js/scripts/validate.js"></script>
 
 
   

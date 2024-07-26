@@ -1,59 +1,105 @@
-export const validateInput=(fullName,phoneNumbar,password)=>{
-const fullNameRegex=/^[\u0600-\u06ff\s]+$/;
-const phoneNumbarRgex=/^\d+$/;
-const passwordRgex=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+
+// Validate Register Fields----------------->
+
+  const validatetRegisterForm=(event)=>{
+  event.preventDefault();
 
 
+  const fullName=document.getElementById('register-fullName').value;
+  const phoneNumber=document.getElementById('register-number').value;
+  const password=document.getElementById('register-password').value;
 
-if(!fullName || !phoneNumbar || !password){
-    return false
+  if(!fullName || !phoneNumber || !password){
+    swal({
+      title: "خطا",
+      text: "کاربرگرامی ! لطفا تمامی فیلد ها را تکمیل کنید",
+      icon: "error",
+      button: "باشه",
+    })
+    return; 
+  }
+
+
+  const userData = {
+    fullName,
+    phoneNumber,
+    password,
+  };
+
+  localStorage.setItem("userData", JSON.stringify(userData));
+  swal({
+    title: "از اعتماد شما سپاسگزاریم",
+    text: " اطلاعات شما با موفقیت ثبت شد",
+    icon: "success",
+    button: "خیلی ممنون",
+  }).then(()=>{
+    window.location.href="login.html"
+  })
+
 }
-if(!fullNameRegex.test(fullName) ){
-    return false
-}
-if(!phoneNumbarRgex.test(phoneNumbar) ){
-    return false
-}
-if(!passwordRgex.test(password) ){
-    return false
-}
-
-return true;
-
-}
-
-// Store User Data In LocalStorage------
-
-export const storeUser=(fullName,phoneNumbar,password)=>{
-    const userData={
-        fullName,
-        phoneNumbar,
-        password
-    }
-
-    localStorage.setItem('userData',JSON.stringify(userData))
-}
 
 
-// Validate Login Fields----------------
+// Validate Login Fields-------------------->
 
-export const validateLogin=(fullName,password)=>{
-    const passwordRgex=/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
+ const validateLoginForm = (event) => {
+  event.preventDefault();
 
-    const storedUser=JSON.parse(localStorage.getItem('userData'))
-    
-    
-    if( !fullName || !password){
-        return false
-    }
-    
-    if(!passwordRgex.test(password) ){
-        return false
-    }
-    if(storedUser && storedUser.fullName===fullName && storedUser.password===password){
-        return true
-    }
-    
-    return false;
-    
-    }
+  const fullName = document.getElementById("login-fullName").value.trim();
+  const password = document.getElementById("login-password").value.trim();
+
+  if (!fullName || !password) {
+    swal({
+      title: "خطا",
+      text: "کاربرگرامی ! لطفا تمامی فیلد ها را تکمیل کنید",
+      icon: "error",
+      button: "باشه",
+    })
+    return; 
+  }
+
+  const getStoredUser = JSON.parse(localStorage.getItem("userData"));
+  if (!getStoredUser) {
+    swal({
+      title: "خطا",
+      text: "متاسفانه کاربر یافت نشد",
+      icon: "error",
+      button: "دوباره امتحان میکنم",
+    })
+    return; 
+  }
+
+  if (
+    getStoredUser.fullName === fullName &&
+    getStoredUser.password === password
+  ) {
+    swal({
+      title: "خوش آمدید",
+      text: "با موفقیت وارد شدید   ",
+      icon: "success",
+      button: "  آخ جوووووون",
+    }).then(()=>{
+      window.location.href="index.html"
+    })
+    return; 
+  } else {
+    swal({
+      title: "عه چیشد؟  ",
+      text: "اطلاعات رو اشتباه وارد کردی که ....",
+      icon: "error",
+      button: "دوباره تلاش میکنم ",
+    })
+    return 
+   }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const registerForm = document.getElementById("register_form--inner");
+  if (registerForm) {
+    registerForm.addEventListener("submit", validatetRegisterForm);
+  }
+
+  const loginForm = document.getElementById("login_form--inner");
+  if (loginForm) {
+    loginForm.addEventListener("submit", validateLoginForm);
+  }
+});

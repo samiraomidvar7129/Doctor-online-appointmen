@@ -155,7 +155,7 @@
             <h6 class="register-wrapper_title my-2"> برای رزرو نوبت لطفا در سایت ثبت نام کنید !</h6>
             <div class="register_inner w-75  mt-4 ">
               <div class="register_form  d-flex  justify-content-end align-items-start w-100 h-100 p-2">
-                <form action="register.php" method="post" class="w-100 register_form--inner m-0 ">
+                <form action="register.php" method="post" id="register_form--inner" class="w-100 register_form--inner m-0 ">
                   <div class="form-element mt-5   w-100 ">
                     <input autofocus
                       class=" w-100 py-2"
@@ -175,17 +175,6 @@
                       id="register-number"
                       placeholder=" شماره تماس"
                     />
-                  </div>
-                  <div class="form-element mt-4   w-100 ">
-                    <input
-                      class=" w-100 py-2"
-                      type="text"
-                      value=""
-                      name="register-email"
-                      id="register-email"
-                      placeholder="ایمیل "
-                    />
-                   
                   </div>   
                   <div class="form-element mt-4   w-100 ">
                     <input
@@ -275,6 +264,11 @@
     </footer>
 
     <!-- END Footer Section -->
+     
+     
+       <!-- Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
     <!-- Bootsrap Files-->
     <script src="Assets/Libs/bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
@@ -286,6 +280,7 @@
 
     <script src="Assets/Js/darkMode.js"></script>
     <script src="Assets/Js/generalScripts.js"></script>
+    <script type="module" src="Assets/Js/scripts/validate.js"></script>
 
 
   

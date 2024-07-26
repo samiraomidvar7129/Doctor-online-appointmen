@@ -15,3 +15,11 @@
 .login-icon ,.login-btn{
   font-size: 12px;
 }
+.login-form_btn{
+  background-color: rgb(14, 130, 253);
+  color: #ffff;
+}
+.form-element input{
+  color:rgb(14, 130, 253) !important ;
+  padding-right: 10px;
+}

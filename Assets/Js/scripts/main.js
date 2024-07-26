@@ -6,6 +6,8 @@ import { setUpSearch } from './search.js';
 
 
 document.addEventListener('DOMContentLoaded',()=>{
+
+
     Promise.all([
         fetchDoctorsList(),
         fetchComments(),
@@ -17,4 +19,6 @@ document.addEventListener('DOMContentLoaded',()=>{
         displayComments(comments),
         displayBlogs(blogs)
     })
+
+    
 })
