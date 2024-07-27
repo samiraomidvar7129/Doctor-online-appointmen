@@ -9,7 +9,7 @@
 .Online-consultation-text {
     font-size: 20px;
     font-weight: bold;
-    color: rgb(14,130,253);
+    color: rgb(14,130,253) !important;
     margin: 0 10px;
     animation:  opacity;
 }
