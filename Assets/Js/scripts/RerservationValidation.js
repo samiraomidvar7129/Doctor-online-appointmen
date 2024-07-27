@@ -3,7 +3,10 @@
  export const validatetReservationForm=(event)=>{
     event.preventDefault()
     
-  
+    const urlParams = new URLSearchParams(window.location.search);
+    const group = urlParams.get("group"); //Get doctorId From Url
+    const doctorName = urlParams.get("doctorName"); //Get doctorName From Url
+
   
     const reservationFullName=document.getElementById('reservation-fullName').value;
     const reservationPhone=document.getElementById('reservation-phoneNumber').value;
@@ -23,6 +26,8 @@
   
   
     const ReservationFormData = {
+      group:group,
+doctorName:doctorName,
         reservationFullName,
         reservationPhone,
         nationalCode,
@@ -32,13 +37,16 @@
   
     localStorage.setItem("UserReservations", JSON.stringify(ReservationFormData));
     swal({
-      title: "نوبت شما با موفقیت ثبت شد",
+      title: `نوبت شما برای ${doctorName} ثبت شد`,
       text: "    برای اطلاع از نوبت های خود به بخش رزروهای من مراجعه کنید",
       icon: "success",
       button: "خیلی ممنون",
     }).then(()=>{
-      window.location.href="index.html"
+      window.location.href="myReservations.html"
     })
+
+
+
   
   }
 

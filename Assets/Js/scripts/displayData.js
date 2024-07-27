@@ -16,7 +16,7 @@ export const displayDoctors = (doctors) => {
             <div class=" doctor-city pt-3">  ${item.city} </div>
             </div>
             <div class=" doctor-reserve_box d-flex justify-content-center align-items-center w-100 mt-4 py-2">
-            <a class"doctor-reserve_link d-block w-100 h-100 " href="details.html?group=${item.id}">نوبت بگیرید</a>
+            <a class"doctor-reserve_link d-block w-100 h-100 " href="details.html?group=${item.id}&doctorName=${item.Name}">نوبت بگیرید</a>
              <i class="fa fa-arrow-left doctor-reserve_icon"></i>
             </div>
             </div>
