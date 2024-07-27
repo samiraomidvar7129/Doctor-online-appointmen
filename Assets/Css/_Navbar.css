@@ -155,4 +155,22 @@ padding:5px
     align-items: center;
     
 }
+.header-nav_login--myReserve{
+    background-color: rgb(14,130,253);
+    color: #ffff;
+    width: 70px;
+    height: 100%;
+    padding: 7px ;
+    margin-left: 6px;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+
+}
+
+
+
+.header-nav_login--myReserve:hover {
+  background-color: rgba(27, 101, 179, 0.842);
+}
 

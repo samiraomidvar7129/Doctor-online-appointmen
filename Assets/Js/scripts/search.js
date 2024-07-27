@@ -9,7 +9,13 @@ const handleSearch=async()=>{
     const searchNameValue=searchName.value.toLocaleLowerCase().trim();
 
     if(!searchName){
-        return;
+        swal({
+            title: "خطا",
+            text: " نام پزشک مورد نظرا را وارد کنید",
+            icon: "error",
+            button: " باشه",
+          })
+          return;
     }
 
     const doctors=await fetchDoctorsList();
@@ -58,8 +64,6 @@ searchName.value=""
 }
 
 searchBtn.addEventListener("click",handleSearch)
-
-
 
 }
 

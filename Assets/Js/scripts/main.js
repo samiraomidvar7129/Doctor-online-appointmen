@@ -5,8 +5,10 @@ import {displayDoctors,displayComments,displayBlogs} from './displayData.js';
 import { setUpSearch } from './search.js';
 
 
+
 document.addEventListener('DOMContentLoaded',()=>{
 
+    
 
     Promise.all([
         fetchDoctorsList(),

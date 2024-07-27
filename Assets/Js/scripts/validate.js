@@ -1,7 +1,7 @@
 
 // Validate Register Fields----------------->
 
-  const validatetRegisterForm=(event)=>{
+   const validatetRegisterForm=(event)=>{
   event.preventDefault();
 
 
@@ -31,7 +31,7 @@
     title: "از اعتماد شما سپاسگزاریم",
     text: " اطلاعات شما با موفقیت ثبت شد",
     icon: "success",
-    button: "خیلی ممنون",
+    button: " ورود",
   }).then(()=>{
     window.location.href="login.html"
   })
@@ -41,7 +41,7 @@
 
 // Validate Login Fields-------------------->
 
- const validateLoginForm = (event) => {
+const validateLoginForm = (event) => {
   event.preventDefault();
 
   const fullName = document.getElementById("login-fullName").value.trim();

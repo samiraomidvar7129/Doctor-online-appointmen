@@ -89,7 +89,9 @@
 .fa-file,
 .fa-comments,
 .fa-exclamation,
-.doctor-address
+.doctor-address,
+.modal-title,
+.btn-close
 {
     color: rgb(14,130,253);
 }
@@ -109,9 +111,28 @@
 }
 
 
-.form-control {
+.reservation-form_parent div input{
     font-size: 11px;
     border: none;
-    border-bottom: 1px solid rgb(14,130,253);
+    color: rgb(14,130,253) !important ;
+    border-radius: 0 !important;
+    border: 1px solid rgb(14,130,253);
+}
+.reservation-form_parent div input::placeholder{
+    
+    color: rgb(14,130,253) !important ;
+    
+}
+input#reservation-phoneNumber::-webkit-outer-spin-button,
+input#reservation-phoneNumber::-webkit-inner-spin-button,
+input#national-code::-webkit-outer-spin-button,
+input#national-code::-webkit-inner-spin-button
+ {
+  -webkit-appearance: none !important;
+}
 
+.reservation-form_btn{
+    background-color:  rgb(14,130,253);
+    font-size: 12px;
+    color: #ffff;
 }
