@@ -73,6 +73,7 @@
 }
 .header-nav_items{
     height: 60px;
+    background-color: #ffff;
 }
 .header-nav_item--menu ul{
     width:100%;
@@ -89,7 +90,7 @@
     --b: 0.1em;   /* the thickness of the line */
     --c: #1095c1; /* the color */
     
-    color: #0000;
+    /* color: #0000; */
     padding-block: var(--b);
     background: 
       linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,

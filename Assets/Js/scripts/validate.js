@@ -1,4 +1,9 @@
 
+
+
+
+
+
 // Validate Register Fields----------------->
 
    const validatetRegisterForm=(event)=>{
@@ -37,6 +42,8 @@
   })
 
 }
+
+
 
 
 // Validate Login Fields-------------------->
@@ -83,14 +90,17 @@ const validateLoginForm = (event) => {
     return; 
   } else {
     swal({
-      title: "عه چیشد؟  ",
-      text: "اطلاعات رو اشتباه وارد کردی که ....",
+      title: "لطفا دقت کنید   ",
+      text: " نلم کاربری یا رمز عبور نادرست است",
       icon: "error",
       button: "دوباره تلاش میکنم ",
     })
     return 
    }
 };
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const registerForm = document.getElementById("register_form--inner");
