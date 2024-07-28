@@ -1,7 +1,16 @@
 
 ![Screenshot 2024-07-27 082733](https://github.com/user-attachments/assets/5593398d-b60d-496f-95e4-026333326ca3)
 
+
+
+-**اطلاعات پزشک**
+
+![detailspng](https://github.com/user-attachments/assets/97d97072-de2b-4041-aafb-e76ac8d38206)
+
+
+
 -**بخش نوبت کاربر**
+
 
 ![Screenshot۲](https://github.com/user-attachments/assets/057ea585-e39a-4438-85aa-39734c32b100)
 
