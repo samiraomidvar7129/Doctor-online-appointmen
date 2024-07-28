@@ -17,10 +17,12 @@
 
 
 
--**بخش نوبتهای کاربر**
+-**بخش نوبت ها**
 
 
-![Screenshot۲](https://github.com/user-attachments/assets/057ea585-e39a-4438-85aa-39734c32b100)
+
+
+![reserve](https://github.com/user-attachments/assets/3af54a52-2fe6-4ab8-9543-5c357e7cf8a8)
 
 
 
