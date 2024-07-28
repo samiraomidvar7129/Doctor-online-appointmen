@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     const appointmentsList=document.getElementById('appointments');
 
     const appointments=JSON.parse(localStorage.getItem('appointments')) || [];
-    console.log(appointments)
 
     if(appointments.length > 0){
        appointments.forEach(appointment=>{
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         <div> تاریخ حضور  :</div>
         <div>${appointment.reserveDate} </div>
         </div>
-        <div class="d-flex  justify-content-between align-items-center my-2 w-100">
+          <div class="d-flex  justify-content-between align-items-center my-2 w-100">
         <div> ساعت حضور  :</div>
         <div>${appointment.reserveTime} </div>
         </div>

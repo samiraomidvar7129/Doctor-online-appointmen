@@ -5,8 +5,8 @@ import { saveAppointmentToLocalStorage } from "./storage.js";
     event.preventDefault()
     
     const urlParams = new URLSearchParams(window.location.search);
-    const group =urlParams.get("group"); //Get doctorId From Url
-    const doctorName =urlParams.get("doctorName"); //Get doctorName From Url
+    const group = urlParams.get("group"); //Get doctorId From Url
+    const doctorName = urlParams.get("doctorName"); //Get doctorName From Url
     const doctorSpeciallity=urlParams.get('speciallity')//Get doctorSpeciallity From Url
 
 
@@ -28,8 +28,6 @@ import { saveAppointmentToLocalStorage } from "./storage.js";
       }
   
 
-
-
     const newAppointment = {
         group:group,
         doctorName:doctorName,
@@ -46,7 +44,7 @@ import { saveAppointmentToLocalStorage } from "./storage.js";
 saveAppointmentToLocalStorage(newAppointment);
 swal({
   title: `نوبت شما برای ${doctorName} ثبت شد`,
-  text: "    برای اطلاع از نوبت های خود به بخش رزروهای من مراجعه کنید",
+  text: "    برای اطلاع از نوبت های خود به بخش نوبت من مراجعه کنید",
   icon: "success",
   button: "نوبت های من ",
 }).then(()=>{
