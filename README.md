@@ -3,16 +3,38 @@
 
 
 
--**اطلاعات پزشک**
+
+
+
+-**بخش اطلاعات پزشک**
+
+
+
+
 
 ![detailspng](https://github.com/user-attachments/assets/97d97072-de2b-4041-aafb-e76ac8d38206)
 
 
 
--**بخش نوبت کاربر**
+
+-**بخش نوبتهای کاربر**
 
 
 ![Screenshot۲](https://github.com/user-attachments/assets/057ea585-e39a-4438-85aa-39734c32b100)
+
+
+
+-**بخش ثبت نام**
+
+
+
+
+![register](https://github.com/user-attachments/assets/34aeadf5-50c1-44ab-b022-4ffe42c44a3d)
+
+
+
+
+
 
 
 
