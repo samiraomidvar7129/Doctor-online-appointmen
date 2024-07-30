@@ -27,11 +27,11 @@ var swiper = new Swiper(".mySwiper", {
   });
 
   var swiper = new Swiper("#comments", {
-    slidesPerView: 4,
+    slidesPerView: 2,
     spaceBetween: 10,
     loop: true,
     autoplay: {
-      delay: 1000,
+      delay: 900,
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -44,11 +44,11 @@ var swiper = new Swiper(".mySwiper", {
         spaceBetween: 10,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 10,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         spaceBetween: 10,
       },
     },
@@ -59,7 +59,7 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     loop: true,
     autoplay: {
-      delay: 2300,
+      delay:700,
       disableOnInteraction: false,
     },
     breakpoints: {

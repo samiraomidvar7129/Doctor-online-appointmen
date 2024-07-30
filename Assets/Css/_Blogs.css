@@ -4,6 +4,8 @@
 .blog-title{
     font-size: 15px;
     position: relative;
+    font-weight: bold;
+
 }
 .blog-title::before{
     content: "+";
@@ -17,3 +19,15 @@
     z-index: 2;
     color:  rgb(14,130,253);
 }
+
+.blog-imgBox  {
+    height: 200px;
+}
+ .swiper-slide_blog{
+    border: 1px solid rgb(14,130,253) ;
+    border-radius: 4px;
+ }
+ .blog-description{
+    font-size: 12px;
+    font-weight: bold;
+ }

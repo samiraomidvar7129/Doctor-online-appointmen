@@ -17,6 +17,8 @@
 .introduce-title{
     position: relative;
     font-size: 15px;
+    font-weight: bold;
+
 }
 
 .introduce-title::before{
@@ -39,6 +41,8 @@
 }
 .doctor-name{
     font-size: 13px;
+    font-weight: bold;
+    
 }
 .doctor-name,
 .doctor-Speciallity,
