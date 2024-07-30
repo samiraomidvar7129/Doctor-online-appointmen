@@ -49,7 +49,10 @@
     font-size: 12px;
     margin-right: 10px;
 }
-.subFooter-item_icon,.subFooter-item_social{
+.subFooter-item_copyright{
+    font-size: 10px;
+}
+.subFooter-item_icon,.subFooter-item_social,.subFooter-item_copyright{
     color: rgb(14,130,253);
 
 }
