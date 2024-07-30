@@ -44,3 +44,15 @@
     background-color:rgb(14,130,253) ;
     color: #ffff;
 }
+
+.subFooter-item_txt{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.subFooter-item_icon,.subFooter-item_social{
+    color: rgb(14,130,253);
+
+}
+.subFooter-item_social li{
+    margin-left: 10px;
+}

@@ -1,13 +1,13 @@
-.comments-textBox_p,.comments-nameBox{
-    font-size: 12px;
-}
 .comments-nameBox{
-    font-weight: bold;
+    font-size: 14px;
 }
+.comments-textBox_p{
+    font-size: 11px;
+}
+
 .comments-title{
     position: relative;
     font-size: 15px;
-    font-weight: bold;
 }
 .comments-title::before{
     content: "+";

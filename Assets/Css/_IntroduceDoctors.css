@@ -17,7 +17,6 @@
 .introduce-title{
     position: relative;
     font-size: 15px;
-    font-weight: bold;
 
 }
 
@@ -33,17 +32,16 @@
     z-index: 2;
     color:  rgb(14,130,253);
 }
+.doctor-name{
+    font-size: 14px;  
+}
 
 .doctor-Speciallity,
 .doctor-NezamCode,
 .doctor-city {
     font-size: 11px;
 }
-.doctor-name{
-    font-size: 13px;
-    font-weight: bold;
-    
-}
+
 .doctor-name,
 .doctor-Speciallity,
 .doctor-NezamCode {
