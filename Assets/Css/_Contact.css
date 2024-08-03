@@ -1,3 +1,9 @@
+
+.aboutUs-heade-img{
+  height: 200px;
+  background-color:  rgb(14, 130, 253);
+}
+
 .contact-us_form {
   border-radius: 3px;
   border: 1px solid rgb(14, 130, 253);
@@ -7,6 +13,7 @@
 }
 .contctUs-wrapper_title{
   font-size: 16px;
+  color: #ffff;
 }
 .form-element input {
   border: none;

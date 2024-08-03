@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded',()=>{
 
   const appointmentsList=document.getElementById('appointments');
@@ -62,6 +63,7 @@ document.addEventListener('DOMContentLoaded',()=>{
             button:"سپاسگذارم"
           })
           
+         
         
         })
       })
