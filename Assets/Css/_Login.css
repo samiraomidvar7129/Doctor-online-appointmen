@@ -1,5 +1,5 @@
 .header-nav_login--itemRight {
-  width: 80px;
+  width: 100px;
   height: 100%;
   background-color: rgb(14, 130, 253);
   margin-left: 5px;
@@ -12,6 +12,7 @@
 .header-nav_login--itemRight:hover {
   background-color: rgba(27, 101, 179, 0.842);
 }
+
 .login-icon ,.login-btn{
   font-size: 12px;
 }

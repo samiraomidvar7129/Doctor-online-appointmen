@@ -142,10 +142,11 @@
     right: 0;
     background-color: white;
     border-left: 1px solid rgba(14, 129, 253, 0.436);
+    border-top: 1px solid rgba(14, 129, 253, 0.436);
     transition: all 0.5s ease-in;
 }
-.hamburger-menu-list li{
-margin-top: 16px;
+.hamburger-menu-list--item{
+margin-top: 30px;
 padding:5px
 }
 
