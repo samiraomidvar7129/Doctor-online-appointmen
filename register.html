@@ -19,7 +19,7 @@
     <!-- Import Bootsrap 5 CDN -->
     <link
       rel="stylesheet"
-      href="Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.rtl.min.css"
+      href="Assets/Libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
     />
 
     <!-- Import Styles File -->
@@ -160,36 +160,35 @@
             <div class="register_inner w-75  mt-4 ">
               <div class="register_form  d-flex  justify-content-end align-items-start w-100 h-100 p-2">
                 <form action="register.php" method="post" id="register_form--inner" class="w-100 register_form--inner m-0 ">
-                  <div class="form-element mt-5   w-100 ">
+                  <div class="form-element mt-5 d-flex flex-column justify-content-end align-items-start w-100 ">
                     <input autofocus
                       class=" w-100 py-2"
                       type="text"
                       value=""
                       name="register-fullName"
                       id="register-fullName"
-                      placeholder="نام و نام خانوادگی "
-                    />
+                      placeholder="نام و نام خانوادگی "/>
+                      <span class="fullName-error text-danger pt-2"></span>
                   </div>
-                  <div class="form-element mt-4   w-100 ">   
+                  <div class="form-element mt-4 d-flex flex-column justify-content-end align-items-start w-100 ">   
                     <input
                       class=" w-100 py-2"
-                      type="number"
+                      type="text"
                       value=""
                       name="register-number"
                       id="register-number"
-                      placeholder=" شماره تماس"
-                    />
+                      placeholder=" شماره تماس"/>
+                      <span class="phone-error text-danger pt-2"></span>
                   </div>   
-                  <div class="form-element mt-4   w-100 ">
+                  <div class="form-element mt-4 d-flex flex-column justify-content-end align-items-start w-100 ">
                     <input
                       class=" w-100 py-2"
                       type="password"
                       value=""
                       name="register-password"
                       id="register-password"
-                      placeholder="رمزعبور "
-                    />
-                   
+                      placeholder="رمزعبور " />
+                      <span class="password-error text-danger pt-2"></span>
                   </div>             
                   <button type="submit" value="" class="regiter-form_btn d-block w-100 p-2 mt-5"> ثبت نام</button>
                 </form>

@@ -1,8 +1,1 @@
-#dedicatedScroll{
-    height: 4px;
-    background-color: rgb(14,130,253);
-    position: fixed;
-    top:  0;
-    left: 0;
-    z-index: 99;
-}
+#dedicatedScroll{height:4px;background-color:#0e82fd;position:fixed;top:0;left:0;z-index:99}
