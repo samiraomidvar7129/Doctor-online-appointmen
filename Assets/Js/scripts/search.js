@@ -1,7 +1,5 @@
 import{fetchDoctorsList} from './fetchDoctors.js';export const setUpSearch=()=>{const searchBtn=document.getElementById('search-btn');const searchName=document.getElementById('search-name');const handleSearch=async()=>{
-    const searchNameValue=searchName.value.toLocaleLowerCase().trim();if(!searchName){
-        swal({ title: "خطا",text: " نام پزشک مورد نظر را وارد کنید",icon: "error",button: " باشه",})
-        return };
+    const searchNameValue=searchName.value.toLocaleLowerCase().trim();if(!searchName){ swal({ title: "خطا",text: " نام پزشک مورد نظر را وارد کنید",icon: "error",button: " باشه",}); return };
     const doctors=await fetchDoctorsList();const doctorsList=doctors.doctors ? doctors.doctors:[];const filterDoctors=doctorsList.filter(doctor=>{ return  doctor.Name.toLocaleLowerCase().includes(searchNameValue)}); const doctorsContainer = document.querySelector(".swiper-wrapper");
     const result = document.querySelector("#result");doctorsContainer.innerHTML="";if(filterDoctors.length > 0){filterDoctors.forEach(doctor=>{result.innerHTML=`
            <div class="swiper-slide bg-light d-flex justify-content-center align-items-center text-center">
@@ -18,7 +16,5 @@ import{fetchDoctorsList} from './fetchDoctors.js';export const setUpSearch=()=>{
           <div class=" doctor-reserve_box d-flex justify-content-center align-items-center w-100 mt-4 py-2">
           <a class"doctor-reserve_link d-block w-100 h-100 " href="details.html?group=${doctor.id}&doctorName=${doctor.Name}&speciallity=${doctor.Speciallity}
           ">نوبت بگیرید</a>
-           <i class="fa fa-arrow-left doctor-reserve_icon"></i>
-          </div>
-          </div>
-     </div>  `})}else{ result.innerHTML="متاسفانه پزشک مورد نظر یافت نشد"}searchName.value=""};searchBtn.addEventListener("click",handleSearch)};
+           <i class="fa fa-arrow-left doctor-reserve_icon"></i> </div>
+          </div> </div>  `})}else{ result.innerHTML="متاسفانه پزشک مورد نظر یافت نشد"}searchName.value=""};searchBtn.addEventListener("click",handleSearch)};
